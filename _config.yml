@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Emil Zawistowski"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "assets/images/profilowe.jpg"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
   email            :
