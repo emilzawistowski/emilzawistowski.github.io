@@ -115,9 +115,9 @@ analytics:
 author:
   name             : "Emil Zawistowski"
   avatar           : "assets/images/profilowe.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Sound and Music Computing Student."
+  location         : "Copenhagen, Denmark"
+  email            : "zemilpl@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
