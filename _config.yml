@@ -1,33 +1,33 @@
 # Site Settings
-title: "Your Name"
+title: "*"
 subtitle: "Research & Creative Practice"
-name: "Your Name"
-description: "Sound computing researcher and creative practitioner"
-url: "https://yourusername.github.io"  # UPDATE THIS
+name: "Emil Zawistowski"
+description: "Thinking, Making, Experimenting"
+url: "https://emilzawistowski.github.io"  # UPDATE THIS
 baseurl: ""
 repository: "yourusername/yourusername.github.io"  # UPDATE THIS
 
 # Theme
-remote_theme: "mmistakes/minimal-mistakes@4.24.0" 
+theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "default"  # Options: air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
 
 # Author (used globally)
 author:
-  name: "Your Name"
-  avatar: "/assets/images/bio-photo.jpg"  # Optional - add your photo here
-  bio: "PhD Candidate in Sound and Music Computing"
-  location: "City, Country"
-  email: "your@email.com"
+  name: "Emil Zawistowski"
+  avatar: "/assets/images/profilowe.jpg"  # Optional - add your photo here
+  bio: "Thinking, Making, Experimenting"
+  location: "Copenhagen, Denmark"
+  email: "zemilpl@gmail.com"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/yourusername"
+      url: "https://github.com/emilzawistowski"
     - label: "Google Scholar"
       icon: "ai ai-google-scholar"
-      url: "https://scholar.google.com/citations?user=YOUR_ID"
+      url: "https://scholar.google.com/citations?user=qwiXzX0AAAAJ&hl=pl"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/yourname"
+      url: "https://www.linkedin.com/in/emil-zawistowski/"
 
 # Build settings
 markdown: kramdown
