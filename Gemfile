@@ -1,6 +1,9 @@
 source "https://rubygems.org"
 
-gem "github-pages", "~> 232", group: :jekyll_plugins
+gem "jekyll", "~> 5.0"
 gem "minimal-mistakes-jekyll", "~> 4.27.3"
 
-
+gem "jekyll-feed"
+gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
+gem "jekyll-paginate"
