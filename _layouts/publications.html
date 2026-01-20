@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+{% comment %}
+OPTIONAL LAYOUT: Programmatically generate publications from _publications collection
+Currently the publications page uses manual HTML for fine control.
+This layout can be used in the future if you want automated generation.
+{% endcomment %}
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="page__inner-wrap">
+      <header>
+        {% if page.title %}<h1 id="page-title" class="page__title">{{ page.title }}</h1>{% endif %}
+      </header>
+
+      <section class="page__content" itemprop="text">
+        {{ content }}
+        
+        <div class="publications-list">
+          {% comment %}
+          Group publications by year, newest first
+          {% endcomment %}
+          {% assign publications_by_year = site.publications | group_by: "year" | sort: "name" | reverse %}
+          
+          {% for year_group in publications_by_year %}
+            <h2>{{ year_group.name }}</h2>
+            
+            {% assign year_pubs = year_group.items | sort: "date" | reverse %}
+            
+            {% for pub in year_pubs %}
+              <div class="publication">
+                <div class="publication__title">{{ pub.title }}</div>
+                
+                <div class="publication__authors">
+                  {% for author in pub.authors %}
+                    {% if author == "Your Name" %}
+                      <strong>{{ author }}</strong>
+                    {% else %}
+                      {{ author }}
+                    {% endif %}
+                    {% unless forloop.last %}, {% endunless %}
+                  {% endfor %}
+                </div>
+                
+                <div class="publication__venue">
+                  {% if pub.type == "journal-article" %}
+                    {{ pub.venue }}
+                    {% if pub.volume %}, {{ pub.volume }}{% endif %}
+                    {% if pub.issue %}({{ pub.issue }}){% endif %}
+                    {% if pub.pages %}, {{ pub.pages }}{% endif %}
+                  {% elsif pub.type == "conference-paper" %}
+                    {{ pub.venue }}
+                  {% elsif pub.type == "thesis" %}
+                    {{ pub.thesis_type | capitalize }} Thesis, {{ pub.institution }}
+                  {% else %}
+                    {{ pub.venue }}
+                  {% endif %}
+                </div>
+                
+                <div class="publication__links">
+                  {% if pub.doi %}
+                    <a href="https://doi.org/{{ pub.doi }}" target="_blank"><i class="ai ai-doi"></i> DOI</a>
+                  {% endif %}
+                  {% if pub.pdf %}
+                    <a href="{{ pub.pdf | relative_url }}"><i class="fas fa-file-pdf"></i> PDF</a>
+                  {% endif %}
+                  {% if pub.scholar %}
+                    <a href="{{ pub.scholar }}" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+                  {% endif %}
+                  {% if pub.github %}
+                    <a href="{{ pub.github }}" target="_blank"><i class="fab fa-github"></i> Code & Data</a>
+                  {% endif %}
+                  {% if pub.related_project %}
+                    <a href="{{ pub.related_project | relative_url }}"><i class="fas fa-link"></i> Related Project</a>
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          {% endfor %}
+        </div>
+      </section>
+    </div>
+  </article>
+</div>

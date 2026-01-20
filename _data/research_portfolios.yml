@@ -1,0 +1,11 @@
+# Research portfolios metadata
+
+- title: "Academic Research"
+  slug: "academic"
+  description: "Sound and music computing research, psychoacoustics, spatial audio, publications and academic work"
+  icon: "fas fa-flask"
+  
+- title: "Software Development"
+  slug: "software"
+  description: "Audio programming, DSP applications, research tools, and open-source software"
+  icon: "fas fa-code"

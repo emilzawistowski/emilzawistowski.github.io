@@ -1,0 +1,30 @@
+{% comment %}
+Project card component for grid display
+Usage: {% include project_card.html project=project %}
+{% endcomment %}
+
+{% assign project = include.project %}
+
+<a href="{{ project.url }}" class="project-card">
+  <div class="project-card__image-wrapper">
+    {% if project.image %}
+      <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="project-card__image">
+    {% else %}
+      <img src="{{ '/assets/images/placeholder-project.jpg' | relative_url }}" alt="{{ project.title }}" class="project-card__image">
+    {% endif %}
+    
+    {% if project.is_big_project %}
+      <span class="project-card__badge">Ongoing</span>
+    {% endif %}
+  </div>
+  
+  <div class="project-card__content">
+    <h3 class="project-card__title">{{ project.title }}</h3>
+    <div class="project-card__meta">
+      <span class="project-card__year">{{ project.date | date: "%Y" }}</span>
+      {% if project.type %}
+        <span class="project-card__type">{{ project.type | replace: "-", " " | capitalize }}</span>
+      {% endif %}
+    </div>
+  </div>
+</a>

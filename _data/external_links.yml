@@ -1,0 +1,38 @@
+# External platform links for home page
+# Order determines display order
+
+- name: "Spotify"
+  url: "https://open.spotify.com/artist/YOUR_ARTIST_ID"
+  icon: "fab fa-spotify"
+  
+- name: "Bandcamp"
+  url: "https://yourname.bandcamp.com"
+  icon: "fab fa-bandcamp"
+
+- name: "SoundCloud"
+  url: "https://soundcloud.com/yourname"
+  icon: "fab fa-soundcloud"
+
+- name: "Instagram"
+  url: "https://www.instagram.com/emil.zawistowski/"
+  icon: "fab fa-instagram"
+
+- name: "LinkedIn"
+  url: "https://linkedin.com/in/yourname"
+  icon: "fab fa-linkedin"
+
+- name: "Google Scholar"
+  url: "https://scholar.google.com/citations?user=YOUR_ID"
+  icon: "ai ai-google-scholar"
+
+- name: "GitHub"
+  url: "https://github.com/emilzawistowski"
+  icon: "fab fa-github"
+
+- name: "ORCID"
+  url: "https://orcid.org/0000-0000-0000-0000"
+  icon: "ai ai-orcid"
+
+- name: "ResearchGate"
+  url: "https://researchgate.net/profile/Your_Name"
+  icon: "ai ai-researchgate"

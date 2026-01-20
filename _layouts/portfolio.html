@@ -1,0 +1,117 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    <div class="page__inner-wrap">
+      <header>
+        {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+      </header>
+
+      <section class="page__content" itemprop="text">
+        {% comment %}
+        Portfolio description from page content
+        {% endcomment %}
+        {{ content }}
+        
+        {% comment %}
+        CV Highlights Section
+        {% endcomment %}
+        {% if page.cv_highlights %}
+          <div class="portfolio-cv">
+            <h2>CV Highlights</h2>
+            {% for entry in page.cv_highlights %}
+              <div class="cv-entry">
+                <div class="cv-entry__period">{{ entry.period }}</div>
+                <div class="cv-entry__role">{{ entry.role }}</div>
+                <div class="cv-entry__institution">{{ entry.institution }}</div>
+                {% if entry.description %}
+                  <div class="cv-entry__description">{{ entry.description }}</div>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+        
+        {% comment %}
+        Featured Projects Section
+        Get projects that include this portfolio in their portfolios array
+        {% endcomment %}
+        {% if page.collection == "research_projects" %}
+          {% assign all_projects = site.research_projects %}
+        {% elsif page.collection == "creative_projects" %}
+          {% assign all_projects = site.creative_projects %}
+        {% else %}
+          {% assign all_projects = site.research_projects %}
+        {% endif %}
+        
+        {% comment %}
+        Filter projects by portfolio slug
+        {% endcomment %}
+        {% assign portfolio_projects = "" | split: "" %}
+        {% for project in all_projects %}
+          {% if project.portfolios contains page.portfolio_slug %}
+            {% assign portfolio_projects = portfolio_projects | push: project %}
+          {% endif %}
+        {% endfor %}
+        
+        {% comment %}
+        Sort and separate featured
+        {% endcomment %}
+        {% assign sorted_portfolio_projects = portfolio_projects | sort: "date" | reverse %}
+        {% assign featured_portfolio_projects = sorted_portfolio_projects | where: "featured", true %}
+        
+        {% if portfolio_projects.size > 0 %}
+          <div class="portfolio-projects">
+            <h2>Featured Projects</h2>
+            
+            {% if featured_portfolio_projects.size > 0 %}
+              <div class="projects-grid">
+                {% for project in featured_portfolio_projects limit:6 %}
+                  {% include project_card.html project=project %}
+                {% endfor %}
+              </div>
+            {% else %}
+              <div class="projects-grid">
+                {% for project in sorted_portfolio_projects limit:6 %}
+                  {% include project_card.html project=project %}
+                {% endfor %}
+              </div>
+            {% endif %}
+            
+            <p style="margin-top: 2rem;">
+              <a href="{{ page.projects_link | default: '/research/projects/' }}?portfolio={{ page.portfolio_slug }}" class="btn btn--primary">
+                View all {{ portfolio_projects.size }} projects in this portfolio →
+              </a>
+            </p>
+          </div>
+        {% else %}
+          <div class="portfolio-projects">
+            <h2>Projects</h2>
+            <p><em>No projects tagged with this portfolio yet.</em></p>
+          </div>
+        {% endif %}
+      </section>
+
+      <footer class="page__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% endif %}
+      </footer>
+    </div>
+  </article>
+</div>

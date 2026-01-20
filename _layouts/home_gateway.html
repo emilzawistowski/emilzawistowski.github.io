@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="gateway-container">
+  <div class="gateway-content">
+    <h1 class="gateway-title">{{ site.title | default: "Your Name" }}</h1>
+    
+    <div class="gateway-buttons">
+      <a href="/research/" class="gateway-button gateway-button--research">
+        <span class="gateway-button__text">Research</span>
+        <span class="gateway-button__subtitle">Sound & Music Computing</span>
+      </a>
+      
+      <a href="/creative/" class="gateway-button gateway-button--creative">
+        <span class="gateway-button__text">Creative Work</span>
+        <span class="gateway-button__subtitle">Sound • Music • Performance</span>
+      </a>
+    </div>
+    
+    <div class="gateway-links">
+      <h2 class="gateway-links__title">Connect</h2>
+      <div class="gateway-links__grid">
+        {% for link in site.data.external_links %}
+        <a href="{{ link.url }}" class="gateway-link" target="_blank" rel="noopener noreferrer" aria-label="{{ link.name }}">
+          <i class="{{ link.icon }}" aria-hidden="true"></i>
+          <span>{{ link.name }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
