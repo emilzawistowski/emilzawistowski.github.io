@@ -117,6 +117,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  jekyll (~> 4.4)
   jekyll-feed
   jekyll-paginate
   jekyll-seo-tag
