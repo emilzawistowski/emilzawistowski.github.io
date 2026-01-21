@@ -6,24 +6,24 @@ sidebar:
   nav: "research"
 ---
 
-I am a researcher in sound and music computing, specializing in psychoacoustics, spatial audio perception, and audio signal processing. My work combines experimental methods, computational modeling, and software development to understand and enhance how we perceive and interact with sound.
+I am a Master's student in Sound and Music Computing at Aalborg University (Copenhagen), researching auditory perception, spatial audio, and computational sound analysis. My work combines experimental psychoacoustics with audio signal processing and machine learning.
 
 ## Current Research Focus
 
-My research explores the intersection of human auditory perception and computational audio systems:
+My research explores auditory perception and audio technology:
 
-- **Spatial Audio Perception** — investigating how listeners perceive and localize sound sources in virtual and augmented environments
-- **Psychoacoustic Modeling** — developing computational models of auditory perception for audio applications
-- **Audio Signal Processing** — creating algorithms and tools for spatial audio rendering, analysis, and manipulation
+- **Spatial Audio Perception** — investigating perceptual and acoustic features of spatial audio formats
+- **Auditory Cognition** — spatial hearing, auditory object enumeration, auditory salience
+- **Computational Audio** — machine learning for audio analysis, acoustic feature extraction
+- **Music Cognition** — psychoacoustics and cognitive aspects of music perception
 
 ## Academic Profiles
 
 Explore my research outputs and collaborations:
 
-- [Google Scholar](https://scholar.google.com/citations?user=YOUR_ID) — Publications and citations
-- [ORCID](https://orcid.org/0000-0000-0000-0000) — Research identifier and outputs
-- [ResearchGate](https://researchgate.net/profile/Your_Name) — Publications and networking
-- [GitHub](https://github.com/yourname) — Open-source code and research tools
+- [Google Scholar](https://scholar.google.com/citations?user=qwiXzX0AAAAJ&hl=en&oi=ao) — Publications and citations
+- [ResearchGate](https://researchgate.net/profile/Emil-Zawistowski) — Publications and networking
+- [GitHub](https://github.com/emilzawistowski) — Open-source code and research tools
 
 ## Explore My Research
 
@@ -35,7 +35,7 @@ Explore my research outputs and collaborations:
   
   <a href="/research/publications/" class="action-link">
     <strong>Publications</strong><br>
-    <span>Papers, conference proceedings, and theses</span>
+    <span>Papers, preprints, and theses</span>
   </a>
   
   <a href="/research/portfolios/" class="action-link">
@@ -54,11 +54,12 @@ Explore my research outputs and collaborations:
 Here are some recent projects and publications:
 
 ### Featured Projects
-- **[Spatial Audio VR Study](/research/projects/spatial-vr-study/)** (2024) — Investigating spatial audio perception in virtual reality environments
-- **[Binaural Rendering Toolkit](/research/projects/binaural-toolkit/)** (2023) — Open-source Python library for HRTF-based spatial audio
+- **[Master's Thesis](/research/projects/master-thesis/)** (2025–2026) — Computational approaches to auditory scene analysis
+- **[Spatial Audio Analysis](/research/projects/spatial-audio-harman/)** (2024–2025) — Research collaboration with HARMAN International on acoustic and perceptual features of spatial audio formats
+- **[CamJam](/research/projects/camjam/)** (2025) — Camera-based collaborative music interface
 
 ### Recent Publications
-- Your Name, Co-Author (2024). "Spatial Audio Perception in Virtual Environments." *International Conference on Acoustics*.
-- Your Name (2023). "Psychoacoustic Modeling for Immersive Audio." *Journal of Audio Engineering*.
+- Zawistowski, E., Sęklewski, M., & Zając, J. (2024). "Influence of Spatial Hearing on Auditory Subitizing Efficiency." *Preprint*.
+- Przyłuska, S. K., Zawistowski, E., et al. (2024). "Auditory object enumeration - preliminary evidence of parallel auditory subitizing." *Preprint*.
 
 [View all publications →](/research/publications/)

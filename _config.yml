@@ -1,5 +1,5 @@
 # Site Settings
-title: "*"
+title: "Emil Zawistowski"
 subtitle: "Research & Creative Practice"
 name: "Emil Zawistowski"
 description: "Thinking, Making, Experimenting"
@@ -27,7 +27,7 @@ author:
       url: "https://scholar.google.com/citations?user=qwiXzX0AAAAJ&hl=pl"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/yourname"
+      url: "https://www.linkedin.com/in/emil-zawistowski/"
 
 # Build settings
 markdown: kramdown
