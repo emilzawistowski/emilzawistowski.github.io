@@ -14,7 +14,7 @@ For citation information and metrics, visit my [Google Scholar profile](https://
 
 <div class="publications-list">
 
-## 2024
+2024
 
 <div class="publication">
   <div class="publication__title">Influence of Spatial Hearing on Auditory Subitizing Efficiency</div>
