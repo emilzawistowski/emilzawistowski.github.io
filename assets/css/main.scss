@@ -2,7 +2,7 @@
 # Custom styles for two-world architecture
 ---
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes/skins/default";
 @import "minimal-mistakes";
 
 /* ============================================
