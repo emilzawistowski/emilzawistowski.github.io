@@ -40,7 +40,7 @@ layout: default
         {% comment %}
         Sort projects by date (newest first)
         {% endcomment %}
-        {% assign sorted_projects = all_projects | sort: "date" | reverse %}
+        {% assign projects = site.research_projects | concat: site.creative_projects %}
         
         {% comment %}
         Separate featured and non-featured projects
