@@ -1,0 +1,20 @@
+---
+layout: home
+title: "Creative Blog"
+permalink: /blog/creative/
+sidebar:
+  nav: "creative"
+entries_layout: list
+author_profile: false
+---
+
+<div class="page__intro">
+  <p>Project diaries, creative process notes, show announcements, and reflections on sound art, music production, and audio practice.</p>
+</div>
+
+<div class="entries-{{ entries_layout }}">
+  {% assign creative_posts = site.creative_posts | sort: 'date' | reverse %}
+  {% for post in creative_posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
