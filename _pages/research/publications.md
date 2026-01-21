@@ -63,7 +63,7 @@ For up-to-date citation counts and h-index:
 
 ### ORCID
 
-ORCID identifier: *[placeholder - add when registered]*
+ORCID identifier: 0009-0003-7500-791X
 
 ---
 

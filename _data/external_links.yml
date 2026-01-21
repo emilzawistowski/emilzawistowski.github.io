@@ -10,7 +10,7 @@
   icon: "fab fa-bandcamp"
 
 - name: "SoundCloud"
-  url: "https://soundcloud.com/yourname"
+  url: "https://soundcloud.com/verseau_music"
   icon: "fab fa-soundcloud"
 
 - name: "Instagram"
@@ -18,11 +18,11 @@
   icon: "fab fa-instagram"
 
 - name: "LinkedIn"
-  url: "https://linkedin.com/in/yourname"
+  url: "https://www.linkedin.com/in/emil-zawistowski/"
   icon: "fab fa-linkedin"
 
 - name: "Google Scholar"
-  url: "https://scholar.google.com/citations?user=YOUR_ID"
+  url: "https://scholar.google.com/citations?user=qwiXzX0AAAAJ&hl=pl"
   icon: "ai ai-google-scholar"
 
 - name: "GitHub"
@@ -30,9 +30,9 @@
   icon: "fab fa-github"
 
 - name: "ORCID"
-  url: "https://orcid.org/0000-0000-0000-0000"
+  url: "https://orcid.org/0009-0003-7500-791X"
   icon: "ai ai-orcid"
 
 - name: "ResearchGate"
-  url: "https://researchgate.net/profile/Your_Name"
+  url: "https://www.researchgate.net/profile/Emil-Zawistowski"
   icon: "ai ai-researchgate"
