@@ -1,13 +1,13 @@
 # External platform links for home page
 # Order determines display order
 
-- name: "Spotify"
-  url: "https://open.spotify.com/artist/YOUR_ARTIST_ID"
-  icon: "fab fa-spotify"
+# - name: "Spotify"
+#   url: "https://open.spotify.com/artist/YOUR_ARTIST_ID"
+#   icon: "fab fa-spotify"
   
-- name: "Bandcamp"
-  url: "https://yourname.bandcamp.com"
-  icon: "fab fa-bandcamp"
+# - name: "Bandcamp"
+#   url: "https://yourname.bandcamp.com"
+#   icon: "fab fa-bandcamp"
 
 - name: "SoundCloud"
   url: "https://soundcloud.com/verseau_music"

@@ -1,0 +1,20 @@
+---
+layout: home
+title: "Research Blog"
+permalink: /blog/research/
+sidebar:
+  nav: "research"
+entries_layout: list
+author_profile: false
+---
+
+<div class="page__intro">
+  <p>Technical posts, tutorials, research updates, and reflections on sound and music computing, psychoacoustics, and audio signal processing.</p>
+</div>
+
+<div class="entries-{{ entries_layout }}">
+  {% assign research_posts = site.research_posts | sort: 'date' | reverse %}
+  {% for post in research_posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
