@@ -48,7 +48,7 @@ Explore my creative outputs:
 ## Recent Highlights
 
 ### Current Projects
-- **[Radio Kapitál](/creative/projects/radio-kapital/)** (2022–present) — Two radio shows: psychoacoustics/music philosophy and music labels spotlight
+- **[Radio Kapitał](/creative/projects/radio-kapital/)** (2022–present) — Two radio shows: psychoacoustics/music philosophy and music labels spotlight
 - **[Freelance Sound Engineering](/creative/projects/sound-engineering/)** (2023–present) — Live sound, recording, and post-production in Copenhagen and Warsaw
 - **[CamJam](/creative/projects/camjam/)** (2025) — Camera-based collaborative music interface
 
