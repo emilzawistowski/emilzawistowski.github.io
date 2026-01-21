@@ -10,17 +10,7 @@
   description: "Audio editing, mixing, and mastering for film and multimedia"
   icon: "fas fa-film"
 
-- title: "Music"
-  slug: "music"
-  description: "Original compositions, performances, and releases"
-  icon: "fas fa-music"
-
-- title: "DJ-ing"
-  slug: "djing"
-  description: "DJ performances, mixes, and club work"
-  icon: "fas fa-headphones"
-
 - title: "Other"
   slug: "other"
-  description: "Podcasts, collaborations, and experimental projects"
+  description: "Podcasts, collaborations, and other projects"
   icon: "fas fa-podcast"
