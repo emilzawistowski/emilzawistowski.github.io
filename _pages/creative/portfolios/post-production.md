@@ -9,273 +9,112 @@ sidebar:
   nav: "creative"
 
 cv_highlights:
-  - period: "2023–present"
-    role: "Freelance Sound Designer & Mixer"
-    institution: "Independent Films & Commercial Projects"
-    description: "Complete audio post-production for documentaries, short films, and commercial content"
+  - period: "Aug 2023–Jan 2024"
+    role: "Freelance Podcast Producer"
+    institution: "ANG Group, NNO Foundation"
+    description: "Recording and post-production for video podcasts"
   
-  - period: "2022–2023"
-    role: "Post-Production Sound Editor"
-    institution: "Post-Production Studio, Berlin"
-    description: "Dialogue editing, sound design, and ADR for feature films and series"
+  - period: "Oct 2023–present"
+    role: "Freelance Audio Post-Production"
+    institution: "Various Projects"
+    description: "Sound recording and post-production for short films, boom operation"
   
-  - period: "2021–2022"
-    role: "Assistant Sound Editor"
-    institution: "Documentary Production Company"
-    description: "Dialogue cleanup, archival restoration, and sound effects editing"
-  
-  - period: "2020"
-    role: "Audio Post Intern"
-    institution: "Broadcast Facility, Warsaw"
-    description: "Training in broadcast audio standards, loudness compliance, and delivery formats"
+  - period: "Sep 2023"
+    role: "Podcast Production"
+    institution: "Glissando Magazine"
+    description: "Podcast episode on microphone technology"
 ---
 
-This portfolio showcases my audio post-production work for film, video, podcasts, and multimedia projects. I specialize in documentary sound design, dialogue editing and restoration, and surround mixing for theatrical and broadcast delivery.
+This portfolio showcases my audio post-production work for podcasts and film. I provide recording, editing, and mixing services for various media projects.
 
 ## Core Services
 
-### Sound Design
-- **Creative Sound Design** — Original sonic elements for narrative and emotional impact
-- **Foley Recording & Editing** — Custom footsteps, cloth, and prop sounds
-- **Ambience Design** — Layered environmental soundscapes and room tone
-- **Transition & Sweetening** — Sonic bridges, impacts, and textural elements
+### Podcast Production
+- **Recording** — Location and studio recording
+- **Editing** — Dialogue cleanup, noise reduction
+- **Mixing** — Stereo mixing for podcast platforms
 
-### Dialogue Post-Production
-- **Dialogue Editing** — Cleanup, consistency, performance selection
-- **Noise Reduction** — Spectral repair, de-noise, de-reverb, de-click
-- **ADR Recording & Editing** — Automated dialogue replacement and sync
-- **Voice-Over Recording** — Narration recording and editing for documentaries
-
-### Mixing Services
-- **5.1 Surround Mixing** — Theatrical DCP delivery with spatial audio
-- **Stereo Mixing** — Broadcast, streaming, and festival formats
-- **Stem Creation** — M&E (Music & Effects) for international distribution
-- **Format Conversions** — Fold-downs, upmixing, loudness compliance
-
-### Specialized Services
-- **Archival Audio Restoration** — Historical footage and degraded media
-- **Music Integration** — Collaboration with composers, editing, and stem management
-- **Podcast Production** — Recording, editing, mixing for podcast platforms
-- **Sound Supervision** — On-set consultation and production sound coordination
+### Film Audio
+- **Location Sound** — Boom operation, field recording
+- **Post-Production** — Sound editing and mixing for short films
+- **Audio Workflow** — Complete audio workflow management
 
 ## Project Experience
 
-### Feature-Length Documentaries
-- **5+ feature documentaries** completed (60-90 minutes each)
-- Festival screenings including IDFA, DOK Leipzig, Krakow Film Festival
-- Broadcast delivery for European television networks
-- Multiple award nominations for sound design and mixing
+### Podcasts
+- **ANG Group** — Recording and post-production for video podcasts (2023–2024)
+- **NNO Foundation** — Podcast production (2023–2024)
+- **Glissando Magazine** — Podcast episode on microphone technology (2023)
 
-### Short Films
-- **15+ short films** (narrative and documentary, 5-30 minutes)
-- Student films, independent productions, festival submissions
-- Experimental and narrative sound approaches
-- Fast turnaround capabilities
+### Film
+- **Short films** — Sound recording and post-production
+- **Location sound** — Boom operation and field recording
+- **Audio workflow** — Complete audio post-production
 
-### Commercial & Corporate
-- **Brand videos** and advertising content
-- **Corporate presentations** and training videos
-- **Web content** optimization for online platforms
-- Quick delivery with broadcast-quality standards
+## Technical Skills
 
-### Podcasts & Audio-Only
-- **Narrative podcasts** — Sound design and immersive mixing
-- **Interview podcasts** — Cleanup, editing, and enhancement
-- **Audio documentaries** — Radio-quality production
-- Spatial audio experiences (binaural, ambisonics)
+### Software
+- **Reaper** — Primary DAW for editing and mixing
+- **Pro Tools** — Professional sessions
+- **iZotope RX** — Noise reduction and cleanup (basic)
 
-## Technical Expertise
+### Recording
+- Field recorders
+- Boom microphones
+- Location sound techniques
 
-### Digital Audio Workstations
-- **Reaper** (primary) — Fully customized templates and workflows
-- **Pro Tools** — Industry-standard sessions, AAF import/export
-- **DaVinci Resolve** — Fairlight integration for video-centric projects
+### Processing
+- Standard plugins for EQ, compression, noise reduction
+- Mixing for stereo delivery
+- Format optimization for web and broadcast
 
-### Audio Restoration & Repair
-- **iZotope RX 10 Advanced** — Spectral editing, de-noise, de-click, de-hum
-- **Cedar DNS One** — Hardware noise reduction for dialogue
-- **Waves Clarity VX** — AI-powered voice isolation
-- **Spectral editing** — Manual cleanup of complex audio issues
+## Workflow
 
-### Plugins & Processing
-- **FabFilter** — Pro-Q3, Pro-C2, Pro-MB for precision processing
-- **Waves** — Renaissance, SSL, Abbey Road collections
-- **Exponential Audio** — PhoenixVerb, R4 for reverb and space
-- **McDSP** — Dynamics and EQ for mixing
-- **Soundtoys** — Creative effects and character processing
+### Podcast Production
+1. Recording setup and capture
+2. Dialogue editing and cleanup
+3. Noise reduction
+4. Stereo mixing
+5. Export for distribution platforms
 
-### Delivery & Standards
-- **Loudness Standards** — EBU R128, ATSC A/85, ITU BS.1770
-- **Metering Tools** — Nugen VisLM-H 2, WLM Plus for compliance
-- **DCP Creation** — Digital Cinema Package export and QC
-- **Broadcast Specs** — Multiple format delivery (ProRes, MXF, WAV)
+### Film Audio
+1. Location sound recording
+2. Sync and organization
+3. Sound editing
+4. Mixing
+5. Delivery
 
-### Recording & Monitoring
-- **ADR Recording** — Source-Connect for remote sessions
-- **Foley Recording** — Home studio with props library
-- **Monitoring** — Genelec 8351 + 8340 + 7370 sub (calibrated 5.1 system)
-- **Room Treatment** — Acoustic optimization for accurate monitoring
+## Equipment
 
-## Workflow & Process
+### Software
+- Reaper
+- Pro Tools
+- iZotope RX (basic)
 
-### Project Intake
-1. **Client Consultation** — Understanding vision, budget, timeline
-2. **Technical Review** — Assessing source material quality and requirements
-3. **Scope Definition** — Deliverables, formats, revisions policy
-4. **Schedule** — Realistic timeline with milestones
-
-### Post-Production Phases
-
-**Phase 1: Dialogue (1-2 weeks)**
-- Sync verification and correction
-- Dialogue editing and cleanup
-- Noise reduction and restoration
-- ADR recording if needed
-- Consistency and EQ matching
-
-**Phase 2: Sound Effects & Ambiences (1-2 weeks)**
-- Sound effects spotting and editing
-- Foley recording and editing
-- Ambience design and layering
-- Transition elements
-
-**Phase 3: Music Integration (3-5 days)**
-- Music editing and placement
-- Stem organization
-- Collaboration with composer
-- Timing and emotional alignment
-
-**Phase 4: Mixing (1-2 weeks)**
-- 5.1 surround mix (theatrical)
-- Stereo fold-down (broadcast/streaming)
-- Client review sessions
-- Revisions and notes implementation
-
-**Phase 5: Delivery (2-3 days)**
-- Format exports (DCP, broadcast, web)
-- Stem delivery (dialogue, music, effects)
-- Quality control and metadata
-- Archive and backup
-
-### Collaboration Tools
-- **File Sharing** — Frame.io for video review with timecode comments
-- **Communication** — Zoom, Slack for remote collaboration
-- **Session Sharing** — AAF/OMF exchange with other editors
-- **Remote ADR** — Source-Connect for distributed recording
-
-## Specialized Skills
-
-### Documentary Sound
-- **Archival Integration** — Matching historical and contemporary audio
-- **Interview Optimization** — Clarity and consistency across multiple sources
-- **Environmental Sound** — Building authentic acoustic spaces
-- **Minimal Music Approach** — Restraint and emotional precision
-
-### Narrative Sound Design
-- **Soundscape Building** — Creating immersive, believable worlds
-- **Emotional Arc** — Supporting narrative through sound
-- **Genre Conventions** — Horror, thriller, drama sound approaches
-- **Foley Artistry** — Detailed, character-specific movement sounds
-
-### Restoration Expertise
-- **Degraded Media** — Magnetic stripe, optical track, damaged recordings
-- **Historical Material** — Preserving character while improving clarity
-- **De-clicking & De-crackling** — Removing mechanical noise
-- **Hum Removal** — Ground loops, power supply interference
-
-### Spatial Audio
-- **5.1 Surround** — Theatrical immersive mixing
-- **Binaural Audio** — Headphone-optimized spatial experiences
-- **Ambisonics** — 360° audio for VR and immersive installations
-- **Atmos Mixing** — Object-based audio (learning/development)
-
-## Tools & Equipment
-
-### Hardware
-- **Genelec 8351A + 8340A + 7370A** — Calibrated 5.1 monitoring
-- **Sound Devices 833** — Field recording for foley/ambiences
-- **Universal Audio Apollo x8** — High-quality audio interface
-- **Multiple Microphones** — DPA, Sennheiser, Shure for ADR/foley
-
-### Software Arsenal
-- Reaper (primary DAW)
-- Pro Tools (collaboration/AAF)
-- iZotope RX 10 Advanced
-- FabFilter Total Bundle
-- Waves Gold + specialty bundles
-- Exponential Audio reverbs
-- Nugen loudness tools
-
-### Studio Setup
-- Acoustically treated mixing room
-- Dual monitor video playback
-- Ergonomic mixing desk
-- Props and surfaces for foley
-
-## Delivery Formats
-
-### Theatrical
-- **DCP** — 5.1 surround, 24-bit/48kHz
-- **Stems** — Dialogue, Music, Effects (5.1 + stereo)
-- **Loudness** — -20 LUFS integrated
-
-### Broadcast
-- **Stereo Mix** — 24-bit or 16-bit, 48kHz
-- **Loudness** — EBU R128 (-23 LUFS) or local standards
-- **File Formats** — WAV, MXF, ProRes with embedded audio
-
-### Streaming & Web
-- **Stereo Mix** — Optimized for online distribution
-- **Loudness** — -14 LUFS (streaming platforms)
-- **Formats** — AAC, MP3 for web delivery
-
-### Archive
-- **Multitrack Session** — Complete Reaper/Pro Tools session
-- **High-Res Masters** — 24-bit/48kHz or 96kHz stems
-- **Documentation** — Cue sheets, notes, asset lists
-
-## Client Success Stories
-
-**Documentary Filmmaker:**
-> "The archival restoration was incredible — material we thought was unusable became crystal clear. The mix elevated the entire film." — *Maria Kowalska, Director*
-
-**Independent Producer:**
-> "Fast turnaround without sacrificing quality. Professional communication and creative problem-solving throughout." — *Production Company*
-
-**Festival Programmer:**
-> "Consistently high-quality sound design. Films mixed by [Your Name] always sound excellent in our cinema." — *Film Festival Technical Director*
-
-## Awards & Recognition
-
-- **Best Sound Design** — Polish Film Awards (Nominee, 2024)
-- **Golden Reel Award** — Motion Picture Sound Editors (Documentary, 2024)
-- **Technical Excellence** — Film Festival commendations
+### Recording Gear
+- Field recorders
+- Microphones
+- Boom poles
 
 ## Rates & Timeline
 
-### Pricing Structure
-- **Dialogue Editing:** €50-80/hour or per-project quote
-- **Full Post Package:** Custom quote based on project length and complexity
-- **Rush Jobs:** Premium rates for urgent delivery
-- **Student/Non-Profit:** Discounted rates available
+Available for:
+- Podcast recording and post-production
+- Film audio post-production
+- Location sound recording
 
-### Typical Timelines
-- **Short Film (10-15 min):** 1-2 weeks
-- **Feature Documentary (60-90 min):** 6-8 weeks
-- **Commercial (30-60 sec):** 2-3 days
-- **Podcast Episode:** 1-2 days per episode
+Contact for rates and availability.
 
-## Contact & Booking
+## Contact
 
-**Email:** post@yourname.com  
-**Phone:** +XX XXX XXX XXX  
-**Website:** [yourname.com/post-production](/)
+For post-production inquiries:
 
-**Availability:** Currently booking projects 3-4 weeks in advance  
-**Location:** Berlin, Germany (remote work possible worldwide)
+- **Email:** [contact via portfolio or LinkedIn]
+- **LinkedIn:** [emil-zawistowski](https://linkedin.com/in/emil-zawistowski)
+- **Portfolio:** [emilzawistowski.github.io](https://emilzawistowski.github.io)
 
-**Initial Consultation:** Free 30-minute call to discuss your project
+**Location:** Copenhagen, Denmark (remote work possible)
 
 ---
 
-*For other work, see [Sound Engineering →](/creative/portfolios/sound-engineering/) or [Music →](/creative/portfolios/music/)*
+*For other work, see [Sound Engineering →](/creative/portfolios/sound-engineering/) or [Radio & Podcasts →](/creative/portfolios/radio/)*

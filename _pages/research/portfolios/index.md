@@ -26,7 +26,7 @@ These portfolios present my research work in different professional contexts. Ea
 
 Each portfolio is designed to be shared independently:
 
-- **Academic Research** — For academic positions, grant applications, and research collaborations
-- **Software Development** — For technical positions, open-source contributions, and industry collaborations
+- **Academic Research** — For PhD applications, research positions, and academic collaborations
+- **Software Development** — For technical positions, open-source contributions, and industry research collaborations
 
 You can link directly to a specific portfolio or download it as a PDF for applications.

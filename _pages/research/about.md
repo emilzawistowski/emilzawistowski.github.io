@@ -33,34 +33,58 @@ Academy of Sound Engineering, Warsaw
 
 ---
 
-## Research Experience
+## Academic Positions
 
 **Master's Student** (2024–present)  
-Aalborg University Copenhagen
+Sound and Music Computing, Aalborg University Copenhagen  
+- Conducting research on computational auditory scene analysis
+- Developing algorithms for spatial audio analysis
+- Collaborating with industry partners on applied audio research
 
 **Research Collaboration with HARMAN International** (2024–2025)  
-Project: Acoustic Feature Analysis of Spatial Audio - research on perceptual and acoustic differentiation of spatial vs. stereo audio formats
+- Acoustic Feature Analysis of Spatial Audio project
+- Research on perceptual and acoustic differentiation of spatial vs. stereo audio formats
 
 **Co-Founder & Vice President** (2023–2024)  
 Research Circle of Cognitive Psychology of Music, University of Warsaw  
-Designed and conducted experimental studies, co-authored research publications
+- Co-founded and led student research organization
+- Designed and conducted experimental studies on auditory perception
+- Supervised research projects and mentored undergraduate researchers
+- Co-authored research publications
 
 **AI Research Intern** (Oct–Dec 2023)  
-Civil Affairs Institute (Instytut Spraw Obywatelskich)
+Civil Affairs Institute (Instytut Spraw Obywatelskich)  
+- Participated in AI research seminars
+- Reviewed literature on AI trends
+- Contributed to public discourse on AI
 
 ---
 
 ## Research Interests
 
-- Auditory perception and spatial hearing
-- Spatial audio and binaural audio
-- Computational auditory scene analysis
-- Music cognition and psychoacoustics
-- Machine learning for audio analysis
+### Primary Areas
+- **Auditory Perception** — Spatial hearing, auditory scene analysis, auditory attention and salience
+- **Spatial Audio** — Binaural audio, spatial audio formats, perceptual evaluation
+- **Computational Audio Analysis** — Machine learning for audio, acoustic feature extraction
+- **Music Cognition** — Auditory object perception, musical memory, psychoacoustics
+
+### Application Domains
+- Virtual and augmented reality audio
+- Immersive audio technologies
+- Music information retrieval
+- Audio quality assessment
 
 ---
 
 ## Publications
+
+**Preprints:** 2  
+**Bachelor's Thesis:** 1  
+**Citations:** Available on [Google Scholar](https://scholar.google.com/citations?user=qwiXzX0AAAAJ&hl=en&oi=ao)
+
+[View complete publications list →](/research/publications/)
+
+### Selected Publications
 
 Zawistowski, E., Sęklewski, M., & Zając, J. (2024). "Influence of Spatial Hearing on Auditory Subitizing Efficiency." *Preprint*.
 
@@ -68,105 +92,156 @@ Przyłuska, S. K., Zawistowski, E., Sodel, W., Rola, O., Skonieczna-Żydecka, A.
 
 Zawistowski, E. (2024). "The Phenomenon of Auditory Salience: An Experimental Examination with Consideration of Spatial Aspects." *Bachelor's Thesis*, University of Warsaw.
 
-[Google Scholar](https://scholar.google.com/citations?user=qwiXzX0AAAAJ&hl=en&oi=ao)
-
 ---
 
-## Skills
+## Research Skills
+
+### Experimental Methods
+- Psychoacoustic experiment design (forced-choice, rating scales, enumeration tasks)
+- Stimulus generation and acoustic control
+- Listening test administration and data collection
+- Statistical analysis of perceptual data
+- Mixed-effects modeling
 
 ### Programming & Software
 - **Languages:** Python, MATLAB, C++, R, Faust, SuperCollider
-- **Audio:** Max/MSP, Pure Data, Reaper, Pro Tools
+- **Audio & DSP:** Max/MSP, Pure Data, Reaper, Pro Tools
 - **Libraries:** NumPy, SciPy, pandas, scikit-learn, librosa, PyTorch, TensorFlow
-- **Tools:** Git, Praat, REPP
-- **DSP:** Teensy microcontroller
+- **Platforms:** Embedded DSP (Teensy), Web Audio API
+- **Version Control:** Git, GitHub
+- **Tools:** Praat, REPP
 
-### Research Methods
-- Psychoacoustic experiment design
-- Statistical analysis (R, Python)
-- Audio signal processing
-- Machine learning
-
-### Audio Engineering
-- Live sound (Behringer X32, Midas PRO1, Soundcraft Si Impact)
-- Recording and post-production
-- Location sound and boom operation
+### Statistical Analysis
+- Experimental data analysis in R and Python
+- Mixed-effects modeling
+- Machine learning for classification
+- Data visualization (Matplotlib, ggplot2, seaborn)
 
 ---
 
-## Projects
+## Software & Tools
+
+Research projects and code:
 
 **Acoustic Feature Analysis of Spatial Audio** (2024–2025)  
-Research project with HARMAN International on spatial audio formats
+Python-based analysis pipeline for spatial audio research (collaboration with HARMAN International)
 
 **CamJam** (2025)  
 Camera-based collaborative music interface
 
-**Auditory Salience Research** (2023–2024)  
-Bachelor's thesis - experimental study on auditory attention and spatial perception
+**Extended FM Synthesizer**  
+SuperCollider implementation
 
-**Spatial Hearing and Subitizing** (2023–2024)  
-Research on parallel auditory object enumeration
+**Ambient Instrument**  
+Embedded audio system using Teensy and Faust
 
-[Portfolio](https://emilzawistowski.github.io) | [GitHub](https://github.com/emilzawistowski)
+[View all software projects →](/research/portfolios/software/)
+
+[GitHub](https://github.com/emilzawistowski) | [Portfolio](https://emilzawistowski.github.io)
 
 ---
 
-## Teaching & Outreach
+## Teaching & Mentoring
+
+### Student Supervision
 
 **Research Circle of Cognitive Psychology of Music** (2023–2024)  
-Co-Founder & Vice President - mentored students, supervised research projects
+- Mentored undergraduate students in experimental design and data analysis
+- Supervised collaborative research projects on auditory perception
+- Co-authored publications with undergraduate researchers
+
+### Outreach & Education
 
 **Radio Kapitał** (2022–present)  
-Radio host - two shows on psychoacoustics/music philosophy and music labels
+Independent radio host for two programs:
+- Psychoacoustics, music philosophy, and musicology
+- Music labels spotlight
+
+**Glissando Magazine** (2023)  
+Podcast episode on microphone technology and acoustics
 
 ---
 
-## Professional Experience
+## Professional Service
 
-**Freelance Sound Engineer** (2023–present)  
-Live sound, recording, post-production for concerts, podcasts, and films
+### Academic Activities
 
-**Sound Engineer, Lolek Pub** (Oct 2023–Feb 2024)
+**Co-organizer** — Cognitive Collisions Conference 2024, University of Warsaw
 
-**Audio Technician, Student Internet Television TVPW** (2020–2022)
+**Member** — Student Scientific Association of Artificial Intelligence (2022–2024), University of Warsaw
 
-**Festival Production Volunteer**  
-Jazz Jamboree 2019, Warsaw Summer Jazz Days 2019, Avant Art Festival 2022–2023, CPH:DOX 2025
+### Memberships
 
----
-
-## Academic Activities
-
-**Co-organizer** - Cognitive Collisions Conference 2024 (University of Warsaw)
-
-**Member** - Student Scientific Association of Artificial Intelligence (2022–2024)
+Open to joining relevant professional societies as research career develops
 
 ---
 
-## Certifications
+## Awards & Honors
 
-**Certificate in Advanced English (C1)** - Cambridge University Press & Assessment (2024)
-
-**Driver's License** (Category B)
+*Awards and honors will be listed here as they are received*
 
 ---
 
-## Languages
+## Invited Talks & Presentations
 
-Polish (native) | English (C1) | Danish (basic)
+*Conference presentations and invited talks will be listed here*
 
 ---
 
-## Contact
+## Grants & Funding
 
+*Research grants and funding will be listed here*
+
+---
+
+## Collaborations
+
+### Current Collaborators
+- **HARMAN International** — Research collaboration on spatial audio (2024–2025)
+
+### Academic Collaborations
+- **Research Circle of Cognitive Psychology of Music**, University of Warsaw (2023–2024)
+
+---
+
+## Contact Information
+
+**Email:** [contact via website form or LinkedIn]  
 **Location:** Copenhagen, Denmark
 
-**Profiles:**
+**Academic Profiles:**
 - [Google Scholar](https://scholar.google.com/citations?user=qwiXzX0AAAAJ&hl=en&oi=ao)
 - [ResearchGate](https://researchgate.net/profile/Emil-Zawistowski)
+
+**Code & Projects:**
 - [GitHub](https://github.com/emilzawistowski)
+- [Personal Website](https://emilzawistowski.github.io)
+
+**Social & Professional:**
 - [LinkedIn](https://linkedin.com/in/emil-zawistowski)
-- [Portfolio](https://emilzawistowski.github.io)
 
 ---
+
+## Research Philosophy
+
+I approach research with commitment to:
+
+**Interdisciplinarity** — Bridging cognitive science, psychoacoustics, and audio engineering
+
+**Practical Relevance** — Connecting fundamental research to real-world applications in spatial audio
+
+**Open Science** — Sharing code, data, and methods to enable reproducibility
+
+**Hands-On Engagement** — Maintaining active practice as sound engineer to stay connected to practical challenges
+
+**Collaboration** — Working across disciplines with diverse collaborators
+
+---
+
+## Download CV
+
+[Download full academic CV (PDF)](/assets/files/cv-research.pdf) — Last updated: January 2025
+
+---
+
+*This page represents my academic and research identity. For creative work, see [Creative Work →](/creative/)*

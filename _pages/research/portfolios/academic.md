@@ -9,107 +9,99 @@ sidebar:
   nav: "research"
 
 cv_highlights:
-  - period: "2023–present"
-    role: "PhD Candidate, Sound and Music Computing"
-    institution: "University of Sound and Music Computing"
-    description: "Dissertation: Psychoacoustic Modeling of Spatial Audio Perception in Virtual Environments"
+  - period: "2024–present"
+    role: "MSc Student, Sound and Music Computing"
+    institution: "Aalborg University, Copenhagen"
+    description: "Master's thesis: Computational approaches to auditory scene analysis"
   
-  - period: "2022–2023"
-    role: "Research Assistant, Spatial Audio Lab"
-    institution: "Institute of Acoustics and Audio Technology"
-    description: "Conducted psychoacoustic experiments on distance perception and HRTF individualization"
+  - period: "2024–2025"
+    role: "Research Collaboration with HARMAN International"
+    institution: "Aalborg University"
+    description: "Acoustic Feature Analysis of Spatial Audio - perceptual and acoustic differentiation of spatial audio formats"
   
-  - period: "2020–2022"
-    role: "MSc Sound and Music Computing"
-    institution: "University of Sound and Music Computing"
-    description: "Thesis: Psychoacoustic Modeling of Distance Perception in Virtual Environments (Grade: Distinction)"
+  - period: "2023–2024"
+    role: "Co-Founder & Vice President, Research Circle of Cognitive Psychology of Music"
+    institution: "University of Warsaw"
+    description: "Led experimental studies on auditory perception, co-authored publications on spatial hearing and auditory subitizing"
   
-  - period: "2017–2020"
-    role: "BSc Computer Science"
-    institution: "Technical University"
-    description: "Specialization in Audio Signal Processing and Human-Computer Interaction"
+  - period: "2021–2024"
+    role: "BSc Cognitive Science"
+    institution: "University of Warsaw"
+    description: "Thesis: The Phenomenon of Auditory Salience: An Experimental Examination with Consideration of Spatial Aspects"
 ---
 
-This portfolio showcases my academic research in sound and music computing, with particular focus on psychoacoustics, spatial audio perception, and computational modeling of auditory perception.
+This portfolio showcases my academic research in sound and music computing, with focus on auditory perception, spatial audio, and computational audio analysis.
 
 ## Research Interests
 
-My research investigates the intersection of human auditory perception and computational audio systems:
+My research investigates auditory perception and audio technology:
 
-- **Psychoacoustics** — Understanding the perceptual processes underlying spatial hearing, timbre perception, and auditory scene analysis
-- **Spatial Audio** — Developing and evaluating binaural rendering techniques, HRTF individualization methods, and spatial audio for VR/AR
-- **Computational Modeling** — Creating psychoacoustically-informed models for audio applications and perceptual quality prediction
-- **Experimental Methods** — Designing and conducting rigorous listening experiments with statistical analysis
+- **Auditory Perception** — Spatial hearing, auditory object enumeration, auditory salience, auditory scene analysis
+- **Spatial Audio** — Perceptual and acoustic analysis of spatial audio formats, binaural audio
+- **Computational Audio** — Machine learning for audio analysis, acoustic feature extraction, signal processing
+- **Music Cognition** — Psychoacoustics, auditory memory, perceptual aspects of music
 
 ## Selected Publications
 
-### Peer-Reviewed Journal Articles
-- **Your Name**, Smith, J., Jones, A. (2024). "Individual Differences in Spatial Audio Perception: A Comprehensive Study." *Journal of the Acoustical Society of America*, 155(2), 1234-1245. DOI: 10.1121/xxxxx
+### Preprints
+- Zawistowski, E., Sęklewski, M., & Zając, J. (2024). "Influence of Spatial Hearing on Auditory Subitizing Efficiency." *Preprint*.
 
-- **Your Name**, Collaborator, B. (2023). "Psychoacoustic Distance Perception in Virtual Environments." *Applied Acoustics*, 198, 109012. DOI: 10.1016/xxxxx
-
-### Conference Papers
-- **Your Name**, Smith, J. (2024). "Spatial Audio Perception in VR: The Role of Individualized HRTFs." *International Conference on Acoustics (ICA 2024)*, Berlin, Germany.
-
-- **Your Name** (2023). "An Open-Source Toolkit for Binaural Audio Rendering." *Audio Engineering Society 155th Convention*, New York, USA.
-
-- **Your Name**, Supervisor, A. (2022). "A Computational Model of Auditory Distance Perception." *International Conference on Spatial Audio (ICSA 2022)*, Graz, Austria.
+- Przyłuska, S. K., Zawistowski, E., Sodel, W., Rola, O., Skonieczna-Żydecka, A., Wyka, N., & Czerniawska, E. (2024). "Auditory object enumeration - preliminary evidence of parallel auditory subitizing." *Preprint*.
 
 ### Theses
-- **Your Name** (2022). *Psychoacoustic Modeling of Distance Perception in Virtual Environments*. MSc Thesis, University of Sound and Music Computing.
+- Zawistowski, E. (2024). "The Phenomenon of Auditory Salience: An Experimental Examination with Consideration of Spatial Aspects." *Bachelor's Thesis*, University of Warsaw.
 
 [View complete publications list →](/research/publications/)
 
 ## Research Skills
 
 ### Experimental Design & Methodology
-- Psychoacoustic listening test design (forced-choice, rating scales, method of adjustment)
-- Virtual environment creation for perceptual studies
+- Psychoacoustic experiment design (forced-choice, enumeration tasks, rating scales)
+- Stimulus generation and acoustic control
 - Participant recruitment and ethical protocols
-- Experimental control and stimulus generation
+- Statistical analysis of perceptual data
 
 ### Statistical Analysis
-- Mixed-effects modeling (lme4, R)
-- Multivariate analysis and dimensionality reduction
-- Bayesian statistics and modeling
-- Signal detection theory applications
+- Experimental data analysis in R and Python
+- Mixed-effects modeling
+- Machine learning for classification and regression
+- Data visualization
 
 ### Technical Skills
-- **Programming:** Python, MATLAB, R, C++, JavaScript
+- **Programming:** Python, MATLAB, C++, R, Faust, SuperCollider
 - **Audio Tools:** Max/MSP, Pure Data, Reaper, Pro Tools
-- **Frameworks:** NumPy, SciPy, Pandas, Matplotlib, scikit-learn
-- **Platforms:** Unity for VR, web audio APIs
+- **Libraries:** NumPy, SciPy, pandas, scikit-learn, librosa, PyTorch, TensorFlow
+- **Platforms:** Embedded DSP (Teensy), Web Audio API
 - **Version Control:** Git, GitHub
+- **Analysis Tools:** Praat, REPP
 
-### Software Development
-- Open-source research software development
-- Documentation and code sharing practices
-- Reproducible research workflows
-- API design and software architecture
+### Research Software Development
+- Python-based analysis pipelines
+- Acoustic feature extraction
+- Machine learning for audio classification
+- Data processing and visualization
 
 ## Teaching & Mentoring
 
-- **Teaching Assistant**, "Psychoacoustics and Audio Perception" (2023–2024)
-- **Lab Supervisor**, Spatial Audio Lab undergraduate projects (2022–2023)
-- **Workshop Instructor**, "Introduction to Binaural Audio" (2023)
+- **Co-Founder & Vice President**, Research Circle of Cognitive Psychology of Music (2023–2024)
+- Mentored undergraduate students in experimental design and data analysis
+- Supervised collaborative research projects
 
 ## Professional Service
 
-- **Reviewer:** Journal of the Acoustical Society of America, Applied Acoustics
-- **Conference Committee:** ICSA 2024 Student Volunteer Coordinator
-- **Membership:** Acoustical Society of America, Audio Engineering Society
+### Academic Activities
+- **Co-organizer**, Cognitive Collisions Conference 2024, University of Warsaw
+- **Member**, Student Scientific Association of Artificial Intelligence (2022–2024)
 
 ## Awards & Recognition
 
-- **Best Student Paper Award**, International Conference on Spatial Audio (2022)
-- **Research Excellence Fellowship**, University of Sound and Music Computing (2023–2024)
-- **Dean's List**, MSc Sound and Music Computing (2020–2022)
+*Awards and recognition will be listed here as they are received*
 
 ## Contact
 
 For research inquiries, collaboration proposals, or questions about my work:
 
-- **Email:** your.name@university.edu
-- **Google Scholar:** [Your Name](https://scholar.google.com/citations?user=YOUR_ID)
-- **ORCID:** [0000-0000-0000-0000](https://orcid.org/0000-0000-0000-0000)
-- **ResearchGate:** [Your Name](https://researchgate.net/profile/Your_Name)
+- **Google Scholar:** [Emil Zawistowski](https://scholar.google.com/citations?user=qwiXzX0AAAAJ&hl=en&oi=ao)
+- **ResearchGate:** [Emil Zawistowski](https://researchgate.net/profile/Emil-Zawistowski)
+- **GitHub:** [emilzawistowski](https://github.com/emilzawistowski)
+- **LinkedIn:** [emil-zawistowski](https://linkedin.com/in/emil-zawistowski)

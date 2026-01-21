@@ -26,10 +26,9 @@ These portfolios present my creative work in different professional contexts. Ea
 
 Each portfolio is designed to be shared independently:
 
-- **Sound Engineering** — For live sound positions, touring work, and venue technical roles
-- **Post-Production** — For film/video post-production, mixing, and sound design work
-- **Music** — For bookings, label demos, and artistic collaborations
-- **DJ-ing** — For club bookings, festival slots, and DJ agency representation
-- **Other** — For podcast production, experimental work, and unique collaborations
+- **Sound Engineering** — For live sound positions, venue work, and technical audio roles
+- **Post-Production** — For film/video post-production, mixing, and podcast work
+- **Radio & Podcasts** — For radio hosting, podcast production, and broadcast work
+- **Other** — For experimental projects, workshops, and unique collaborations
 
 You can link directly to a specific portfolio or use it as a professional reference.

@@ -7,4 +7,4 @@ sidebar:
   nav: "creative"
 ---
 
-Browse my creative work spanning sound engineering, post-production, music performance, DJ work, and experimental projects. Projects include live concerts, studio recordings, releases, mixes, and collaborative works.
+Browse my creative work spanning sound engineering, post-production, radio, and experimental audio projects. Projects include live sound work, recordings, radio shows, and collaborative works.

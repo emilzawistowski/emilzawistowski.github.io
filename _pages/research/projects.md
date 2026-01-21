@@ -7,4 +7,4 @@ sidebar:
   nav: "research"
 ---
 
-Browse my research projects spanning sound and music computing, psychoacoustics, spatial audio, and audio signal processing. Projects include experimental studies, software tools, academic work, and collaborative research.
+Browse my research projects spanning sound and music computing, psychoacoustics, spatial audio, and computational audio analysis. Projects include experimental studies, software tools, academic work, and collaborative research.

@@ -9,145 +9,138 @@ sidebar:
   nav: "research"
 
 cv_highlights:
-  - period: "2023–present"
-    role: "Lead Developer, Binaural Rendering Toolkit"
-    institution: "Open Source Project"
-    description: "Python library for spatial audio rendering with 400+ GitHub stars and 1000+ monthly downloads"
+  - period: "2024–present"
+    role: "MSc Student, Sound and Music Computing"
+    institution: "Aalborg University, Copenhagen"
+    description: "Developing computational tools for auditory scene analysis and spatial audio research"
   
-  - period: "2022–2023"
-    role: "Audio Software Developer"
-    institution: "Spatial Audio Company (Contract)"
-    description: "Developed real-time binaural rendering plugins and psychoacoustic algorithms for VR applications"
+  - period: "2024–2025"
+    role: "Research Collaboration with HARMAN International"
+    institution: "Aalborg University"
+    description: "Developed Python-based analysis pipeline for acoustic feature extraction and spatial audio classification"
   
-  - period: "2021–2022"
-    role: "Research Software Engineer"
-    institution: "University Sound Lab"
-    description: "Built experimental platforms for psychoacoustic research and data analysis pipelines"
+  - period: "2023–2024"
+    role: "Research Software Development"
+    institution: "University of Warsaw"
+    description: "Built experimental platforms for psychoacoustic research and data analysis tools"
   
-  - period: "2020"
-    role: "Audio Programming Intern"
-    institution: "Digital Audio Company"
-    description: "Implemented DSP algorithms and contributed to cross-platform audio applications"
+  - period: "2021–2024"
+    role: "Audio Programming Projects"
+    institution: "University of Warsaw & Aalborg University"
+    description: "Implemented DSP algorithms, synthesis systems, and audio analysis tools"
 ---
 
-This portfolio showcases my software development work in audio signal processing, spatial audio rendering, and research tools. I specialize in creating high-performance, well-documented audio applications with strong foundations in psychoacoustics and DSP theory.
+This portfolio showcases my software development work in audio signal processing, spatial audio, and research tools. I specialize in creating audio applications with foundations in psychoacoustics and DSP.
 
 ## Technical Expertise
 
 ### Audio Signal Processing
-- **Spatial Audio:** Binaural rendering, HRTF processing, ambisonics encoding/decoding
-- **DSP Algorithms:** FIR/IIR filtering, FFT-based processing, convolution, time-stretching, pitch-shifting
-- **Room Acoustics:** Reverb algorithms, early reflections simulation, acoustic modeling
-- **Real-time Processing:** Low-latency audio streaming, buffer management, optimization
+- **Spatial Audio:** Acoustic feature analysis, spatial audio classification
+- **DSP:** Signal analysis, synthesis, filtering
+- **Music Technology:** Music information retrieval, rhythm perception analysis
+- **Real-time Processing:** Embedded DSP, interactive audio systems
 
 ### Programming Languages & Tools
 
 **Primary Languages:**
-- **Python** — NumPy, SciPy, Pandas, PyTorch, audio libraries (soundfile, librosa, pyaudio)
-- **C++** — Modern C++ (11/14/17), STL, template metaprogramming, JUCE framework
-- **MATLAB** — Signal processing, statistics, algorithm prototyping
+- **Python** — NumPy, SciPy, pandas, scikit-learn, librosa, PyTorch, TensorFlow
+- **MATLAB** — Signal processing, experimental data analysis, REPP software
+- **C++** — Audio programming, embedded systems
 
 **Secondary Languages:**
-- **JavaScript** — Web Audio API, Node.js, real-time web audio
 - **R** — Statistical analysis, mixed-effects modeling, data visualization
-- **Max/MSP** — Interactive audio systems, creative coding
+- **JavaScript** — Web Audio API (basic)
+- **Faust** — DSP programming for embedded systems
+- **SuperCollider** — Audio synthesis and composition
 
 **Frameworks & Libraries:**
-- **JUCE** — Cross-platform audio applications and plugins
-- **Web Audio API** — Browser-based audio applications
-- **Unity** — VR/AR audio integration
-- **Qt** — Desktop application interfaces
+- **Audio DSP:** NumPy/SciPy, librosa, soundfile
+- **Machine Learning:** scikit-learn, PyTorch, TensorFlow
+- **Data Analysis:** pandas, Matplotlib, seaborn, ggplot2
+- **Embedded:** Teensy microcontroller, Faust
+- **Creative:** Max/MSP, Pure Data
 
 ### Software Engineering Practices
-- Version control with Git and GitHub collaboration workflows
-- Unit testing and continuous integration (pytest, Google Test, GitHub Actions)
-- Documentation (Sphinx, Doxygen, ReadTheDocs)
-- Code review and open-source contribution
-- Agile development and project management
-- Performance profiling and optimization
+- Version control with Git and GitHub
+- Documentation and code organization
+- Reproducible research workflows
+- Open-source development practices
 
 ## Development Experience
 
-### Open Source Contributions
-- **Binaural Rendering Toolkit** — Creator and maintainer (400+ stars, 15 contributors)
-- **SciPy** — Contributed signal processing functions
-- **JUCE Forum** — Active contributor with 50+ helpful posts
-
-### Commercial Experience
-- Real-time spatial audio plugins for VR/AR platforms
-- Psychoacoustic algorithms for adaptive audio systems
-- Research tools and experimental platforms
-- Data analysis pipelines and visualization tools
-
 ### Research Software
-- Custom psychoacoustic experiment platforms
-- Binaural rendering engines for research
-- Statistical analysis and modeling tools
-- Automated data processing pipelines
+- **Acoustic Feature Analysis Pipeline** (2024–2025) — Python-based system for spatial audio research with HARMAN International
+- **Psychoacoustic Experiment Tools** (2023–2024) — Custom software for auditory perception research
+- **CamJam** (2025) — Camera-based collaborative music interface
+- **Statistical Analysis Tools** — R and Python tools for experimental data
+
+### Audio Programming Projects
+- **Extended FM Synthesizer** — SuperCollider implementation extending Chowning's FM synthesis
+- **Ambient Instrument** — Embedded audio system using Teensy microcontroller and Faust
+- **Rhythm Perception Analysis** — MATLAB-based research tools using REPP software
+
+### Open Source
+- Research code and tools shared via GitHub
+- Commitment to open science and reproducible research
 
 ## Technical Skills Summary
 
 ### Audio Programming
-- **Spatial Audio:** HRTF-based rendering, distance cues, room simulation
-- **DSP:** Filtering, spectral processing, time/frequency domain analysis
-- **Formats:** WAV, FLAC, MP3, SOFA (HRTF), Ambisonics
-- **APIs:** ASIO, Core Audio, JACK, Web Audio
+- **Spatial Audio:** Acoustic feature extraction, perceptual analysis
+- **DSP:** Synthesis, signal analysis, filtering
+- **Music Technology:** MIR, rhythm perception, auditory analysis
+- **Tools:** Python audio libraries, MATLAB, Max/MSP, Pure Data
 
 ### Software Development
-- **Languages:** Python, C++, MATLAB, JavaScript, R
-- **Frameworks:** JUCE, NumPy/SciPy, Web Audio, Unity
-- **Tools:** Git, CMake, Docker, Jupyter, VSCode, Xcode
-- **Platforms:** macOS, Linux, Windows, web browsers
+- **Languages:** Python, MATLAB, C++, R, Faust, SuperCollider
+- **Libraries:** NumPy/SciPy, scikit-learn, PyTorch, librosa
+- **Tools:** Git, Jupyter, VSCode, MATLAB
+- **Platforms:** macOS, Linux, Windows, embedded systems (Teensy)
 
-### Performance Optimization
-- Profiling and benchmarking (Instruments, gprof, perf)
-- SIMD vectorization (SSE, AVX)
-- Multithreading and parallel processing
-- Memory management and cache optimization
+### Machine Learning
+- Audio classification and regression
+- Acoustic feature extraction
+- scikit-learn, PyTorch, TensorFlow
+- Data preprocessing and visualization
 
 ## Notable Projects
 
-### Production-Ready Software
-- **Binaural Rendering Toolkit** — 1000+ downloads/month, used in academic and commercial projects
-- **VR Audio Plugin Suite** — Deployed in commercial VR applications
-
 ### Research Tools
-- **Psychoacoustic Experiment Platform** — Used in 5+ published studies
-- **HRTF Measurement System** — Automated measurement and processing pipeline
+- **Spatial Audio Analysis Pipeline** — Used in HARMAN International collaboration
+- **Psychoacoustic Experiment Platform** — Used in published research on auditory subitizing
+- **Auditory Salience Research Tools** — Custom software for Bachelor's thesis
+
+### Creative Audio Projects
+- **CamJam** — Computer vision-based music interface
+- **FM Synthesizer** — Extended SuperCollider implementation
+- **Embedded DSP Instrument** — Teensy + Faust system
 
 ### Code Quality
-- Comprehensive unit test coverage (>80%)
-- Extensive documentation with examples
-- Clean architecture and modular design
-- Cross-platform compatibility
+- Clean, documented code
+- Version control with Git
+- Open-source sharing practices
+- Reproducible research focus
 
 ## Professional Interests
 
 I'm interested in opportunities involving:
-- Audio software development (plugins, applications, libraries)
+- Audio research software development
 - Spatial audio and immersive technologies
+- Machine learning for audio analysis
 - Research and development in audio technology
-- Open-source audio software projects
-- Technical consulting on psychoacoustics and DSP
+- Open-source audio projects
 
 ## Links & Resources
 
-- **GitHub:** [github.com/yourname](https://github.com/yourname) — Open source projects and contributions
+- **GitHub:** [github.com/emilzawistowski](https://github.com/emilzawistowski) — Open source projects
+- **Portfolio:** [emilzawistowski.github.io](https://emilzawistowski.github.io)
 - **Personal Projects:** [View all software projects →](/research/projects/?type=software)
-- **Stack Overflow:** Active contributor in audio and DSP tags
-- **LinkedIn:** [Professional profile](https://linkedin.com/in/yourname)
-
-## Technical Writing
-
-I maintain technical documentation and write about audio programming:
-- [Binaural Toolkit Documentation](https://binaural-toolkit.readthedocs.io)
-- [Research blog on audio DSP](/blog/research/)
-- Conference papers with code examples and implementations
+- **LinkedIn:** [emil-zawistowski](https://linkedin.com/in/emil-zawistowski)
 
 ## Contact
 
 For software development inquiries, technical questions, or collaboration:
 
-- **Email:** your.name@email.com
-- **GitHub:** [@yourname](https://github.com/yourname)
-- **LinkedIn:** [Your Name](https://linkedin.com/in/yourname)
+- **GitHub:** [@emilzawistowski](https://github.com/emilzawistowski)
+- **LinkedIn:** [Emil Zawistowski](https://linkedin.com/in/emil-zawistowski)
+- **Portfolio:** [emilzawistowski.github.io](https://emilzawistowski.github.io)
