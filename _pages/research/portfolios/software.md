@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 title: "Software Development Portfolio"
-permalink: /research/portfolios/software/
+permalink: /research/cv/software/
 portfolio_slug: software
 collection: research_projects
 projects_link: /research/projects/

@@ -1,39 +1,62 @@
-{% capture logo_path %}{{ site.logo }}{% endcapture %}
+{% comment %}
+Custom masthead with profile photo, name, home icon, domain nav, and social links
+{% endcomment %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        {% unless logo_path == empty %}
-          <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
-        {% endunless %}
-        <a class="site-title" href="{{ '/' | relative_url }}">
-          {{ site.masthead_title | default: site.title | escape_once | strip }}
-          {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle | escape_once | strip }}</span>{% endif %}
-        </a>
-        <ul class="visible-links">
-          {%- for link in site.data.navigation.main -%}
-            <li class="masthead__menu-item">
-              <a
-                href="{{ link.url | relative_url }}"
-                {% if link.description %} title="{{ link.description }}"{% endif %}
-                {% if link.target %} target="{{ link.target }}"{% endif %}
-              >{{ link.title }}</a>
-            </li>
-          {%- endfor -%}
-        </ul>
-        {% if site.search == true %}
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
-          <i class="fas fa-search"></i>
-        </button>
+    <div class="masthead__left">
+      {% comment %}Profile photo and name - both link to gateway{% endcomment %}
+      <a href="/" class="masthead__profile">
+        {% if site.author.avatar %}
+          <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="masthead__avatar">
         {% endif %}
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
-          <div class="navicon"></div>
-        </button>
-        <ul class="hidden-links hidden"></ul>
+        <span class="masthead__name">{{ site.author.name | default: site.title }}</span>
+      </a>
+      
+      {% comment %}Home icon - links to gateway{% endcomment %}
+      <a href="/" class="masthead__home-icon" aria-label="Home">
+        <i class="fas fa-home"></i>
+      </a>
+    </div>
+
+    <div class="masthead__right">
+      {% comment %}Domain-specific navigation{% endcomment %}
+      <nav class="masthead__menu">
+        <ul class="visible-links">
+          {% assign navigation = site.data.navigation[page.navigation] | default: site.data.navigation.main %}
+          {% for link in navigation %}
+            <li class="masthead__menu-item">
+              <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
       </nav>
+
+      {% comment %}Domain-specific social links + shared (both){% endcomment %}
+      <div class="masthead__social">
+        {% comment %}Determine current domain from page URL{% endcomment %}
+        {% if page.url contains '/research/' %}
+          {% assign current_domain = 'research' %}
+        {% elsif page.url contains '/creative/' %}
+          {% assign current_domain = 'creative' %}
+        {% else %}
+          {% assign current_domain = 'none' %}
+        {% endif %}
+
+        {% for link in site.data.external_links %}
+          {% if link.domain == current_domain or link.domain == 'both' %}
+            <a href="{% if link.url %}{{ link.url }}{% else %}#{% endif %}" 
+               class="masthead__social-link" 
+               {% if link.url contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}
+               aria-label="{{ link.name }}">
+              <i class="{{ link.icon }}"></i>
+              {% if link.text %}
+                <span class="masthead__social-text">{{ link.text }}</span>
+              {% endif %}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>

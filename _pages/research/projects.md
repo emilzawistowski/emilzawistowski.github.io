@@ -1,6 +1,6 @@
 ---
 layout: projects_archive
-title: "Research Projects"
+title: "Projects"
 permalink: /research/projects/
 collection: research_projects
 sidebar:

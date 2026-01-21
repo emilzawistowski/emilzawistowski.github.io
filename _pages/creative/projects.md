@@ -1,6 +1,6 @@
 ---
 layout: projects_archive
-title: "Creative Projects"
+title: "Projects"
 permalink: /creative/projects/
 collection: creative_projects
 sidebar:

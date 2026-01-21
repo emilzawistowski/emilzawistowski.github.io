@@ -1,11 +1,12 @@
 ---
 layout: single
-title: "Research Portfolios"
-permalink: /research/portfolios/
+title: "CV"
+permalink: /research/cv/
 sidebar:
   nav: "research"
+toc: true
+toc_sticky: true
 ---
-
 These portfolios present my research work in different professional contexts. Each portfolio is tailored for specific audiences and includes a curated selection of projects with relevant CV highlights.
 
 ## Available Portfolios

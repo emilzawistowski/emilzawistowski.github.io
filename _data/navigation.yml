@@ -1,27 +1,17 @@
-# Research section navigation
+# Research domain navigation
 research:
-  - title: "Research"
-    url: /research/
+  - title: "Profile"
+    url: /research/profile/
   - title: "Projects"
     url: /research/projects/
-  - title: "Publications"
-    url: /research/publications/
-  - title: "Portfolios"
-    url: /research/portfolios/
-  - title: "Blog"
-    url: /blog/research/
-  - title: "About"
-    url: /research/about/
+  - title: "CV"
+    url: /research/cv/
 
-# Creative section navigation
+# Creative domain navigation
 creative:
-  - title: "Creative"
-    url: /creative/
+  - title: "About"
+    url: /creative/about/
   - title: "Projects"
     url: /creative/projects/
   - title: "Portfolios"
     url: /creative/portfolios/
-  - title: "Blog"
-    url: /blog/creative/
-  - title: "About"
-    url: /creative/about/

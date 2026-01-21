@@ -1,10 +1,11 @@
 ---
 layout: single
-title: "About — Creative Work"
+title: "About"
 permalink: /creative/about/
 sidebar:
   nav: "creative"
-author_profile: true
+toc: true
+toc_sticky: true
 ---
 
 ## Bio
@@ -272,3 +273,16 @@ Whether engineering a concert, mixing a podcast, or performing, I approach every
 ---
 
 *This page represents my creative and professional audio identity. For research work, see [Research →](/research/)*
+
+
+## Recent Updates
+
+{% assign recent_updates = site.creative_posts | sort: "date" | reverse | limit: 5 %}
+{% for post in recent_updates %}
+### [{{ post.title }}]({{ post.url }})
+*{{ post.date | date: "%B %d, %Y" }}*
+
+{{ post.excerpt }}
+{% endfor %}
+
+[View all updates →](/creative/updates/)

@@ -118,3 +118,17 @@ For post-production inquiries:
 ---
 
 *For other work, see [Sound Engineering →](/creative/portfolios/sound-engineering/) or [Radio & Podcasts →](/creative/portfolios/radio/)*
+
+
+
+---
+
+## Contact / Get in Touch
+
+For bookings, collaborations, or inquiries about [this type of work]:
+
+**Email:** your@email.com  
+**Phone:** +XX XXX XXX XXX (if applicable)  
+**Location:** Copenhagen, Denmark; Warsaw, Poland
+
+I'm available for [specific services this portfolio offers]. Feel free to reach out to discuss your project.

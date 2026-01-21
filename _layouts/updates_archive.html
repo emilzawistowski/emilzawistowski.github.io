@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    <div class="page__inner-wrap">
+      <header>
+        {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+      </header>
+
+      <section class="page__content" itemprop="text">
+        {{ content }}
+        
+        {% comment %}
+        Display all creative posts in reverse chronological order
+        {% endcomment %}
+        
+        <div class="updates-archive">
+          {% assign all_updates = site.creative_posts | sort: "date" | reverse %}
+          
+          {% for post in all_updates %}
+            <article class="update-entry">
+              <h2 class="update-entry__title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h2>
+              <div class="update-entry__meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+              </div>
+              {% if post.excerpt %}
+                <div class="update-entry__excerpt">
+                  {{ post.excerpt }}
+                </div>
+              {% endif %}
+            </article>
+          {% endfor %}
+          
+          {% if all_updates.size == 0 %}
+            <p><em>No updates yet.</em></p>
+          {% endif %}
+        </div>
+      </section>
+
+      <footer class="page__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% endif %}
+      </footer>
+    </div>
+  </article>
+</div>

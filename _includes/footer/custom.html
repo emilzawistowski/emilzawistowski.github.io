@@ -1,3 +1,17 @@
 <!-- start custom footer snippets -->
 
+{% comment %}
+Custom footer additions - Gateway link
+Only show on domain pages, not on gateway itself
+{% endcomment %}
+
+{% unless page.layout == 'home_gateway' %}
+<div class="page__footer-gateway">
+  <a href="/" class="footer-gateway-link">
+    <i class="fas fa-home"></i>
+    <span>Go to gateway</span>
+  </a>
+</div>
+{% endunless %}
+
 <!-- end custom footer snippets -->

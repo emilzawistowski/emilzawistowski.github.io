@@ -1,33 +1,85 @@
 ---
-layout: default
+layout: none
 ---
 
-<div class="gateway-container">
-  <div class="gateway-content">
-    <h1 class="gateway-title">{{ site.title | default: "Your Name" }}</h1>
-    
-    <div class="gateway-buttons">
-      <a href="/research/" class="gateway-button gateway-button--research">
-        <span class="gateway-button__text">Research</span>
-        <span class="gateway-button__subtitle">Sound & Music Computing</span>
-      </a>
-      
-      <a href="/creative/" class="gateway-button gateway-button--creative">
-        <span class="gateway-button__text">Creative Work</span>
-        <span class="gateway-button__subtitle">Sound • Music • Performance</span>
-      </a>
-    </div>
-    
-    <div class="gateway-links">
-      <h2 class="gateway-links__title">Connect</h2>
-      <div class="gateway-links__grid">
-        {% for link in site.data.external_links %}
-        <a href="{{ link.url }}" class="gateway-link" target="_blank" rel="noopener noreferrer" aria-label="{{ link.name }}">
-          <i class="{{ link.icon }}" aria-hidden="true"></i>
-          <span>{{ link.name }}</span>
-        </a>
-        {% endfor %}
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="layout--gateway">
+    <div class="gateway-container">
+      <div class="gateway-content">
+        <h1 class="gateway-title">{{ site.author.name | default: site.title }}</h1>
+        
+        <div class="gateway-domains">
+          {% comment %}Research Domain{% endcomment %}
+          <div class="gateway-domain gateway-domain--research">
+            <a href="/research/profile/" class="gateway-button gateway-button--research">
+              <span class="gateway-button__text">Research / Academic & IT</span>
+            </a>
+            
+            <div class="gateway-links gateway-links--research">
+              {% for link in site.data.external_links %}
+                {% if link.domain == 'research' %}
+                  <a href="{{ link.url }}" 
+                     class="gateway-link" 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                     aria-label="{{ link.name }}">
+                    <i class="{{ link.icon }}"></i>
+                    <span>{{ link.name }}</span>
+                  </a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+
+          {% comment %}Shared Links (Center){% endcomment %}
+          <div class="gateway-domain gateway-domain--shared">
+            <div class="gateway-links gateway-links--shared">
+              {% for link in site.data.external_links %}
+                {% if link.domain == 'both' %}
+                  <div class="gateway-link gateway-link--shared">
+                    <i class="{{ link.icon }}"></i>
+                    {% if link.text %}
+                      <span>{{ link.text }}</span>
+                    {% elsif link.url %}
+                      <a href="{{ link.url }}">{{ link.name }}</a>
+                    {% endif %}
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+
+          {% comment %}Creative Domain{% endcomment %}
+          <div class="gateway-domain gateway-domain--creative">
+            <a href="/creative/about/" class="gateway-button gateway-button--creative">
+              <span class="gateway-button__text">Creative Practice</span>
+            </a>
+            
+            <div class="gateway-links gateway-links--creative">
+              {% for link in site.data.external_links %}
+                {% if link.domain == 'creative' %}
+                  <a href="{{ link.url }}" 
+                     class="gateway-link" 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                     aria-label="{{ link.name }}">
+                    <i class="{{ link.icon }}"></i>
+                    <span>{{ link.name }}</span>
+                  </a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+
+    {% include scripts.html %}
+  </body>
+</html>

@@ -33,6 +33,71 @@
   url: "https://orcid.org/0009-0003-7500-791X"
   icon: "ai ai-orcid"
 
+
+
+
+# External platform links with domain assignment
+# domain: research | creative | both
+
+# Research-specific links
+- name: "GitHub"
+  url: "https://github.com/emilzawistowski"
+  icon: "fab fa-github"
+  domain: "research"
+
+- name: "Google Scholar"
+  url: "https://scholar.google.com/citations?user=qwiXzX0AAAAJ&hl=pl"
+  icon: "ai ai-google-scholar"
+  domain: "research"
+
+- name: "ORCID"
+  url: "https://orcid.org/0009-0003-7500-791X"
+  icon: "ai ai-orcid"
+  domain: "research"
+
+- name: "arXiv"
+  url: "https://arxiv.org/a/yourname"
+  icon: "ai ai-arxiv"
+  domain: "research"
+
+- name: "LinkedIn"
+  url: "https://www.linkedin.com/in/emil-zawistowski"
+  icon: "fab fa-linkedin"
+  domain: "research"
+
 - name: "ResearchGate"
   url: "https://www.researchgate.net/profile/Emil-Zawistowski"
   icon: "ai ai-researchgate"
+
+# Creative-specific links
+- name: "Bandcamp"
+  url: "https://yourname.bandcamp.com"
+  icon: "fab fa-bandcamp"
+  domain: "creative"
+
+- name: "SoundCloud"
+  url: "https://soundcloud.com/verseau_music"
+  icon: "fab fa-soundcloud"
+  domain: "creative"
+
+- name: "Spotify"
+  url: "https://open.spotify.com/artist/YOUR_ARTIST_ID"
+  icon: "fab fa-spotify"
+  domain: "creative"
+
+- name: "Instagram"
+  url: "https://www.instagram.com/emil.zawistowski/"
+  icon: "fab fa-instagram"
+  domain: "creative"
+
+# Shared (both domains and gateway center)
+- name: "Email"
+  url: "mailto:your@email.com"
+  icon: "fas fa-envelope"
+  domain: "both"
+  
+- name: "Location"
+  url: ""
+  icon: "fas fa-map-marker-alt"
+  domain: "both"
+  text: "Copenhagen, Denmark; Warsaw, Poland"

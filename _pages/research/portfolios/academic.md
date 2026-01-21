@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 title: "Academic Research Portfolio"
-permalink: /research/portfolios/academic/
+permalink: /research/cv/academic/
 portfolio_slug: academic
 collection: research_projects
 projects_link: /research/projects/

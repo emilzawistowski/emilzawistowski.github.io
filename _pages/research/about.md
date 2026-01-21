@@ -1,10 +1,11 @@
 ---
 layout: single
-title: "About — Research"
-permalink: /research/about/
+title: "Profile"
+permalink: /research/profile/
 sidebar:
   nav: "research"
-author_profile: true
+toc: true
+toc_sticky: true
 ---
 
 ## Bio

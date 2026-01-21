@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Creative Portfolios"
+title: "Portfolios"
 permalink: /creative/portfolios/
 sidebar:
   nav: "creative"
