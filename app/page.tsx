@@ -68,7 +68,7 @@ export default function HomePage() {
         <aside className="font-mono text-[11px]">
           <div className="relative mb-5 aspect-[4/5] w-full max-w-[12rem] overflow-hidden bg-muted">
             <Image
-              src="/portrait.png"
+              src="/portrait.jpg"
               alt={`Portrait of ${scholar.name}`}
               fill
               sizes="192px"
