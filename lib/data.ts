@@ -13,8 +13,8 @@ export type Work = {
 export const scholar = {
   name: 'Emil Zawistowski',
   title: 'Emil Zawistowski',
-  role: 'Auditory Neuroscience / Psychoacoustics / Spatial Hearing / Computational Auditory Scene Analysis',
-  affiliation: 'Aalborg University Copenhagen',
+  role: 'Computational / Cognitive / Auditory / Neuroscience',
+  affiliation: 'Aalborg University',
   location: 'Copenhagen, DK',
   email: 'zemilpl@gmail.com',
 }
