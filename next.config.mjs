@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // To generuje folder './out' ze statyczną stroną
+  output: 'export',
   images: {
-    unoptimized: true, // Wymagane na GitHub Pages, żeby działały obrazki z <Image />
+    unoptimized: true,
   },
+  trailingSlash: true,
 };
 
 export default nextConfig;
