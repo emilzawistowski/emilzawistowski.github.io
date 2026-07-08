@@ -11,12 +11,12 @@ export type Work = {
 }
 
 export const scholar = {
-  name: 'Mira Haldén',
-  title: 'Dr. Mira Haldén',
-  role: 'Computational Systems / Information Theory',
-  affiliation: 'Institute for Data & Perception',
-  location: 'Berlin, DE',
-  email: 'halden@idp-research.org',
+  name: 'Emil Zawistowski',
+  title: 'Emil Zawistowski',
+  role: 'Computational / Cognitive / Auditory / Neuroscience',
+  affiliation: 'Aalborg Univeristy',
+  location: 'Copenhagen, DK',
+  email: 'zemilpl@gmail.com',
 }
 
 export const works: Work[] = [
