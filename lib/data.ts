@@ -43,6 +43,7 @@ export const works: Work[] = [
     description:
       'Engineered acoustic and perceptual features distinguishing stereo and binaural spatial audio formats. Applied MFCC/cepstral modeling, inter-channel energy statistics, spectral analysis, and PCA-based dimensionality reduction to correlate physical acoustic descriptors with perceptual spatial attributes.',
     links: [],
+    featured: true
   },
   {
     slug: 'demant-audio-explorers',
