@@ -2,7 +2,7 @@ import { publications } from '@/lib/data'
 import { PublicationList } from '@/components/publication-list'
 
 export const metadata = {
-  title: 'Publications — Dr. Mira Haldén',
+  title: 'Publications — Emil Zawistowski',
 }
 
 export default function PublicationsPage() {

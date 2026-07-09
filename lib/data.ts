@@ -28,7 +28,7 @@ export const works: Work[] = [
     image: '/works/thesis-eeg.png',
     venue: 'Aalborg University Copenhagen',
     description:
-      'Investigating how auditory distance affects auditory salience using a Wave Field Synthesis (WFS) setup capable of rendering physically accurate distance cues. The project employs an EEG-based approach, tracking Event-Related Potential (ERP) measures like Mismatch Negativity (MMN) and P3a as indices of pre-attentive distance change detection.',
+      'Investigating auditory distance using a Wave Field Synthesis (WFS) setup capable of rendering physically accurate distance cues. The project employs an EEG-based approach, tracking Event-Related Potential (ERP) measures like Mismatch Negativity (MMN) and P3a as indices of pre-attentive distance change detection.',
     links: [
       { label: 'Thesis info', href: '#' },
     ],
@@ -108,7 +108,7 @@ export const publications: Publication[] = [
     title: 'Piano Stream Dominance in Spatial Auditory Scene Detection',
     venue: 'International Conference on Auditory Display (ICAD)',
     year: '2026',
-    type: 'Conference',
+    type: 'Extended Abstract',
     href: '#',
   },
   {
@@ -116,7 +116,7 @@ export const publications: Publication[] = [
     title: 'Influence of Spatial Hearing on Auditory Parallel Subitizing Efficiency',
     venue: 'Virtual Conference on Computational Audiology (VCCA)',
     year: '2026',
-    type: 'Conference',
+    type: 'Abstract',
     href: '#',
   },
   {
@@ -124,13 +124,13 @@ export const publications: Publication[] = [
     title: 'CamJam: A Modular Collaborative and Accessible Digital Musical Interface',
     venue: 'New Interfaces for Musical Expression (NIME)',
     year: '2026',
-    type: 'Conference',
+    type: 'Conference Paper',
     href: '#',
   },
   {
     authors: 'E. Zawistowski, et al.',
     title: 'Auditory Object Enumeration: Preliminary Evidence of Parallel Auditory Subitizing',
-    venue: 'Preprint / Manuscript in preparation',
+    venue: 'Manuscript in preparation',
     year: '2026',
     type: 'Preprint',
     href: '#',
@@ -157,7 +157,7 @@ export const news: NewsItem[] = [
   {
     date: '2026.03.15',
     title: 'Winner of Demant Audio Explorers Case Competition',
-    body: 'Successfully developed and pitched a full multi-talker audio analysis pipeline, taking first place in the 2026 competition.',
+    body: 'Successfully developed a full multi-talker audio analysis pipeline.',
   },
   {
     date: '2025.01.15',
