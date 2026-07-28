@@ -151,8 +151,18 @@ export const news: NewsItem[] = [
   },
   {
     date: '25.06.2026',
+    title: 'Presenting at Virtual Conference on Computational Audiology (VCCA 2026)',
+    body: 'Presenting virtually during poster session',
+  },
+  {
+    date: '25.06.2026',
     title: 'Presenting at New Interfaces for Musical Expression 2026',
     body: 'Presenting during poster session at Escola Superior de Música de Catalunya (ESMUC) located at L’Auditory building in Barcelona',
+  },
+  {
+    date: '13.05.2026',
+    title: 'Abstract accepted at Virtual Conference on Computational Audiology (VCCA 2026)',
+    body: 'Abstract “Influence of Spatial Hearing on Auditory Parallel Subitizing Efficiency" will be presented during poster session at VCCA 2026',
   },
   {
     date: '08.05.2026',
