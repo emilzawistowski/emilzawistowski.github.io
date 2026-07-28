@@ -112,7 +112,7 @@ export const publications: Publication[] = [
     href: '#',
   },
   {
-    authors: 'E. Zawistowski, et al.',
+    authors: 'E. Zawistowski, M. Sęklewski, J. Zając',
     title: 'Influence of Spatial Hearing on Auditory Parallel Subitizing Efficiency',
     venue: 'Virtual Conference on Computational Audiology (VCCA)',
     year: '2026',
@@ -120,7 +120,7 @@ export const publications: Publication[] = [
     href: '#',
   },
   {
-    authors: 'F. Lorenzen, et al.',
+    authors: 'F. Lorenzen, K. Hansen, E. Zawistowski, E. Liapikou',
     title: 'CamJam: A Modular Collaborative and Accessible Digital Musical Interface',
     venue: 'New Interfaces for Musical Expression (NIME)',
     year: '2026',
@@ -128,7 +128,7 @@ export const publications: Publication[] = [
     href: '#',
   },
   {
-    authors: 'E. Zawistowski, et al.',
+    authors: 'Sofia Przyłuska, Emil Zawistowski, Wiktoria Sodel, Bogumiła Jamiołkowska, Aleksandra Ogrodnik, Patryk Karp, Julia Kuczmierowska, Ewa Czerniawska',
     title: 'Auditory Object Enumeration: Preliminary Evidence of Parallel Auditory Subitizing',
     venue: 'Manuscript in preparation',
     year: '2026',
