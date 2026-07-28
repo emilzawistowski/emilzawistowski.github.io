@@ -145,9 +145,9 @@ export type NewsItem = {
 
 export const news: NewsItem[] = [
   {
-    date: '2026.07.28 - 2026.31.07',
+    date: '28.07.2026 - 31.07.2026',
     title: 'Presenting at ICAD 2026 – The 31st International Conference on Auditory Display',
-    body: 'Presenting during poster session',
+    body: 'Presenting during poster session at Escola Superior de Música de Catalunya (ESMUC) located at L’Auditory building in Barcelona',
   },
   {
     date: '2026.05.01 - 2026.05.05',
