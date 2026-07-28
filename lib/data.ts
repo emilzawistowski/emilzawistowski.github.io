@@ -155,12 +155,12 @@ export const news: NewsItem[] = [
     body: 'Research contributions on spatial auditory scene detection, auditory subitizing, and collaborative musical interfaces have been accepted for presentation at international conferences.',
   },
   {
-    date: '2026.05.04',
+    date: '04.05.2026',
     title: 'Winner of Demant Audio Explorers Case Competition',
     body: 'Together with Wiktoria Sodel, we have won in the Audio Explorers challenge, proposing our solution for Software Case',
   },
   {
-    date: '01.2024',
+    date: '20.01.2025',
     title: 'Completed Spatial Audio Project with HARMAN',
     body: 'Finalized an intensive industry research collaboration engineering acoustic and perceptual features for stereo vs. binaural spatial formats.',
   },
