@@ -150,9 +150,9 @@ export const news: NewsItem[] = [
     body: 'Presenting during poster session at Escola Superior de Música de Catalunya (ESMUC) located at L’Auditory building in Barcelona',
   },
   {
-    date: '2026.05.01 - 2026.05.05',
-    title: 'Papers accepted at ICAD, VCCA, and NIME',
-    body: 'Research contributions on spatial auditory scene detection, auditory subitizing, and collaborative musical interfaces have been accepted for presentation at international conferences.',
+    date: '08.05.2026',
+    title: 'Extended abstract accepted at International Conference on Auditory Display 2026',
+    body: 'Extended abstract "Piano stream dominance in spatial auditory scene detection: A preliminary study with musicians and non-musicians" will be presented during poster session at ICAD 2026',
   },
   {
     date: '04.05.2026',
