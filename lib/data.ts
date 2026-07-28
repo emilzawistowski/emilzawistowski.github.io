@@ -147,6 +147,11 @@ export const news: NewsItem[] = [
   {
     date: '28.07.2026',
     title: 'Presenting at ICAD 2026 – The 31st International Conference on Auditory Display, 28-31.07',
+    body: 'Presenting during poster session at Loughborough University London',
+  },
+  {
+    date: '25.06.2026',
+    title: 'Presenting at New Interfaces for Musical Expression 2026',
     body: 'Presenting during poster session at Escola Superior de Música de Catalunya (ESMUC) located at L’Auditory building in Barcelona',
   },
   {
