@@ -157,7 +157,7 @@ export const news: NewsItem[] = [
   {
     date: '2026.05.04',
     title: 'Winner of Demant Audio Explorers Case Competition',
-    body: 'Successfully developed a full multi-talker audio analysis pipeline.',
+    body: 'Together with Wiktoria Sodel, we have won in the Audio Explorers challenge, proposing our solution for Software Case',
   },
   {
     date: '2025.01.15',
