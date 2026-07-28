@@ -145,12 +145,12 @@ export type NewsItem = {
 
 export const news: NewsItem[] = [
   {
-    date: '2026.09.01',
-    title: 'Starting MSc in Engineering Acoustics at DTU',
+    date: '2026.07.28 - 2026.31.07',
+    title: 'Attending In',
     body: 'Moving to the Technical University of Denmark (DTU) to begin a Master of Science program focusing on Engineering Acoustics.',
   },
   {
-    date: '2026.05.01',
+    date: '2026.05.01 - 2026.05.05',
     title: 'Papers accepted at ICAD, VCCA, and NIME',
     body: 'Research contributions on spatial auditory scene detection, auditory subitizing, and collaborative musical interfaces have been accepted for presentation at international conferences.',
   },
