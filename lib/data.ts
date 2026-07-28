@@ -146,8 +146,8 @@ export type NewsItem = {
 export const news: NewsItem[] = [
   {
     date: '2026.07.28 - 2026.31.07',
-    title: 'Attending In',
-    body: 'Moving to the Technical University of Denmark (DTU) to begin a Master of Science program focusing on Engineering Acoustics.',
+    title: 'Presenting at ICAD 2026 – The 31st International Conference on Auditory Display',
+    body: 'Presenting during poster session',
   },
   {
     date: '2026.05.01 - 2026.05.05',
