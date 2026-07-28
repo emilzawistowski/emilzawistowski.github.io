@@ -155,14 +155,14 @@ export const news: NewsItem[] = [
     body: 'Research contributions on spatial auditory scene detection, auditory subitizing, and collaborative musical interfaces have been accepted for presentation at international conferences.',
   },
   {
-    date: '23.04.2026',
-    title: 'Paper accepted at New Interfaces for Musical Expression 2026',
-    body: 'Paper accepted: “CamJam: A Modular Collaborative and Accessible Digital Musical Interface”',
-  },
-  {
     date: '04.05.2026',
     title: 'Winner of Demant Audio Explorers Case Competition',
     body: 'Together with Wiktoria Sodel, we have won in the Audio Explorers challenge, proposing our solution for Software Case',
+  },
+  {
+    date: '23.04.2026',
+    title: 'Paper accepted at New Interfaces for Musical Expression 2026',
+    body: 'Paper accepted: “CamJam: A Modular Collaborative and Accessible Digital Musical Interface”',
   },
   {
     date: '20.01.2025',
