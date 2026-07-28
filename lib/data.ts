@@ -160,6 +160,11 @@ export const news: NewsItem[] = [
     body: 'Presenting during poster session at Escola Superior de Música de Catalunya (ESMUC) located at L’Auditory building in Barcelona',
   },
   {
+    date: '28.05.2026 - 30.05.2026',
+    title: 'Volunteering at 160th Audio Engineering Society Convention',
+    body: 'Volunteered at the AES Europe 2026 convention at DTU, providing technical support during the conference.',
+  },
+  {
     date: '13.05.2026',
     title: 'Abstract accepted at Virtual Conference on Computational Audiology (VCCA 2026)',
     body: 'Abstract “Influence of Spatial Hearing on Auditory Parallel Subitizing Efficiency" will be presented during poster session at VCCA 2026',
@@ -173,6 +178,11 @@ export const news: NewsItem[] = [
     date: '04.05.2026',
     title: 'Winner of Demant Audio Explorers Case Competition',
     body: 'Together with Wiktoria Sodel, we have won in the Audio Explorers challenge, proposing our solution for Software Case',
+  },
+  {
+    date: '28.04.2026',
+    title: 'Volunteering at ADCx Copenhagen 2026',
+    body: 'Provided technical support and guided participants during the ADCx Copenhagen conference at Aalborg University.',
   },
   {
     date: '23.04.2026',
