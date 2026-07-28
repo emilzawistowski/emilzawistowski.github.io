@@ -145,8 +145,8 @@ export type NewsItem = {
 
 export const news: NewsItem[] = [
   {
-    date: '28.07.2026 - 31.07.2026',
-    title: 'Presenting at ICAD 2026 – The 31st International Conference on Auditory Display',
+    date: '28.07.2026',
+    title: 'Presenting at ICAD 2026 – The 31st International Conference on Auditory Display, 28-31.07',
     body: 'Presenting during poster session at Escola Superior de Música de Catalunya (ESMUC) located at L’Auditory building in Barcelona',
   },
   {
@@ -160,7 +160,7 @@ export const news: NewsItem[] = [
     body: 'Together with Wiktoria Sodel, we have won in the Audio Explorers challenge, proposing our solution for Software Case',
   },
   {
-    date: '2025.01.15',
+    date: '01.2024',
     title: 'Completed Spatial Audio Project with HARMAN',
     body: 'Finalized an intensive industry research collaboration engineering acoustic and perceptual features for stereo vs. binaural spatial formats.',
   },
