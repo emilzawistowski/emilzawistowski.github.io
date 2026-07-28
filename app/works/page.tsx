@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { works } from '@/lib/data'
 
 export const metadata = {
-  title: 'Works — Dr. Mira Haldén',
+  title: 'Works — Emil Zawistowski',
 }
 
 export default function WorksPage() {

@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Emil Zawistowski',
   description:
-    'Portfolio of Dr. Mira Halden, researcher in computational systems, information theory, and data visualization.',
+    'Computational / Cognitive / Auditory / Neuroscience',
 }
 
 export const viewport: Viewport = {
