@@ -180,8 +180,13 @@ export const news: NewsItem[] = [
     body: 'Paper accepted: “CamJam: A Modular Collaborative and Accessible Digital Musical Interface”',
   },
   {
+    date: '14.04.2026',
+    title: 'Visit at Eriksholm Research Centre',
+    body: 'Participated in a DAS student member visit to the Eriksholm Research Centre, featuring lectures on hearing research and laboratory tours.',
+  },
+  {
     date: '20.01.2025',
-    title: 'Completed Spatial Audio Project with HARMAN',
+    title: 'Completed Student Research Project with HARMAN International',
     body: 'Finalized an intensive industry research collaboration engineering acoustic and perceptual features for stereo vs. binaural spatial formats.',
   },
 ]
