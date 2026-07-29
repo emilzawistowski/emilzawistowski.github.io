@@ -195,6 +195,11 @@ export const news: NewsItem[] = [
     body: 'Participated in a DAS student member visit to the Eriksholm Research Centre, featuring lectures on hearing research and laboratory tours.',
   },
   {
+    date: '22.11.2025',
+    title: 'Won "Innovation Award" at Techathon - AAU Sydhavnen',
+    body: 'Together with Jinpeng Zhang and Alberte Lohse, we designed an smart recycling drop-off system using computer vision, pathfinding, and 3D modeling.',
+  },
+  {
     date: '20.01.2025',
     title: 'Completed Student Research Project with HARMAN International',
     body: 'Finalized an intensive industry research collaboration engineering acoustic and perceptual features for stereo vs. binaural spatial formats.',
