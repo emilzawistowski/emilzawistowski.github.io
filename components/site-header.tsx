@@ -20,7 +20,7 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background">
-      <div className="mx-auto flex max-w-[1400px] items-start justify-between px-4 py-3 md:px-6">
+      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-4 py-3 md:px-6">
         <Link href="/" className="group flex flex-col leading-none">
           <span className="font-mono text-xs uppercase tracking-[0.15em] text-foreground">
             {scholar.title}
