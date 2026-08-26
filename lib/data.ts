@@ -144,6 +144,11 @@ export type NewsItem = {
 }
 
 export const news: NewsItem[] = [
+  {
+    date: '15.09.2026 - 18.09.2026',
+    title: 'Volunteering at ICDVRAT 2026',
+    body: 'Volunteering at the 16th International Conference on Disability, Virtual Reality & Associated Technologies, hosted at Aalborg University Copenhagen.',
+  },
 {
     date: '01.09.2026',
     title: 'Starting MSc in Engineering Acoustics at DTU',
@@ -163,6 +168,11 @@ export const news: NewsItem[] = [
     date: '28.07.2026',
     title: 'Presenting at ICAD 2026 – The 31st International Conference on Auditory Display, 28-31.07',
     body: 'Presenting during poster session at Loughborough University London',
+  },
+  {
+    date: '06.2026 - 08.2026',
+    title: 'Trust Analyst Internship at Paavis',
+    body: 'Designed and structured the foundational research methodology and evaluation framework for assessing B2B digital trust signals, as a Trust Analyst Intern at Paavis, Copenhagen.',
   },
   {
     date: '25.06.2026',
@@ -200,6 +210,11 @@ export const news: NewsItem[] = [
     body: 'Provided technical support and guided participants during the ADCx Copenhagen conference at Aalborg University.',
   },
   {
+    date: '25.04.2026 - 26.04.2026',
+    title: 'BR41N.io BCI Hackathon at Augmented Cognition Lab',
+    body: 'Developed "Brain-Controlled Jukebox" — a motor imagery-based music selection interface — with Jeppe Dahl Guldager, Julia Jünger, Steffen Møgelmose, and Laurids Jacobsen.',
+  },
+  {
     date: '23.04.2026',
     title: 'Paper accepted at New Interfaces for Musical Expression 2026',
     body: 'Paper accepted: “CamJam: A Modular Collaborative and Accessible Digital Musical Interface”',
@@ -218,6 +233,16 @@ export const news: NewsItem[] = [
     date: '20.01.2025',
     title: 'Completed Student Research Project with HARMAN International',
     body: 'Finalized an intensive industry research collaboration engineering acoustic and perceptual features for stereo vs. binaural spatial formats.',
+  },
+  {
+    date: '11.07.2024',
+    title: 'Defended Bachelor\'s Thesis at University of Warsaw',
+    body: 'Defended thesis "The Phenomenon of Auditory Salience: An Experimental Examination with Consideration of Spatial Aspects," examining how musicians\' long-term memory for instrument timbre influences auditory attention in spatial listening.',
+  },
+  {
+    date: '03.2023',
+    title: 'Co-Founded Research Circle of Cognitive Psychology of Music',
+    body: 'Co-founded and led a student research organisation at the Faculty of Psychology, University of Warsaw, focused on auditory perception.',
   },
 ]
 
