@@ -283,5 +283,6 @@ export const contact = {
     { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=qwiXzX0AAAAJ' },
     { label: 'ORCID', href: 'https://orcid.org/0009-0003-7500-791X' },
     { label: 'ResearchGate', href: 'https://researchgate.net/profile/Emil-Zawistowski' },
+    { label: 'GitHub', href: 'https://github.com/emilzawistowski' },
   ],
 }
