@@ -225,6 +225,11 @@ export const news: NewsItem[] = [
     body: 'Participated in a DAS student member visit to the Eriksholm Research Centre, featuring lectures on hearing research and laboratory tours.',
   },
   {
+    date: '15.02.2026 - 10.03.2026',
+    title: 'Peer Reviewer for NIME 2026',
+    body: 'Served as a peer reviewer for paper submissions to the International Conference on New Interfaces for Musical Expression 2026.',
+  },
+  {
     date: '22.11.2025',
     title: 'Won "Innovation Award" at Techathon - AAU Sydhavnen',
     body: 'Together with Jinpeng Zhang and Alberte Lohse, we designed an smart recycling drop-off system using computer vision, pathfinding, and 3D modeling.',
