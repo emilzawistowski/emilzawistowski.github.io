@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { biography, contact, news, scholar } from '@/lib/data'
 import { CollapsibleList } from '@/components/collapsible-list'
 import { NewsList } from '@/components/news-list'
+import { ContactLinkIcon } from '@/components/contact-link-icon'
 
 export default function HomePage() {
   return (
@@ -54,6 +55,7 @@ export default function HomePage() {
                           href={l.href}
                           className="inline-flex items-center gap-1 text-foreground transition-colors hover:text-accent"
                         >
+                          <ContactLinkIcon icon={l.icon} />
                           <span className="tracking-[0.1em]">{l.label}</span>
                           <span aria-hidden="true">↗</span>
                         </Link>

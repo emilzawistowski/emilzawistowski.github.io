@@ -10,6 +10,12 @@ export type Work = {
   links?: { label: string; href: string }[]
 }
 
+export type ContactLink = {
+  label: string
+  href: string
+  icon: 'google-scholar' | 'orcid' | 'researchgate' | 'github'
+}
+
 export const scholar = {
   name: 'Emil Zawistowski',
   title: 'Emil Zawistowski',
@@ -280,9 +286,9 @@ export const contact = {
     'Copenhagen, Denmark',
   ],
   links: [
-    { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=qwiXzX0AAAAJ' },
-    { label: 'ORCID', href: 'https://orcid.org/0009-0003-7500-791X' },
-    { label: 'ResearchGate', href: 'https://researchgate.net/profile/Emil-Zawistowski' },
-    { label: 'GitHub', href: 'https://github.com/emilzawistowski' },
-  ],
+    { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=qwiXzX0AAAAJ', icon: 'google-scholar' },
+    { label: 'ORCID', href: 'https://orcid.org/0009-0003-7500-791X', icon: 'orcid' },
+    { label: 'ResearchGate', href: 'https://researchgate.net/profile/Emil-Zawistowski', icon: 'researchgate' },
+    { label: 'GitHub', href: 'https://github.com/emilzawistowski', icon: 'github' },
+  ] satisfies ContactLink[],
 }

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { scholar, contact } from '@/lib/data'
+import { ContactLinkIcon } from '@/components/contact-link-icon'
 
 export function SiteFooter() {
   return (
@@ -14,8 +15,9 @@ export function SiteFooter() {
             <Link
               key={l.label}
               href={l.href}
-              className="text-foreground transition-colors hover:text-accent"
+              className="inline-flex items-center gap-1.5 text-foreground transition-colors hover:text-accent"
             >
+              <ContactLinkIcon icon={l.icon} />
               {l.label}
             </Link>
           ))}
