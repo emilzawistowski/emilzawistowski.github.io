@@ -16,7 +16,7 @@ export default function HomePage() {
       </div>
 
       <div className="grid grid-cols-1 gap-8 py-6 md:grid-cols-[1fr_15rem] md:gap-10">
-        <div>
+        <div className="order-last md:order-first">
           <p className="max-w-2xl text-pretty font-sans text-base font-medium leading-snug text-foreground md:text-lg">
             {biography.short}
           </p>
@@ -68,7 +68,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <aside className="font-mono text-[11px]">
+        <aside className="order-first font-mono text-[11px] md:order-last">
           <div className="relative mb-5 aspect-[4/5] w-full max-w-[12rem] overflow-hidden bg-muted">
             <Image
               src="/portrait.jpg"
