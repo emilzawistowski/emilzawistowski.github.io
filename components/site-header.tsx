@@ -54,7 +54,7 @@ export function SiteHeader() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="font-mono text-xs uppercase tracking-[0.15em] text-foreground md:hidden"
+          className="shrink-0 whitespace-nowrap font-mono text-xs uppercase tracking-[0.15em] text-foreground md:hidden"
           aria-expanded={open}
           aria-label="Toggle navigation menu"
         >
