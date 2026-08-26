@@ -134,7 +134,7 @@ export const publications: Publication[] = [
     href: '#',
   },
   {
-    authors: 'Sofia Przyłuska, Emil Zawistowski, Wiktoria Sodel, Bogumiła Jamiołkowska, Aleksandra Ogrodnik, Patryk Karp, Julia Kuczmierowska, Ewa Czerniawska',
+    authors: 'S. Przyłuska, E. Zawistowski, W. Sodel, B. Jamiołkowska, A. Ogrodnik, P. Karp, J. Kuczmierowska, E. Czerniawska',
     title: 'Auditory Object Enumeration: Preliminary Evidence of Parallel Auditory Subitizing',
     venue: 'Manuscript in preparation',
     year: '2026',
