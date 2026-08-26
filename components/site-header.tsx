@@ -31,7 +31,7 @@ export function SiteHeader() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:block" aria-label="Primary">
+        <nav className="hidden translate-y-0.5 md:block" aria-label="Primary">
           <ul className="flex items-center gap-6 font-mono text-xs uppercase tracking-[0.15em]">
             {nav.map((item) => (
               <li key={item.href}>
