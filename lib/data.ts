@@ -28,13 +28,13 @@ export const scholar = {
 export const works: Work[] = [
   {
     slug: 'msc-thesis-auditory-distance',
-    title: 'Neural Correlates of Auditory Distance Perception',
+    title: 'Auditory Distance Perception in Wave Field Synthesis: Pre-Attentive Neural Processing in a Cocktail-Party Environment',
     category: 'Master\'s Thesis',
     year: '2026',
     image: '/works/thesis-eeg.png',
     venue: 'Aalborg University Copenhagen',
     description:
-      'Investigating auditory distance using a Wave Field Synthesis (WFS) setup capable of rendering physically accurate distance cues. The project employs an EEG-based approach, tracking Event-Related Potential (ERP) measures like Mismatch Negativity (MMN) and P3a as indices of pre-attentive distance change detection.',
+      'Investigated whether the brain automatically detects shifts in sound-source distance within a multi-talker "cocktail party" scene, using a 60-loudspeaker Wave Field Synthesis array to render physically accurate distance cues (wavefront curvature, direct-to-reverberant ratio, intensity gradients). A passive oddball paradigm with 32-channel EEG in 20 participants targeted the Mismatch Negativity (MMN) and P3a components, plus single-trial CSP+LDA decoding. Contrary to predictions, neither component showed a reliable distance-deviant effect (Bayes factors favouring the null) and decoding did not exceed chance — a null result discussed against methodological limitations, alongside a validated, reusable WFS/EEG methodological framework for future work.',
     links: [
       { label: 'Thesis info', href: '#' },
     ],
@@ -52,13 +52,14 @@ export const works: Work[] = [
   },
   {
     slug: 'demant-audio-explorers',
-    title: 'Multi-Talker Audio Analysis Pipeline',
+    title: 'Software Engineering Case: Extracting the Talker of Interest in a Multi-Talker Sound Scene',
     category: 'Case Competition',
     year: '2026',
     image: '/works/audio_explorers_2026.png',
-    venue: 'Demant Audio Explorers',
+    venue: 'Demant Audio Explorers (Team "EarCode Duo")',
     description:
-      'Developed a comprehensive analysis pipeline for complex multi-talker audio environments, implementing Direction of Arrival (DoA) estimation, talker characterization, transcription, and target-speaker enhancement.',
+      'Winning solution to Demant\'s four-channel hearing-aid multi-talker case: SRP-PHAT direction-of-arrival estimation, MVDR beamforming, and a Wiener post-filter isolate each talker, followed by Whisper-based transcription, language ID, and F0-based gender classification, with a rule-based scorer (frontal position, signal quality, language-outlier cues) selecting and enhancing the talker of interest.',
+    collaborators: ['Wiktoria Sodel'],
     links: [],
   },
   {
