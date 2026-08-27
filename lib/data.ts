@@ -41,13 +41,14 @@ export const works: Work[] = [
   },
   {
     slug: 'harman-spatial-audio',
-    title: 'Acoustic & Perceptual Feature Engineering for Spatial Audio',
-    category: 'Industry Collaboration',
-    year: '2025',
+    title: 'Acoustic Feature Analysis of Spatial Audio',
+    category: 'Semester Project (Industry Collaboration)',
+    year: '2024',
     image: '/works/harman-spatial.png',
     venue: 'HARMAN International',
     description:
-      'Engineered acoustic and perceptual features distinguishing stereo and binaural spatial audio formats. Applied MFCC/cepstral modeling, inter-channel energy statistics, spectral analysis, and PCA-based dimensionality reduction to correlate physical acoustic descriptors with perceptual spatial attributes.',
+      'A semester project with HARMAN International\'s Advanced Audio Engineering team, investigating acoustic features and perceptual attributes that differentiate stereo and binaural spatial audio, combining a literature-based perceptual lexicon with acoustic feature extraction. Full methodological and technical detail is withheld under an industry confidentiality agreement.',
+    collaborators: ['Daniel Sousa'],
     links: [],
   },
   {
@@ -58,19 +59,19 @@ export const works: Work[] = [
     image: '/works/audio_explorers_2026.png',
     venue: 'Demant Audio Explorers (Team "EarCode Duo")',
     description:
-      'Winning solution to Demant\'s four-channel hearing-aid multi-talker case: SRP-PHAT direction-of-arrival estimation, MVDR beamforming, and a Wiener post-filter isolate each talker, followed by Whisper-based transcription, language ID, and F0-based gender classification, with a rule-based scorer (frontal position, signal quality, language-outlier cues) selecting and enhancing the talker of interest.',
+      'Winning solution to Demant\'s Audio Explorers case competition, analysing a four-channel hearing-aid recording of a multi-talker scene to estimate each talker\'s number, direction, gender, and content, and to identify and enhance the talker of interest. Full technical detail is withheld under the competition\'s confidentiality terms.',
     collaborators: ['Wiktoria Sodel'],
     links: [],
   },
   {
     slug: 'nmf-source-separation',
-    title: 'Computational Auditory Scene Analysis via NMF',
-    category: 'Research Project',
+    title: 'Computational Auditory Scene Analysis using Non-negative Matrix Factorization: Performance Evaluation on Extreme Audio Textures',
+    category: 'Mini-Project',
     year: '2026',
     image: '/works/nmf-casa.png',
     venue: 'Aalborg University Copenhagen',
     description:
-      'A systematic evaluation of classical Non-Negative Matrix Factorization (NMF) for audio source separation across extreme audio textures, including dense choral polyphony, tropical soundscapes, and reverberant speech, evaluating 288 distinct hyperparameter configurations.',
+      'A systematic evaluation of classical NMF for source separation on extreme audio textures (dense choral polyphony, tropical soundscapes, reverberant speech), sweeping rank, beta-divergence, sparsity regularization, iteration count, and phase-recovery method across 288 configurations. High rank, Euclidean divergence, and zero regularization gave the best reconstruction quality (~5–10 dB SDR for choir/speech, ~20–29 dB for environmental textures), while exposing limitations in reconstruction-based metrics and motivating a reformulation of the proposed Mix Clarity Index and psychoacoustic overlap measures.',
     links: [],
   },
   {
