@@ -27,7 +27,7 @@ export default function WorksPage() {
             >
               <div className="relative aspect-[16/10] w-full overflow-hidden bg-foreground md:aspect-[3/2] md:w-28">
                 <Image
-                  src={work.image || '/placeholder.svg'}
+                  src="/works/data-topology.png"
                   alt={work.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 112px"
