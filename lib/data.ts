@@ -29,7 +29,7 @@ export const works: Work[] = [
   {
     slug: 'msc-thesis-auditory-distance',
     title: 'Auditory Distance Perception in Wave Field Synthesis: Pre-Attentive Neural Processing in a Cocktail-Party Environment',
-    category: 'Master\'s Thesis',
+    category: 'Thesis',
     year: '2026',
     image: '/works/thesis-eeg.png',
     venue: 'Aalborg University Copenhagen',
@@ -42,7 +42,7 @@ export const works: Work[] = [
   {
     slug: 'harman-spatial-audio',
     title: 'Acoustic Feature Analysis of Spatial Audio',
-    category: 'Semester Project (Industry Collaboration)',
+    category: 'Industry Collaboration',
     year: '2024',
     image: '/works/harman-spatial.png',
     venue: 'HARMAN International',
@@ -54,7 +54,7 @@ export const works: Work[] = [
   {
     slug: 'demant-audio-explorers',
     title: 'Software Engineering Case: Extracting the Talker of Interest in a Multi-Talker Sound Scene',
-    category: 'Case Competition',
+    category: 'Competition',
     year: '2026',
     image: '/works/audio_explorers_2026.png',
     venue: 'Demant Audio Explorers (Team "EarCode Duo")',
@@ -66,7 +66,7 @@ export const works: Work[] = [
   {
     slug: 'nmf-source-separation',
     title: 'Computational Auditory Scene Analysis using Non-negative Matrix Factorization: Performance Evaluation on Extreme Audio Textures',
-    category: 'Mini-Project',
+    category: 'Research Project',
     year: '2026',
     image: '/works/nmf-casa.png',
     venue: 'Aalborg University Copenhagen',
@@ -77,7 +77,7 @@ export const works: Work[] = [
   {
     slug: 'anomalous-sound-detection',
     title: 'DCASE 2025 – Task 2: First-Shot Unsupervised Anomalous Sound Detection for Machine Condition Monitoring',
-    category: 'Mini-Project',
+    category: 'Research Project',
     year: '2026',
     image: '/works/dcase-anomaly.png',
     venue: 'Aalborg University Copenhagen (coursework based on the DCASE 2025 Task 2 dataset)',
@@ -86,15 +86,27 @@ export const works: Work[] = [
     links: [],
   },
   {
-    slug: 'auditory-subitizing',
-    title: 'Spatial Hearing and Auditory Object Enumeration',
+    slug: 'auditory-object-enumeration',
+    title: 'Auditory Object Enumeration: Preliminary Evidence of Parallel Auditory Subitizing',
+    category: 'Research Project',
+    year: '2024',
+    image: '/works/subitizing.png',
+    venue: 'University of Warsaw — Research Circle of Cognitive Psychology of Music',
+    description:
+      'Investigated participants\' capacity to subitize (rapidly enumerate without counting) auditory objects presented in parallel, and aimed to determine the subitizing range for auditory stimuli. Findings suggest a limited ability to enumerate auditory objects presented in parallel, indicative of an auditory subitizing mechanism.',
+    collaborators: ['Sofia Kalina Przyłuska', 'Wiktoria Sodel', 'Bogumiła Jamiołkowska', 'Aleksandra Ogrodnik', 'Patryk Karp', 'Julia Kuczmierowska', 'Ewa Czerniawska'],
+    links: [],
+  },
+  {
+    slug: 'spatial-hearing-subitizing-efficiency',
+    title: 'Influence of Spatial Hearing on Auditory Parallel Subitizing Efficiency',
     category: 'Research Project',
     year: '2024',
     image: '/works/subitizing.png',
     venue: 'University of Warsaw',
     description:
-      'Investigated whether people can subitize (rapidly enumerate without counting) simultaneously presented auditory objects in parallel, and how the spatial distribution of sounds affects this ability, gathering preliminary empirical evidence for a parallel auditory subitizing mechanism and its subitizing range.',
-    collaborators: ['Research Circle of Cognitive Psychology of Music'],
+      'Explored how the spatial distribution of simultaneously presented sounds influences auditory parallel subitizing efficiency, building on preliminary evidence for a parallel auditory subitizing mechanism to examine the specific role of spatial cues.',
+    collaborators: ['Mikołaj Sęklewski', 'Jakub Zając'],
     links: [],
   },
   {
