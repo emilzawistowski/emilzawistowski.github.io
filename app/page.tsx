@@ -67,15 +67,6 @@ export default function HomePage() {
             </dl>
           </div>
 
-          <div className="relative mt-10 aspect-[2.06/1] max-w-2xl overflow-hidden bg-muted">
-            <Image
-              src="/sweep.png"
-              alt="Generative sweep visualization"
-              fill
-              sizes="(max-width: 672px) 100vw, 672px"
-              className="object-cover"
-            />
-          </div>
         </div>
 
         <aside className="order-first font-mono text-[11px] md:order-last">
