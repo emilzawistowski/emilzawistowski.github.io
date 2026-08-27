@@ -19,7 +19,7 @@ export default function WorksPage() {
       </div>
 
       <ul>
-        {works.map((work) => (
+        {[...works].sort((first, second) => Number(second.year) - Number(first.year)).map((work) => (
           <li key={work.slug} className="border-b border-border">
             <Link
               href={`/works/${work.slug}`}
