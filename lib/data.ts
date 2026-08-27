@@ -76,13 +76,13 @@ export const works: Work[] = [
   },
   {
     slug: 'anomalous-sound-detection',
-    title: 'Unsupervised Anomalous Sound Detection',
-    category: 'Research Project',
+    title: 'DCASE 2025 – Task 2: First-Shot Unsupervised Anomalous Sound Detection for Machine Condition Monitoring',
+    category: 'Mini-Project',
     year: '2026',
     image: '/works/dcase-anomaly.png',
-    venue: 'DCASE 2025 Challenge (Task 2)',
+    venue: 'Aalborg University Copenhagen (coursework based on the DCASE 2025 Task 2 dataset)',
     description:
-      'First-shot unsupervised anomaly detection framework designed for machine condition monitoring under domain shift. Compared GMM+MFCC and Mahalanobis distance approaches on log-Mel spectrograms across multiple machine types.',
+      'A student mini-project exploring first-shot unsupervised anomalous sound detection for industrial machine condition monitoring, using the DCASE 2025 Task 2 dataset. Compared MFCC- and log-mel-based Gaussian Mixture Models against a Mahalanobis-distance approach on mean-pooled log-mel features across seven machine types; the Mahalanobis approach generalized best under domain shift, reaching AUC scores of 0.6394 (valves) and 0.6234 (sliders).',
     links: [],
   },
   {
@@ -93,8 +93,20 @@ export const works: Work[] = [
     image: '/works/subitizing.png',
     venue: 'University of Warsaw',
     description:
-      'Explored the foundational cognitive boundaries of spatial hearing, gathering preliminary empirical evidence for parallel auditory object enumeration and analyzing the exact influence of spatial cues on auditory subitizing efficiency.',
+      'Investigated whether people can subitize (rapidly enumerate without counting) simultaneously presented auditory objects in parallel, and how the spatial distribution of sounds affects this ability, gathering preliminary empirical evidence for a parallel auditory subitizing mechanism and its subitizing range.',
     collaborators: ['Research Circle of Cognitive Psychology of Music'],
+    links: [],
+  },
+  {
+    slug: 'camjam',
+    title: 'CamJam: A Modular Collaborative and Accessible Digital Musical Interface',
+    category: 'Research Project',
+    year: '2026',
+    image: '/works/camjam.png',
+    venue: 'New Interfaces for Musical Expression (NIME)',
+    description:
+      'A modular, collaborative, and accessible digital musical interface supporting inclusive music-making, enabling musicians and non-musicians to engage in shared sound creation through embodied, camera-based interaction modules that each contribute a distinct musical role within a synchronized loop. Stations include a drum machine controlled by hand height across three vertical zones, a contrast-based synthesizer modulated by dark paper shapes placed on a white background, an interface mapping facial expressions to chord progressions with on-screen emotion display, and a plucked-string instrument where vertical hand position maps to pitch with plucking gestures — arranged as four interaction stations in a circle.',
+    collaborators: ['Frej Spangsberg Lorenzen', 'Kevin Thor Hansen', 'Eirini Liapikou'],
     links: [],
   },
 ]
