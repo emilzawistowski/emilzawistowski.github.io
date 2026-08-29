@@ -188,8 +188,8 @@ export const news: NewsItem[] = [
   },
   {
     date: '28.08.2026',
-    title: 'Defending MSc Thesis at Aalborg University Copenhagen',
-    body: 'Defending Master’s thesis in Sound and Music Computing at Aalborg University Copenhagen.',
+    title: 'Defended MSc Thesis at Aalborg University Copenhagen',
+    body: 'Defended the Master’s thesis in Sound and Music Computing at Aalborg University Copenhagen; the final grade was 12/12, the highest possible grade in the Danish system.',
   },
 {
     date: '13.08.2026 - 18.08.2026',
