@@ -39,7 +39,7 @@ export default function HomePage() {
                 <dd>
                   <Link
                     href={`mailto:${contact.email}`}
-                    className="lowercase text-foreground transition-colors hover:text-accent"
+                    className="lowercase text-foreground transition-colors duration-100 hover:bg-foreground hover:text-background"
                   >
                     {contact.email}
                   </Link>
@@ -53,7 +53,7 @@ export default function HomePage() {
                       <li key={l.label}>
                         <Link
                           href={l.href}
-                          className="inline-flex items-center gap-1 text-foreground transition-colors hover:text-accent"
+                          className="inline-flex items-center gap-1 text-foreground transition-colors duration-100 hover:bg-foreground hover:text-background"
                         >
                           <ContactLinkIcon icon={l.icon} />
                           <span className="tracking-[0.1em]">{l.label}</span>

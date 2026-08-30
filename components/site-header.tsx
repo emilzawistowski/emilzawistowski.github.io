@@ -21,11 +21,11 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background">
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-4 py-3 md:px-6">
-        <Link href="/" className="group flex flex-col leading-none">
-          <span className="font-mono text-xs uppercase tracking-[0.15em] text-foreground">
+        <Link href="/" className="group flex flex-col leading-none transition-colors duration-100 hover:bg-foreground hover:text-background">
+          <span className="font-mono text-xs uppercase tracking-[0.15em] text-foreground group-hover:text-background">
             {scholar.title}
           </span>
-          <span className="mt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
+          <span className="mt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground group-hover:text-background">
             {scholar.role}
           </span>
         </Link>
@@ -40,7 +40,7 @@ export function SiteHeader() {
                   className={
                     isActive(item.href)
                       ? 'text-accent'
-                      : 'text-foreground transition-colors hover:text-accent'
+                      : 'inline-block px-1 py-0.5 text-foreground transition-colors duration-100 hover:bg-foreground hover:text-background'
                   }
                 >
                   {item.label}
@@ -71,8 +71,10 @@ export function SiteHeader() {
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className={`block px-4 py-3 ${
-                    isActive(item.href) ? 'text-accent' : 'text-foreground'
+                  className={`block px-4 py-3 transition-colors duration-100 ${
+                    isActive(item.href)
+                      ? 'text-accent'
+                      : 'text-foreground hover:bg-foreground hover:text-background'
                   }`}
                 >
                   {item.label}
