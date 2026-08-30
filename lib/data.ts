@@ -229,7 +229,7 @@ export const news: NewsItem[] = [
   {
     date: '08.05.2026',
     title: 'Extended abstract accepted at International Conference on Auditory Display 2026',
-    body: 'Extended abstract "Piano stream dominance in spatial auditory scene detection: A preliminary study with musicians and non-musicians" will be presented during poster session at ICAD 2026',
+    body: 'Extended abstract "Timbre Familiarity and Auditory Salience in Spatial Scene Detection: A Preliminary Study with Musicians and Non-Musicians" will be presented during poster session at ICAD 2026',
   },
   {
     date: '04.05.2026',
