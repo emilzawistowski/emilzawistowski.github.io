@@ -41,7 +41,7 @@ export function NewsList({
         <button
           type="button"
           onClick={() => setExpanded((v) => !v)}
-          className="mt-4 inline-block font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors duration-100 hover:bg-foreground hover:text-background"
+          className="mt-4 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:text-accent"
           aria-expanded={expanded}
         >
           {expanded ? '[ − show less ]' : `[ + show all (${items.length}) ]`}
