@@ -182,6 +182,11 @@ export const news: NewsItem[] = [
     body: 'Volunteering at the 16th International Conference on Disability, Virtual Reality & Associated Technologies, hosted at Aalborg University Copenhagen.',
   },
 {
+    date: '07.09.2026',
+    title: 'Workshop Preparing for NAD Annual Meeting 2026 Competition',
+    body: 'Attended a four-hour workshop preparing for an upcoming competition to be held at the NAD Annual Meeting 2026.',
+  },
+{
     date: '01.09.2026',
     title: 'Starting MSc in Engineering Acoustics at DTU',
     body: 'Beginning Master’s degree studies in Engineering Acoustics at the Technical University of Denmark (DTU).',
