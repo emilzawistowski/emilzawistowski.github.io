@@ -183,8 +183,8 @@ export const news: NewsItem[] = [
   },
 {
     date: '07.09.2026',
-    title: 'Workshop Preparing for NAD Annual Meeting 2026 Competition',
-    body: 'Attended a four-hour workshop preparing for an upcoming competition to be held at the NAD Annual Meeting 2026.',
+    title: 'Attended NAD Poster Course 2026',
+    body: 'Attended a poster-communication course led by Gert K. Nielsen at Neuroscience Academy Denmark (NAD), ahead of presenting at the NAD 2026 Annual Meeting.',
   },
 {
     date: '01.09.2026',
