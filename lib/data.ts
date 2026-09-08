@@ -207,6 +207,11 @@ export const news: NewsItem[] = [
     body: 'Presenting during poster session at Escola Superior de Música de Catalunya (ESMUC) located at L’Auditory building in Barcelona',
   },
   {
+    date: '06.07.2026',
+    title: 'Neurojukebox Selected for FENS Art & Science Initiative',
+    body: 'Our project "Neurojukebox: A Brain-Controlled Sound and Vision" was selected as one of 10 projects featured in the FENS Communication Committee\'s Art & Science initiative. A QR code linking to the project will appear on a poster at FENS Forum 2026 in Barcelona.',
+  },
+  {
     date: '06.2026 - 08.2026',
     title: 'Trust Analyst Internship at Paavis',
     body: 'Designed and structured the foundational research methodology and evaluation framework for assessing B2B digital trust signals, as a Trust Analyst Intern at Paavis, Copenhagen.',
