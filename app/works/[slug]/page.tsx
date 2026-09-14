@@ -31,7 +31,7 @@ export default async function WorkDetailPage({
         <div>
           <div className="relative aspect-[3/2] w-full overflow-hidden bg-foreground">
             <Image
-              src="/works/data-topology.png"
+              src={work.image}
               alt={work.title}
               fill
               sizes="(max-width: 768px) 100vw, 700px"

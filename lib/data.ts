@@ -4,6 +4,8 @@ export type Work = {
   category: string
   year: string
   image: string
+  featured?: boolean
+  selected?: boolean
   venue: string
   description: string
   collaborators?: string[]
@@ -32,6 +34,8 @@ export const works: Work[] = [
     category: 'Thesis',
     year: '2026',
     image: '/works/thesis-eeg.png',
+    featured: true,
+    selected: true,
     venue: 'Aalborg University Copenhagen',
     description:
       'Investigated whether the brain automatically detects shifts in sound-source distance within a multi-talker "cocktail party" scene, using a 60-loudspeaker Wave Field Synthesis array to render physically accurate distance cues (wavefront curvature, direct-to-reverberant ratio, intensity gradients). A passive oddball paradigm with 32-channel EEG in 20 participants targeted the Mismatch Negativity (MMN) and P3a components, plus single-trial CSP+LDA decoding. Contrary to predictions, neither component showed a reliable distance-deviant effect (Bayes factors favouring the null) and decoding did not exceed chance — a null result discussed against methodological limitations, alongside a validated, reusable WFS/EEG methodological framework for future work.',
@@ -45,6 +49,8 @@ export const works: Work[] = [
     category: 'Industry Collaboration',
     year: '2024',
     image: '/works/harman-spatial.png',
+    featured: true,
+    selected: true,
     venue: 'HARMAN International',
     description:
       'A semester project with HARMAN International\'s Advanced Audio Engineering team, investigating acoustic features and perceptual attributes that differentiate stereo and binaural spatial audio, combining a literature-based perceptual lexicon with acoustic feature extraction. Full methodological and technical detail is withheld under an industry confidentiality agreement.',
@@ -57,6 +63,8 @@ export const works: Work[] = [
     category: 'Competition',
     year: '2026',
     image: '/works/audio_explorers_2026.png',
+    featured: true,
+    selected: true,
     venue: 'Demant Audio Explorers (Team "EarCode Duo")',
     description:
       'Winning solution to Demant\'s Audio Explorers case competition, analysing a four-channel hearing-aid recording of a multi-talker scene to estimate each talker\'s number, direction, gender, and content, and to identify and enhance the talker of interest. Full technical detail is withheld under the competition\'s confidentiality terms.',
@@ -69,6 +77,8 @@ export const works: Work[] = [
     category: 'Research Project',
     year: '2026',
     image: '/works/nmf-casa.png',
+    featured: true,
+    selected: true,
     venue: 'Aalborg University Copenhagen',
     description:
       'A systematic evaluation of classical NMF for source separation on extreme audio textures (dense choral polyphony, tropical soundscapes, reverberant speech), sweeping rank, beta-divergence, sparsity regularization, iteration count, and phase-recovery method across 288 configurations. High rank, Euclidean divergence, and zero regularization gave the best reconstruction quality (~5–10 dB SDR for choir/speech, ~20–29 dB for environmental textures), while exposing limitations in reconstruction-based metrics and motivating a reformulation of the proposed Mix Clarity Index and psychoacoustic overlap measures.',
@@ -80,6 +90,7 @@ export const works: Work[] = [
     category: 'Research Project',
     year: '2026',
     image: '/works/dcase-anomaly.png',
+    selected: true,
     venue: 'Aalborg University Copenhagen (coursework based on the DCASE 2025 Task 2 dataset)',
     description:
       'A student mini-project exploring first-shot unsupervised anomalous sound detection for industrial machine condition monitoring, using the DCASE 2025 Task 2 dataset. Compared MFCC- and log-mel-based Gaussian Mixture Models against a Mahalanobis-distance approach on mean-pooled log-mel features across seven machine types; the Mahalanobis approach generalized best under domain shift, reaching AUC scores of 0.6394 (valves) and 0.6234 (sliders).',
@@ -91,6 +102,7 @@ export const works: Work[] = [
     category: 'Research Project',
     year: '2024',
     image: '/works/subitizing.png',
+    selected: true,
     venue: 'University of Warsaw — Research Circle of Cognitive Psychology of Music',
     description:
       'Investigated participants\' capacity to subitize (rapidly enumerate without counting) auditory objects presented in parallel, and aimed to determine the subitizing range for auditory stimuli. Findings suggest a limited ability to enumerate auditory objects presented in parallel, indicative of an auditory subitizing mechanism.',
@@ -103,6 +115,7 @@ export const works: Work[] = [
     category: 'Research Project',
     year: '2024',
     image: '/works/subitizing.png',
+    selected: true,
     venue: 'University of Warsaw',
     description:
       'Explored how the spatial distribution of simultaneously presented sounds influences auditory parallel subitizing efficiency, building on preliminary evidence for a parallel auditory subitizing mechanism to examine the specific role of spatial cues.',
@@ -115,6 +128,7 @@ export const works: Work[] = [
     category: 'Research Project',
     year: '2026',
     image: '/works/camjam.png',
+    selected: true,
     venue: 'New Interfaces for Musical Expression (NIME)',
     description:
       'A modular, collaborative, and accessible digital musical interface supporting inclusive music-making, enabling musicians and non-musicians to engage in shared sound creation through embodied, camera-based interaction modules that each contribute a distinct musical role within a synchronized loop. Stations include a drum machine controlled by hand height across three vertical zones, a contrast-based synthesizer modulated by dark paper shapes placed on a white background, an interface mapping facial expressions to chord progressions with on-screen emotion display, and a plucked-string instrument where vertical hand position maps to pitch with plucking gestures — arranged as four interaction stations in a circle.',

@@ -1,11 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { biography, contact, news, scholar } from '@/lib/data'
+import { biography, contact, news, scholar, works } from '@/lib/data'
 import { CollapsibleList } from '@/components/collapsible-list'
 import { NewsList } from '@/components/news-list'
 import { ContactLinkIcon } from '@/components/contact-link-icon'
 
 export default function HomePage() {
+  const recentWorks = [...works]
+    .sort((first, second) => Number(second.year) - Number(first.year))
+    .slice(0, 6)
+
   return (
     <div className="mx-auto max-w-[1100px] px-4 md:px-6">
       {/* Biography */}
@@ -87,6 +91,47 @@ export default function HomePage() {
             <CollapsibleList title="Appointments" entries={biography.appointments} />
           </div>
         </aside>
+      </div>
+
+      {/* Recent projects */}
+      <div className="mt-12 flex items-baseline justify-between border-b border-foreground py-2.5">
+        <h2 className="font-mono text-[11px] uppercase tracking-[0.15em] text-foreground">
+          Recent Projects
+        </h2>
+        <Link
+          href="/works"
+          className="font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:text-accent"
+        >
+          View all ↗
+        </Link>
+      </div>
+
+      <div className="grid grid-cols-1 gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
+        {recentWorks.map((work) => (
+          <Link
+            key={work.slug}
+            href={`/works/${work.slug}`}
+            className="group bg-background p-3 transition-colors hover:bg-muted"
+          >
+            <div className="relative aspect-[16/10] w-full overflow-hidden bg-foreground">
+              <Image
+                src={work.image}
+                alt={work.title}
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover grayscale transition duration-300 group-hover:scale-[1.02] group-hover:grayscale-0"
+              />
+            </div>
+            <div className="mt-3 flex items-baseline justify-between gap-3">
+              <h3 className="text-pretty font-sans text-sm font-medium leading-tight text-foreground transition-colors group-hover:text-accent">
+                {work.title}
+              </h3>
+              <span className="shrink-0 font-mono text-[11px] tabular-nums text-foreground">
+                {work.year}
+              </span>
+            </div>
+          </Link>
+        ))}
       </div>
 
       {/* News */}
