@@ -191,6 +191,11 @@ export type NewsItem = {
 
 export const news: NewsItem[] = [
   {
+    date: '11.11.2026',
+    title: 'Volunteering at Danish Sound Day',
+    body: 'Volunteering at Danish Sound Day, organised by the Danish Sound Cluster.',
+  },
+  {
     date: '15.09.2026 - 18.09.2026',
     title: 'Volunteering at ICDVRAT 2026',
     body: 'Volunteering at the 16th International Conference on Disability, Virtual Reality & Associated Technologies, hosted at Aalborg University Copenhagen.',
