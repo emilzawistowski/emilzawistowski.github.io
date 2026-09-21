@@ -2,6 +2,7 @@ import {
   siGithub,
   siGooglescholar,
   siOrcid,
+  siOsf,
   siResearchgate,
   type SimpleIcon,
 } from 'simple-icons'
@@ -11,14 +12,24 @@ type ContactLinkIconProps = {
   icon: ContactLink['icon']
 }
 
-const icons: Record<ContactLink['icon'], SimpleIcon> = {
+const icons: Record<Exclude<ContactLink['icon'], 'linkedin'>, SimpleIcon> = {
   github: siGithub,
   'google-scholar': siGooglescholar,
   orcid: siOrcid,
+  osf: siOsf,
   researchgate: siResearchgate,
 }
 
 export function ContactLinkIcon({ icon }: ContactLinkIconProps) {
+  if (icon === 'linkedin')
+    return (
+      <span
+        aria-hidden="true"
+        className="inline-flex size-3.5 shrink-0 items-center justify-center border border-current font-sans text-[10px] font-bold leading-none"
+      >
+        in
+      </span>
+    )
   const simpleIcon = icons[icon]
 
   return (

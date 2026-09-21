@@ -1,150 +1,100 @@
+import { CollapsibleList } from '@/components/collapsible-list'
 import Image from 'next/image'
 import Link from 'next/link'
-import { biography, contact, news, scholar, works } from '@/lib/data'
-import { CollapsibleList } from '@/components/collapsible-list'
+import {
+  biography,
+  contact,
+  news,
+  publications,
+  scholar,
+  works,
+} from '@/lib/data'
 import { NewsList } from '@/components/news-list'
-import { ContactLinkIcon } from '@/components/contact-link-icon'
+import { PublicationList } from '@/components/publication-list'
+import { ProjectCard } from '@/components/project-card'
+
+const homeSelection = [
+  'msc-thesis-auditory-distance',
+  'auditory-object-enumeration',
+  'demant-audio-explorers',
+  'harman-spatial-audio',
+]
 
 export default function HomePage() {
-  const recentWorks = [...works]
-    .sort((first, second) => Number(second.year) - Number(first.year))
-    .slice(0, 6)
-
+  const selectedWorks = homeSelection.flatMap((slug) =>
+    works.filter((work) => work.slug === slug),
+  )
   return (
     <div className="mx-auto max-w-[1100px] px-4 md:px-6">
-      {/* Biography */}
-      <div className="border-b border-foreground py-2.5">
-        <h1 className="font-mono text-[11px] uppercase tracking-[0.15em] text-foreground">
-          Biography
-        </h1>
-      </div>
-
-      <div className="grid grid-cols-1 gap-8 py-6 md:grid-cols-[1fr_15rem] md:gap-10">
-        <div className="order-last md:order-first">
-          <p className="max-w-2xl text-pretty font-sans text-base font-medium leading-snug text-foreground md:text-lg">
-            {biography.short}
-          </p>
-          <div className="mt-5 flex max-w-2xl flex-col gap-3">
-            {biography.paragraphs.map((p, i) => (
-              <p
-                key={i}
-                className="text-pretty font-sans text-[13px] leading-relaxed text-foreground"
-              >
-                {p}
-              </p>
-            ))}
-          </div>
-
-          {/* Contact */}
-          <div className="mt-8 max-w-2xl border-t border-foreground pt-4">
-            <dl className="grid grid-cols-1 gap-x-8 gap-y-3 font-mono text-[13px] uppercase tracking-[0.1em] sm:grid-cols-2">
-              <div className="grid grid-cols-[4.5rem_1fr] gap-3">
-                <dt className="text-muted-foreground">Email</dt>
-                <dd>
-                  <Link
-                    href={`mailto:${contact.email}`}
-                    className="lowercase text-foreground transition-colors hover:text-accent"
-                  >
-                    {contact.email}
-                  </Link>
-                </dd>
-              </div>
-              <div className="grid grid-cols-[4.5rem_1fr] gap-3">
-                <dt className="text-muted-foreground">Links</dt>
-                <dd>
-                  <ul className="flex flex-col gap-1">
-                    {contact.links.map((l) => (
-                      <li key={l.label}>
-                        <Link
-                          href={l.href}
-                          className="inline-flex items-center gap-1 text-foreground transition-colors hover:text-accent"
-                        >
-                          <ContactLinkIcon icon={l.icon} />
-                          <span className="tracking-[0.1em]">{l.label}</span>
-                          <span aria-hidden="true">↗</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </dd>
-              </div>
-            </dl>
-          </div>
-
+      <section className="identity-panel" aria-labelledby="intro-title">
+        <div className="identity-photo">
+          <Image
+            src="/portrait.jpg"
+            alt={`Portrait of ${scholar.name}`}
+            fill
+            sizes="(max-width: 767px) 72px, 144px"
+            className="object-cover grayscale"
+            priority
+          />
         </div>
-
-        <aside className="order-first font-mono text-[11px] md:order-last">
-          <div className="relative mb-5 aspect-[4/5] w-full max-w-[12rem] overflow-hidden bg-muted">
-            <Image
-              src="/portrait.jpg"
-              alt={`Portrait of ${scholar.name}`}
-              fill
-              sizes="192px"
-              className="object-cover grayscale"
-              priority
-            />
-          </div>
-
-          <CollapsibleList title="Education" entries={biography.education} />
-
-          <div className="mt-6">
-            <CollapsibleList title="Appointments" entries={biography.appointments} />
-          </div>
-        </aside>
-      </div>
-
-      {/* Recent projects */}
-      <div className="mt-12 flex items-baseline justify-between border-b border-foreground py-2.5">
-        <h2 className="font-mono text-[11px] uppercase tracking-[0.15em] text-foreground">
-          Recent Projects
-        </h2>
-        <Link
-          href="/works"
-          className="font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:text-accent"
-        >
-          View all ↗
-        </Link>
-      </div>
-
-      <div className="grid grid-cols-1 gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
-        {recentWorks.map((work) => (
-          <Link
-            key={work.slug}
-            href={`/works/${work.slug}`}
-            className="group bg-background p-3 transition-colors hover:bg-muted"
-          >
-            <div className="relative aspect-[16/10] w-full overflow-hidden bg-foreground">
-              <Image
-                src={work.image}
-                alt={work.title}
-                fill
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className="object-cover grayscale transition duration-300 group-hover:scale-[1.02] group-hover:grayscale-0"
-              />
-            </div>
-            <div className="mt-3 flex items-baseline justify-between gap-3">
-              <h3 className="text-pretty font-sans text-sm font-medium leading-tight text-foreground transition-colors group-hover:text-accent">
-                {work.title}
-              </h3>
-              <span className="shrink-0 font-mono text-[11px] tabular-nums text-foreground">
-                {work.year}
-              </span>
-            </div>
+        <div className="identity-heading">
+          <h1 id="intro-title">{scholar.name}</h1>
+          <p>{scholar.role}</p>
+          <span className="eyebrow">Copenhagen, DK</span>
+        </div>
+        <p className="identity-description">{biography.short}</p>
+      </section>
+      <div className="contact-strip">
+        <Link href={`mailto:${contact.email}`}>{contact.email} ↗</Link>
+        {contact.links.map((link) => (
+          <Link key={link.label} href={link.href}>
+            {link.label} ↗
           </Link>
         ))}
       </div>
-
-      {/* News */}
-      <div className="mt-6 flex items-baseline justify-between border-b border-foreground py-2.5">
-        <h2 className="font-mono text-[11px] uppercase tracking-[0.15em] text-foreground">
-          News / Updates
-        </h2>
-        <span className="font-mono text-[11px] tabular-nums text-muted-foreground">
-          {String(news.length).padStart(2, '0')}
-        </span>
+      <section className="home-section" aria-labelledby="home-projects">
+        <div className="editorial-heading">
+          <div>
+            <h2 id="home-projects">Selected Projects</h2>
+          </div>
+          <Link href="/works">All projects ↗</Link>
+        </div>
+        <div className="featured-grid">
+          {selectedWorks.map((work) => (
+            <ProjectCard key={work.slug} work={work} />
+          ))}
+        </div>
+      </section>
+      <section className="home-section" aria-labelledby="home-publications">
+        <div className="editorial-heading">
+          <div>
+            <h2 id="home-publications">Publications</h2>
+          </div>
+          <Link href="/publications">Full list ↗</Link>
+        </div>
+        <PublicationList publications={publications.slice(0, 3)} />
+      </section>
+      <div className="credentials home-section">
+        {[
+          { title: 'Education', entries: biography.education },
+          { title: 'Experience', entries: biography.appointments },
+        ].map((section) => (
+          <CollapsibleList
+            key={section.title}
+            title={section.title}
+            entries={section.entries}
+            limit={3}
+          />
+        ))}
       </div>
-
-      <NewsList items={news} limit={6} />
+      <section className="home-section" aria-labelledby="home-news">
+        <div className="editorial-heading">
+          <div>
+            <h2 id="home-news">News</h2>
+          </div>
+        </div>
+        <NewsList items={news} limit={3} />
+      </section>
     </div>
   )
 }

@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Emil Zawistowski',
   description:
-    'Computational / Cognitive / Auditory / Neuroscience',
+    'Emil Zawistowski — hearing science, auditory cognition and spatial hearing research using psychoacoustics, EEG and computational methods.',
 }
 
 export const viewport: Viewport = {
@@ -37,8 +37,13 @@ export default function RootLayout({
       className={`${archivo.variable} ${geistMono.variable} bg-background`}
     >
       <body className="flex min-h-screen flex-col font-sans antialiased">
+        <a href="#main-content" className="skip-link">
+          Skip to content
+        </a>
         <SiteHeader />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1" tabIndex={-1}>
+          {children}
+        </main>
         <SiteFooter />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
