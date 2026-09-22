@@ -1266,9 +1266,9 @@ summary:focus-visible {
   margin-top: 10px;
 }
 .identity-meta-block {
-  margin-top: 18px;
-  padding-top: 14px;
-  border-top: 1px solid var(--border);
+  margin-top: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
 }
 .identity-meta-block > .identity-degrees {
   margin-top: 0;
