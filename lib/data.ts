@@ -111,52 +111,6 @@ export const works: Work[] = [
     links: [],
   },
   {
-    slug: 'nmf-source-separation',
-    keywords: ['NMF', 'Source separation'],
-    shortTitle: 'NMF Source Separation',
-    focus: 'Computational auditory scene analysis',
-    question:
-      'How well does classical non-negative matrix factorization separate sources in dense and reverberant audio textures?',
-    methods:
-      'Evaluation across 288 configurations, varying rank, beta-divergence, sparsity, iterations and phase recovery for choral polyphony, tropical soundscapes and reverberant speech.',
-    findings:
-      'High rank, Euclidean divergence and zero regularization gave the best reconstruction quality: approximately 5–10 dB SDR for choir and speech, and 20–29 dB for environmental textures. The results also exposed limitations of reconstruction-based metrics, motivating a reformulation of the proposed Mix Clarity Index and psychoacoustic overlap measures.',
-    title:
-      'Computational Auditory Scene Analysis using Non-negative Matrix Factorization: Performance Evaluation on Extreme Audio Textures',
-    category: 'Research Project',
-    year: '2026',
-    image: '/works/nmf-casa.png',
-    featured: true,
-    selected: true,
-    venue: 'Aalborg University Copenhagen',
-    description:
-      'A systematic evaluation of classical NMF for source separation on extreme audio textures (dense choral polyphony, tropical soundscapes, reverberant speech), sweeping rank, beta-divergence, sparsity regularization, iteration count, and phase-recovery method across 288 configurations. High rank, Euclidean divergence, and zero regularization gave the best reconstruction quality (~5–10 dB SDR for choir/speech, ~20–29 dB for environmental textures), while exposing limitations in reconstruction-based metrics and motivating a reformulation of the proposed Mix Clarity Index and psychoacoustic overlap measures.',
-    links: [],
-  },
-  {
-    slug: 'anomalous-sound-detection',
-    keywords: ['Anomaly detection', 'Domain shift'],
-    shortTitle: 'Anomalous Sound Detection',
-    focus: 'Audio ML · DCASE dataset',
-    question:
-      'How well do unsupervised acoustic models detect machine anomalies under domain shift?',
-    methods:
-      'A coursework study using the DCASE 2025 Task 2 dataset across seven machine types. Compared MFCC- and log-mel-based Gaussian Mixture Models with Mahalanobis distances on mean-pooled log-mel features.',
-    findings:
-      'The Mahalanobis approach generalized best under domain shift, reaching AUC values of 0.6394 for valves and 0.6234 for sliders.',
-    title:
-      'DCASE 2025 – Task 2: First-Shot Unsupervised Anomalous Sound Detection for Machine Condition Monitoring',
-    category: 'Research Project',
-    year: '2026',
-    image: '/works/dcase-anomaly.png',
-    selected: true,
-    venue:
-      'Aalborg University Copenhagen (coursework based on the DCASE 2025 Task 2 dataset)',
-    description:
-      'A student mini-project exploring first-shot unsupervised anomalous sound detection for industrial machine condition monitoring, using the DCASE 2025 Task 2 dataset. Compared MFCC- and log-mel-based Gaussian Mixture Models against a Mahalanobis-distance approach on mean-pooled log-mel features across seven machine types; the Mahalanobis approach generalized best under domain shift, reaching AUC scores of 0.6394 (valves) and 0.6234 (sliders).',
-    links: [],
-  },
-  {
     slug: 'auditory-object-enumeration',
     keywords: ['Auditory subitizing', 'Enumeration'],
     shortTitle: 'Auditory Object Enumeration',
@@ -170,8 +124,9 @@ export const works: Work[] = [
     title:
       'Auditory Object Enumeration: Preliminary Evidence of Parallel Auditory Subitizing',
     category: 'Preprint',
-    year: '2024',
+    year: '2026',
     image: '/works/subitizing.png',
+    featured: true,
     selected: true,
     venue:
       'University of Warsaw — Research Circle of Cognitive Psychology of Music',
@@ -202,14 +157,19 @@ export const works: Work[] = [
     title:
       'Influence of Spatial Hearing on Auditory Parallel Subitizing Efficiency',
     category: 'Research Project',
-    year: '2024',
+    year: '2026',
     image: '/works/subitizing.png',
     selected: true,
     venue: 'University of Warsaw',
     description:
       'Explored how the spatial distribution of simultaneously presented sounds influences auditory parallel subitizing efficiency, building on preliminary evidence for a parallel auditory subitizing mechanism to examine the specific role of spatial cues.',
     collaborators: ['Mikołaj Sęklewski', 'Jakub Zając'],
-    links: [],
+    links: [
+      {
+        label: 'VCCA Abstract',
+        href: 'https://computationalaudiology.com/influence-of-spatial-hearing-on-auditory-parallel-subitizing-efficiency/',
+      },
+    ],
   },
   {
     slug: 'camjam',
@@ -238,6 +198,259 @@ export const works: Work[] = [
     ],
     links: [],
   },
+  {
+    slug: 'nordic-ai-cup-2026',
+    keywords: ['AI competition', 'Reinforcement learning', 'Computer vision'],
+    shortTitle: 'Nordic AI Cup 2026',
+    focus: 'AI competition · Solo entry',
+    question:
+      'How to build deployable AI endpoints for simulation, drone and medical tasks under competition time constraints?',
+    methods:
+      'Solo development of FastAPI endpoints for three use cases (survival-simulator, drone-flyby, medical-appointment) covering RL, CV and speech/NLP, based on the official Ambolt AI templates.',
+    findings:
+      'Solo participation in the four-day Nordic AI Cup 2026 challenge (17–20.09.2026) hosted by Ambolt AI. Repository documents templates and submission endpoints.',
+    title: 'Nordic AI Cup 2026: Solo Submission across RL, Vision and Speech/NLP',
+    category: 'Competition',
+    year: '2026',
+    image: '/works/matrix-grid.png',
+    venue: 'Nordic AI Cup 2026 (Ambolt AI)',
+    description:
+      'Solo entry to the Nordic AI Cup 2026, a four-day online AI competition hosted by Ambolt AI. Developed FastAPI submission endpoints for three use cases — survival-simulator, drone-flyby and medical-appointment — spanning reinforcement learning, computer vision and speech/NLP, from the official competition templates.',
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/emilzawistowski/Nordic-AI-Cup-2026',
+      },
+    ],
+  },
+  {
+    slug: 'drumming-sonification',
+    keywords: ['Sonification', 'MediaPipe', 'MIDI/OSC'],
+    shortTitle: 'Drumming Sonification',
+    focus: 'NIME · Movement sonification',
+    question:
+      'How can drumming movement captured by a webcam drive real-time musical control data?',
+    methods:
+      'Webcam and MediaPipe Pose provide movement descriptors (position, velocity, acceleration) mapped to musical control across iterations: a wrist-velocity sketch, a Laban-inspired MIDI controller (Weight, Time, Space effort categories to MIDI CC), and an OSC pose tracker with a Pure Data receiver patch.',
+    findings:
+      'Academic prototype demonstrating three mapping iterations. It does not recognise drum hits and has not been evaluated in a user study; the Pure Data patch maps a subset of the OSC streams.',
+    title:
+      'Drumming Sonification: Real-Time Movement-to-Sound Mapping with MediaPipe, MIDI/OSC and Pure Data',
+    category: 'Research Project',
+    year: '2026',
+    image: '/works/timeseries.png',
+    venue: 'Aalborg University Copenhagen',
+    description:
+      'Explorations in real-time sonification of drumming movement. A webcam and MediaPipe Pose provide movement descriptors mapped to musical control data across iterations: early wrist-motion sketch, MIDI Laban controller, and OSC pose tracker (127.0.0.1:7400) with Pure Data receiver and sound-mapping patch.',
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/emilzawistowski/drumming-sonification',
+      },
+    ],
+  },
+  {
+    slug: 'thermobient',
+    keywords: ['Embedded audio', 'Faust', 'Teensy'],
+    shortTitle: 'Thermobient',
+    focus: 'NIME · Embedded instrument',
+    question: 'How can temperature sensing control an ambient sound generator?',
+    methods:
+      'A Teensy/Arduino-style sketch (Thermobient.ino) coupled with C++ audio code (AmbientSoundGenerator.cpp/.h) and Faust DSP source (AmbientSoundGenerator.dsp); requires the Teensy Audio Library and compatible hardware.',
+    findings:
+      'Coursework prototype for New Interfaces for Musical Expression. Sensor wiring and audio hardware need documenting before treating the repository as a reproducible build.',
+    title:
+      'Thermobient: Temperature-Controlled Ambient Sound Interface with Teensy, C++ and Faust',
+    category: 'Research Project',
+    year: '2026',
+    image: '/works/spectral.png',
+    venue: 'Aalborg University Copenhagen',
+    description:
+      'Experimental musical interface using temperature sensing to control an ambient sound generator, combining a Teensy microcontroller sketch with C++ audio code and Faust DSP code.',
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/emilzawistowski/thermobient',
+      },
+    ],
+  },
+  {
+    slug: 'cognitive-modelling-facial-feature-encoding',
+    keywords: ['Cognitive modelling', 'PCA', 'Face perception'],
+    shortTitle: 'Facial Dominance Encoding',
+    focus: 'Cognitive modelling · DTU coursework',
+    question:
+      'Can a linear encoding model on facial image structure predict perceived dominance and generalize to synthetic faces?',
+    methods:
+      '200 UTKFace images (white, female, 30–39) after quality screening; 96×96 grayscale PCA with nested-CV forward selection and linear regression to mean dominance ratings; synthetic-face generation and an adaptation after-effect experiment run in PsychoPy.',
+    findings:
+      'Small psychophysics project with a numbered pipeline (report/scripts 01–11) covering screening, preprocessing, Experiment 1–3 analyses and stimulus generation, plus validation on synthetic faces.',
+    title:
+      'Encoding of Facial Features: Perceived Dominance from PCA and Linear Regression',
+    category: 'Research Project',
+    year: '2026',
+    image: '/works/data-topology.png',
+    venue: 'Technical University of Denmark (DTU)',
+    description:
+      'Fits a linear encoding model relating facial image structure to perceived dominance, validates it by generating and rating synthetic faces, and tests it with an adaptation after-effect experiment. PCA on processed grayscale images with forward-selected components predicts mean dominance ratings.',
+    collaborators: ['Krešimir Pavlov'],
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/emilzawistowski/cognitive-modelling-facial-feature-encoding',
+      },
+    ],
+  },
+  {
+    slug: 'emotional-micro-gestures-sonification',
+    keywords: ['Affective sonification', 'SuperCollider', 'Micro-gestures'],
+    shortTitle: 'Micro-Gestures Sonification',
+    focus: 'Affective sonification · SMC coursework',
+    question:
+      'Can everyday mouse and typing micro-gestures drive a continuous affective soundscape in real time?',
+    methods:
+      'OS-level mouse/keyboard capture with 20 Hz feature extraction and adaptive percentile normalisation, projected onto arousal/valence dimensions and mapped to grain density, spectral brightness, harmonic dissonance and reverberation decay; synthesis in SuperCollider (granular + FM layers) controlled from Python via OSC, with sessions logged to HDF5/CSV.',
+    findings:
+      'Coursework system shipped with anonymised listener ratings (12 participants, 8 trials each), study materials and an analysis script for listener-study statistics.',
+    title:
+      'Emotional Micro-Gestures Sonification: Real-Time Affective Soundscape Generation from Computer Interaction Patterns',
+    category: 'Research Project',
+    year: '2026',
+    image: '/works/timeseries.png',
+    venue: 'Aalborg University Copenhagen',
+    description:
+      'Real-time affective sonification turning mouse movement, clicks and typing dynamics into a continuous soundscape. Features extracted at 20 Hz are projected onto arousal/valence dimensions and mapped to perceptually grounded synthesis parameters, rendered in SuperCollider and controlled from Python via Open Sound Control.',
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/emilzawistowski/emotional-micro-gestures-sonification',
+      },
+    ],
+  },
+  {
+    slug: 'yolov8-recycling-detection',
+    keywords: ['Object detection', 'YOLOv8', 'Sustainability'],
+    shortTitle: 'Recycling Detection',
+    focus: 'Computer vision · Sustainability prototype',
+    question:
+      'Can a fine-tuned YOLOv8 detect recyclable object categories in real time from a webcam?',
+    methods:
+      'Fine-tuning YOLOv8 with dataset preparation helpers (train_test_divide.py), category mapping and image acquisition scripts, plus a webcam inference app (app.py).',
+    findings:
+      'Academic prototype for real-time detection of recyclable categories. Trained weights and dataset images are excluded for licensing reasons. Thematically related to the award-winning Techathon smart-recycling concept (see News, 22.11.2025).',
+    title: 'YOLOv8 Recycling Object Detection: Real-Time Webcam Prototype',
+    category: 'Research Project',
+    year: '2026',
+    image: '/works/pointcloud.png',
+    selected: true,
+    venue: 'Aalborg University Copenhagen',
+    description:
+      'Computer-vision coursework project fine-tuning YOLOv8 for real-time detection of recyclable object categories from a webcam, with helpers for image acquisition, category mapping and dataset preparation.',
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/emilzawistowski/yolov8-recycling-detection',
+      },
+    ],
+  },
+  {
+    slug: 'neurojukebox',
+    keywords: ['BCI', 'Motor imagery', 'Music interface'],
+    shortTitle: 'Neurojukebox',
+    focus: 'BCI Hackathon · FENS Art & Science',
+    question:
+      'Can motor-imagery EEG signals drive music selection in a shared listening interface?',
+    methods:
+      'Motor imagery-based music-selection interface built at the BR41N.io BCI Hackathon at the Augmented Cognition Lab (25–26.04.2026). Users wearing a Unicorn EEG headset browse a sound library in a Unity interface by imagining hand movements; signals are processed with CSP filtering and LDA classification, jaw-clench artifacts trigger track selection and looping, and each sound drives TouchDesigner visuals responding to the audio.',
+    findings:
+      'Selected as one of 10 projects in the FENS Communication Committee Art & Science initiative, with a QR code linking to the project on a poster at FENS Forum 2026 in Barcelona. Proof-of-concept pipeline for creative BCI applications combining musical and visual control.',
+    title: 'Neurojukebox: A Brain-Controlled Sound and Vision Interface',
+    category: 'Competition',
+    year: '2026',
+    image: '/works/waveform.png',
+    selected: true,
+    venue: 'BR41N.io BCI Hackathon (Aalborg University Copenhagen) / FENS Forum 2026',
+    description:
+      'Brain-controlled jukebox — an interactive project using BCI technology to link neural activity with musical selection, developed during the BR41N.io Hackathon 2026. Users navigate a sound library using EEG signals: a Unicorn headset captures motor imagery, CSP filtering and LDA classification identify intent, jaw-clench artifacts select and loop tracks, and TouchDesigner visuals respond to the audio.',
+    collaborators: [
+      'Jeppe Dahl Guldager',
+      'Julia Jünger',
+      'Steffen Møgelmose',
+      'Laurids Jacobsen',
+    ],
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/JDGuldager/Br41n-Hackathon---MED8',
+      },
+      {
+        label: 'FENS Art & Science',
+        href: 'https://www.fens.org/art-science-projects',
+      },
+    ],
+  },
+  {
+    slug: 'nmf-source-separation',
+    keywords: ['NMF', 'Source separation'],
+    shortTitle: 'NMF Source Separation',
+    focus: 'Computational auditory scene analysis',
+    question:
+      'How well does classical non-negative matrix factorization separate sources in dense and reverberant audio textures?',
+    methods:
+      'Evaluation across 288 configurations, varying rank, beta-divergence, sparsity, iterations and phase recovery for choral polyphony, tropical soundscapes and reverberant speech.',
+    findings:
+      'High rank, Euclidean divergence and zero regularization gave the best reconstruction quality: approximately 5–10 dB SDR for choir and speech, and 20–29 dB for environmental textures. The results also exposed limitations of reconstruction-based metrics, motivating a reformulation of the proposed Mix Clarity Index and psychoacoustic overlap measures.',
+    title:
+      'Computational Auditory Scene Analysis using Non-negative Matrix Factorization: Performance Evaluation on Extreme Audio Textures',
+    category: 'Research Project',
+    year: '2026',
+    image: '/works/nmf-casa.png',
+    selected: true,
+    venue: 'Aalborg University Copenhagen',
+    description:
+      'A systematic evaluation of classical NMF for source separation on extreme audio textures (dense choral polyphony, tropical soundscapes, reverberant speech), sweeping rank, beta-divergence, sparsity regularization, iteration count, and phase-recovery method across 288 configurations. High rank, Euclidean divergence, and zero regularization gave the best reconstruction quality (~5–10 dB SDR for choir/speech, ~20–29 dB for environmental textures), while exposing limitations in reconstruction-based metrics and motivating a reformulation of the proposed Mix Clarity Index and psychoacoustic overlap measures.',
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/emilzawistowski/casa-nmf-benchmark',
+      },
+    ],
+  },
+  {
+    slug: 'anomalous-sound-detection',
+    keywords: ['Anomaly detection', 'Domain shift'],
+    shortTitle: 'Anomalous Sound Detection',
+    focus: 'Audio ML · DCASE dataset',
+    question:
+      'How well do unsupervised acoustic models detect machine anomalies under domain shift?',
+    methods:
+      'A coursework study using the DCASE 2025 Task 2 dataset across seven machine types. Compared MFCC- and log-mel-based Gaussian Mixture Models with Mahalanobis distances on mean-pooled log-mel features.',
+    findings:
+      'The Mahalanobis approach generalized best under domain shift, reaching AUC values of 0.6394 for valves and 0.6234 for sliders.',
+    title:
+      'DCASE 2025 – Task 2: First-Shot Unsupervised Anomalous Sound Detection for Machine Condition Monitoring',
+    category: 'Research Project',
+    year: '2026',
+    image: '/works/dcase-anomaly.png',
+    selected: true,
+    venue:
+      'Aalborg University Copenhagen (coursework based on the DCASE 2025 Task 2 dataset)',
+    description:
+      'A student mini-project exploring first-shot unsupervised anomalous sound detection for industrial machine condition monitoring, using the DCASE 2025 Task 2 dataset. Compared MFCC- and log-mel-based Gaussian Mixture Models against a Mahalanobis-distance approach on mean-pooled log-mel features across seven machine types; the Mahalanobis approach generalized best under domain shift, reaching AUC scores of 0.6394 (valves) and 0.6234 (sliders).',
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/emilzawistowski/spis-anomalous-sound-detection',
+      },
+    ],
+  },
+]
+
+export const homeSelection = [
+  'msc-thesis-auditory-distance',
+  'auditory-object-enumeration',
+  'demant-audio-explorers',
+  'harman-spatial-audio',
 ]
 
 export type Publication = {
@@ -246,6 +459,7 @@ export type Publication = {
   venue: string
   year: string
   type: string
+  id?: string
   doi?: string
   abstract?: string
   href?: string
@@ -259,6 +473,7 @@ export const publications: Publication[] = [
     venue: 'International Conference on Auditory Display (ICAD)',
     year: '2026',
     type: 'Extended Abstract',
+    id: 'icad-timbre-2026',
   },
   {
     authors: 'E. Zawistowski, M. Sęklewski, J. Zając',
@@ -267,6 +482,8 @@ export const publications: Publication[] = [
     venue: 'Virtual Conference on Computational Audiology (VCCA)',
     year: '2026',
     type: 'Abstract',
+    id: 'vcca-subitizing-2026',
+    href: 'https://computationalaudiology.com/influence-of-spatial-hearing-on-auditory-parallel-subitizing-efficiency/',
   },
   {
     authors: 'F. Lorenzen, K. Hansen, E. Zawistowski, E. Liapikou',
@@ -275,6 +492,9 @@ export const publications: Publication[] = [
     venue: 'New Interfaces for Musical Expression (NIME)',
     year: '2026',
     type: 'Conference Paper',
+    id: 'nime-camjam-2026',
+    doi: '10.5281/zenodo.20784455',
+    href: 'https://nime.org/proc/nime2026_150/index.html',
   },
   {
     authors:
@@ -284,6 +504,7 @@ export const publications: Publication[] = [
     venue: 'OSF Preprints',
     year: '2026',
     type: 'Preprint',
+    id: 'osf-enumeration-2026',
     href: 'https://osf.io/2rwja',
   },
 ]

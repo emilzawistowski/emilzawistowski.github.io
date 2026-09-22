@@ -31,11 +31,12 @@ export default async function WorkDetailPage({
   const { slug } = await params
   const work = works.find((work) => work.slug === slug)
   if (!work) notFound()
-  const relatedPublications = [
-    'camjam',
-    'auditory-object-enumeration',
-    'spatial-hearing-subitizing-efficiency',
-  ].includes(work.slug)
+  const relatedPublicationIds: Record<string, string> = {
+    camjam: 'nime-camjam-2026',
+    'auditory-object-enumeration': 'osf-enumeration-2026',
+    'spatial-hearing-subitizing-efficiency': 'vcca-subitizing-2026',
+  }
+  const relatedPublicationId = relatedPublicationIds[work.slug]
   return (
     <article className="mx-auto max-w-[1100px] px-4 md:px-6">
       <div className="border-b border-foreground">
@@ -56,7 +57,7 @@ export default async function WorkDetailPage({
         <p className="mt-5 max-w-2xl text-lg leading-relaxed">
           {work.question}
         </p>
-        {work.links?.length || relatedPublications ? (
+        {work.links?.length || relatedPublicationId ? (
           <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2">
             {work.links?.map((link) => (
               <Link
@@ -67,9 +68,9 @@ export default async function WorkDetailPage({
                 {link.label} ↗
               </Link>
             ))}
-            {relatedPublications && (
+            {relatedPublicationId && (
               <Link
-                href="/publications"
+                href={`/publications#${relatedPublicationId}`}
                 className="inline-flex min-h-11 items-center font-mono text-xs underline underline-offset-4 hover:text-accent"
               >
                 Related publication ↗

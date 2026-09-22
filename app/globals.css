@@ -861,6 +861,20 @@ summary:focus-visible {
   border-bottom: 1px solid var(--border);
   padding: 12px 0;
 }
+.bibliography-row[id] {
+  scroll-margin-top: 90px;
+}
+@keyframes bibliography-flash {
+  0% {
+    background-color: oklch(0.8 0 0);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.bibliography-flash {
+  animation: bibliography-flash 1.2s ease-out;
+}
 .bibliography-type,
 .bibliography-year {
   font-family: var(--font-mono);

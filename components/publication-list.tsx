@@ -1,11 +1,40 @@
 'use client'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import type { Publication } from '@/lib/data'
-function PublicationRow({ pub }: { pub: Publication }) {
+
+export function usePublicationHashFlash() {
+  useEffect(() => {
+    const flashFromHash = () => {
+      const hash = window.location.hash.slice(1)
+      if (!hash) return
+      const el = document.getElementById(hash)
+      if (!el) return
+      const reduced = window.matchMedia(
+        '(prefers-reduced-motion: reduce)',
+      ).matches
+      el.scrollIntoView({
+        behavior: reduced ? 'auto' : 'smooth',
+        block: 'center',
+      })
+      el.classList.remove('bibliography-flash')
+      void el.offsetWidth
+      el.classList.add('bibliography-flash')
+      window.setTimeout(
+        () => el.classList.remove('bibliography-flash'),
+        1300,
+      )
+    }
+    flashFromHash()
+    window.addEventListener('hashchange', flashFromHash)
+    return () => window.removeEventListener('hashchange', flashFromHash)
+  }, [])
+}
+
+export function PublicationRow({ pub }: { pub: Publication }) {
   const [showAbstract, setShowAbstract] = useState(false)
   return (
-    <li className="bibliography-row">
+    <li id={pub.id} className="bibliography-row">
       <div>
         <h2 className="max-w-3xl text-pretty text-sm font-medium leading-snug">
           {pub.href ? (
@@ -66,6 +95,7 @@ export function PublicationList({
 }: {
   publications: Publication[]
 }) {
+  usePublicationHashFlash()
   return (
     <ul>
       {publications.map((pub) => (

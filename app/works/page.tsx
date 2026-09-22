@@ -1,11 +1,14 @@
 import Link from 'next/link'
-import { works } from '@/lib/data'
+import { homeSelection, works } from '@/lib/data'
 import { ProjectCard } from '@/components/project-card'
 import { ProjectArchive } from '@/components/project-archive'
 export const metadata = { title: 'Research & Projects — Emil Zawistowski' }
 export default function WorksPage() {
-  // Both selected groups preserve editorial importance; archive sorting is independent.
-  const featuredWorks = works.filter((work) => work.featured)
+  // Featured order follows homeSelection so / and /works stay consistent;
+  // archive sorting is independent.
+  const featuredWorks = homeSelection.flatMap((slug) =>
+    works.filter((work) => work.slug === slug && work.featured),
+  )
   const selectedWorks = works.filter((work) => work.selected && !work.featured)
   return (
     <div className="mx-auto max-w-[1100px] px-4 md:px-6">

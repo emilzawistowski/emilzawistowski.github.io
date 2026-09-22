@@ -1,5 +1,5 @@
 import { publications } from '@/lib/data'
-import { PublicationList } from '@/components/publication-list'
+import { PublicationArchive } from '@/components/publication-archive'
 
 export const metadata = {
   title: 'Publications — Emil Zawistowski',
@@ -12,7 +12,9 @@ export default function PublicationsPage() {
         <h1>Publications</h1>
       </header>
 
-      <PublicationList publications={publications} />
+      <div className="pt-6">
+        <PublicationArchive publications={publications} />
+      </div>
     </div>
   )
 }

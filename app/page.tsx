@@ -4,6 +4,7 @@ import Link from 'next/link'
 import {
   biography,
   contact,
+  homeSelection,
   news,
   publications,
   scholar,
@@ -12,13 +13,6 @@ import {
 import { NewsList } from '@/components/news-list'
 import { PublicationList } from '@/components/publication-list'
 import { ProjectCard } from '@/components/project-card'
-
-const homeSelection = [
-  'msc-thesis-auditory-distance',
-  'auditory-object-enumeration',
-  'demant-audio-explorers',
-  'harman-spatial-audio',
-]
 
 export default function HomePage() {
   const selectedWorks = homeSelection.flatMap((slug) =>
