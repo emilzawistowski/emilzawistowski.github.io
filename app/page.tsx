@@ -34,8 +34,37 @@ export default function HomePage() {
   const selectedWorks = homeSelection.flatMap((slug) =>
     works.filter((work) => work.slug === slug),
   )
+  const personJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: scholar.name,
+    jobTitle: scholar.role,
+    affiliation: {
+      '@type': 'Organization',
+      name: scholar.affiliation,
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Copenhagen',
+      addressCountry: 'DK',
+    },
+    url: 'https://emilzawistowski.github.io/',
+    image: 'https://emilzawistowski.github.io/portrait_emil.jpg',
+    sameAs: contact.links.map((link) => link.href),
+    knowsAbout: [
+      'Hearing science',
+      'Auditory cognition',
+      'Spatial hearing',
+      'Psychoacoustics',
+      'EEG',
+    ],
+  }
   return (
     <div className="mx-auto max-w-[1100px] px-4 md:px-6">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
       <section className="identity-panel" aria-labelledby="intro-title">
         <div className="identity-heading">
           <h1 id="intro-title">{scholar.name}</h1>

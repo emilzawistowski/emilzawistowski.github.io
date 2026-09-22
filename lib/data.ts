@@ -77,7 +77,7 @@ export const works: Work[] = [
     title: 'Acoustic Feature Analysis of Spatial Audio',
     category: 'Industry Collaboration',
     year: '2024',
-    image: '/works/harman-spatial.png',
+    image: '/works/harman-spatial.jpg',
     featured: true,
     selected: true,
     venue: 'HARMAN International',

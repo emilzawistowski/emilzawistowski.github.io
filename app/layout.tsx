@@ -16,9 +16,46 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://emilzawistowski.github.io'),
   title: 'Emil Zawistowski',
   description:
     'Emil Zawistowski — hearing science, auditory cognition and spatial hearing research using psychoacoustics, EEG and computational methods.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Emil Zawistowski',
+    description:
+      'Emil Zawistowski — hearing science, auditory cognition and spatial hearing research using psychoacoustics, EEG and computational methods.',
+    url: '/',
+    siteName: 'Emil Zawistowski',
+    images: [
+      {
+        url: '/portrait_emil.jpg',
+        width: 725,
+        height: 905,
+        alt: 'Portrait of Emil Zawistowski',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Emil Zawistowski',
+    description:
+      'Emil Zawistowski — hearing science, auditory cognition and spatial hearing research using psychoacoustics, EEG and computational methods.',
+    images: ['/portrait_emil.jpg'],
+  },
+  icons: {
+    icon: [
+      { url: '/favicon/favicon.ico' },
+      { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/favicon/apple-touch-icon.png',
+  },
+  manifest: '/favicon/site.webmanifest',
 }
 
 export const viewport: Viewport = {

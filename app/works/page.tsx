@@ -2,7 +2,11 @@ import Link from 'next/link'
 import { homeSelection, works } from '@/lib/data'
 import { ProjectCard } from '@/components/project-card'
 import { ProjectArchive } from '@/components/project-archive'
-export const metadata = { title: 'Research & Projects — Emil Zawistowski' }
+export const metadata = {
+  title: 'Research & Projects — Emil Zawistowski',
+  description:
+    'Research projects by Emil Zawistowski: auditory distance perception with EEG and Wave Field Synthesis, spatial audio, auditory subitizing, sound-source separation and brain-computer music interfaces.',
+}
 export default function WorksPage() {
   // Featured order follows homeSelection so / and /works stay consistent;
   // archive sorting is independent.
