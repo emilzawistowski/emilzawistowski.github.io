@@ -198,7 +198,6 @@ export function ProjectArchive({ works }: { works: Work[] }) {
         <span>Keywords</span>
         <span>Type</span>
         <span>Year</span>
-        <span />
       </div>
       <ul className="archive-results">
         {filtered
@@ -212,7 +211,6 @@ export function ProjectArchive({ works }: { works: Work[] }) {
                 </span>
                 <span className="archive-type">{work.category}</span>
                 <span className="archive-year">{work.year}</span>
-                <span aria-hidden="true">↗</span>
               </Link>
             </li>
           ))}

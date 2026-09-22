@@ -843,9 +843,42 @@ summary:focus-visible {
   margin-top: 10px;
 }
 .identity-description {
-  max-width: 640px;
+  max-width: 740px;
+  margin-top: 22px;
   font-size: 17px;
   line-height: 1.6;
+}
+@keyframes statement-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.statement-word {
+  display: inline-block;
+  animation: statement-rise 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.statement-chip {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.2;
+  padding: 0.05em 0.5em;
+  box-sizing: border-box;
+  border: 1px solid var(--foreground);
+}
+.statement-chip:hover {
+  background: var(--foreground);
+  color: var(--background);
+}
+.statement-sentence {
+  display: block;
+}
+.statement-sentence + .statement-sentence {
+  margin-top: 18px;
 }
 .identity-extended {
   max-width: 68ch;
@@ -858,15 +891,15 @@ summary:focus-visible {
   margin-top: 12px;
 }
 .identity-focus {
+  grid-column: 1 / -1;
+  grid-row: 2;
   margin-top: 26px;
   font-size: 15px;
-  line-height: 1.7;
-}
-@media (min-width: 768px) {
-  .identity-focus {
-    columns: 2;
-    column-gap: 32px;
-  }
+  line-height: 1.75;
+  columns: 2;
+  column-gap: 32px;
+  orphans: 3;
+  widows: 3;
 }
 .credentials {
   display: grid;
@@ -962,7 +995,7 @@ summary:focus-visible {
   text-align: right;
 }
 .archive-results a {
-  grid-template-columns: minmax(0, 1fr) 12rem 8rem 2.5rem 1rem;
+  grid-template-columns: minmax(0, 1fr) 12rem 8rem 2.5rem;
   gap: 16px;
   padding: 8px 0;
   min-height: 36px;
@@ -1084,9 +1117,6 @@ summary:focus-visible {
   .archive-year {
     grid-column: 2;
   }
-  .archive-results a > span:last-child {
-    display: none;
-  }
 }
 .index-column-labels,
 .archive-column-labels {
@@ -1106,7 +1136,7 @@ summary:focus-visible {
 }
 .archive-column-labels {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 12rem 8rem 2.5rem 1rem;
+  grid-template-columns: minmax(0, 1fr) 12rem 8rem 2.5rem;
   gap: 16px;
   padding-block: 8px;
 }
@@ -1203,22 +1233,74 @@ summary:focus-visible {
 
 /* Shared composition: compact identity, aligned cards and quiet controls. */
 .identity-panel {
-  grid-template-columns: minmax(0, 1fr) 240px;
-  gap: 32px;
+  grid-template-columns: minmax(0, 1fr) 306px;
+  gap: 20px;
   padding-block: 24px;
-  align-items: center;
+  align-items: start;
 }
-.identity-photo {
-  width: 240px;
+.identity-heading {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+}
+.identity-side {
   grid-column: 2;
   grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.identity-photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+}
+.identity-role {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.identity-heading .eyebrow {
+  display: block;
+  margin-top: 10px;
+}
+.identity-meta-block {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.identity-meta-block > .identity-degrees {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  color: var(--foreground);
+}
+.identity-meta-block > .identity-degrees span {
+  color: var(--muted-foreground);
+}
+.identity-meta-block > .identity-email {
+  margin-top: 8px;
+}
+.identity-degrees span {
+  color: var(--muted-foreground);
+}
+.identity-email {
+  margin-top: 14px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  align-self: flex-start;
 }
 .identity-heading h1 {
   font-size: clamp(40px, 6vw, 72px);
 }
 .identity-heading > .identity-description {
   margin-top: 24px;
-  max-width: 640px;
+  max-width: 740px;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0;
@@ -1511,14 +1593,18 @@ summary:focus-visible {
   .publication-archive { grid-template-columns: minmax(0, 1fr) auto; gap: 0 16px; }
 }
 
-.identity-nameplate > p { font-size: 17px; font-weight: 600; margin-top: 12px; letter-spacing: -.01em; }
 .research-card-context { border-top: 1px solid var(--border); padding-top: 10px; font-size: 11px; line-height: 1.5; color: var(--muted-foreground); }
 @media (max-width: 767px) {
-  .identity-panel { grid-template-columns: 80px minmax(0,1fr); gap: 20px 16px; align-items: center; }
-  .identity-photo { width: 80px; grid-column: 1; grid-row: 1; }
-  .identity-nameplate { grid-column: 2; min-width: 0; }
-  .identity-nameplate h1 { font-size: clamp(26px,7vw,34px); line-height: 1.05; }
-  .identity-nameplate > p { font-size: 11px; line-height: 1.4; margin-top: 8px; }
-  .identity-nameplate .eyebrow { margin-top: 7px; }
+  .identity-panel { display: block; }
+  .identity-heading { display: block; }
+  .identity-side { display: block; margin-top: 20px; }
+  .identity-side .identity-photo { width: 120px; }
+  .identity-role { font-size: 14px; margin-top: 12px; }
   .research-card-context { margin-top: auto; }
+}
+
+@media (max-width: 767px) {
+  .identity-focus {
+    columns: 1;
+  }
 }

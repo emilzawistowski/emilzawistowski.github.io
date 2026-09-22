@@ -21,6 +21,8 @@ export function SiteFooter() {
             <Link
               key={l.label}
               href={l.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex min-h-11 items-center gap-1.5 text-foreground transition-colors hover:text-accent"
             >
               <ContactLinkIcon icon={l.icon} />
