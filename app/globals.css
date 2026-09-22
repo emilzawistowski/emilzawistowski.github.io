@@ -1595,15 +1595,17 @@ summary:focus-visible {
 
 .research-card-context { border-top: 1px solid var(--border); padding-top: 10px; font-size: 11px; line-height: 1.5; color: var(--muted-foreground); }
 @media (max-width: 767px) {
-  .identity-panel { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .identity-panel { display: grid; grid-template-columns: minmax(0, 1fr) 110px; gap: 8px 16px; }
   .identity-heading { display: contents; }
-  .identity-heading h1 { grid-column: 1; }
-  .identity-heading > p.identity-role { grid-column: 1; font-size: 14px; margin-top: 12px; }
-  .identity-heading .eyebrow { grid-column: 1; }
+  .identity-heading h1 { grid-column: 1 / -1; grid-row: 1; }
+  .identity-heading > p.identity-role { grid-column: 1; grid-row: 2; font-size: 14px; margin-top: 0; align-self: end; }
+  .identity-heading > span.eyebrow { grid-column: 1; grid-row: 3; }
+  .identity-meta-block { grid-column: 1 / -1; grid-row: 4; }
   .identity-side { display: contents; }
-  .identity-side .identity-photo { grid-row: 5; width: 160px; }
-  .identity-panel .identity-description { grid-row: 6; margin-top: 16px; }
-  .identity-focus { grid-row: 7; }
+  .identity-side .identity-photo { grid-column: 2; grid-row: 2 / span 2; width: 100%; }
+  .identity-panel .identity-description { grid-row: 5; margin-top: 16px; }
+  .identity-focus { grid-row: 6; }
+  br.statement-br { display: none; }
   .research-card-context { margin-top: auto; }
 }
 

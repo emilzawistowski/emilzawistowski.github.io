@@ -28,7 +28,13 @@ export function StatementText({ text }: { text: string }) {
                 >
                   {word}
                 </span>
-                {wi < arr.length - 1 ? (BREAK_AFTER.has(word) ? <br /> : ' ') : ''}
+                {wi < arr.length - 1 ? (
+              <>
+                {BREAK_AFTER.has(word) && <br className="statement-br" />}{' '}
+              </>
+            ) : (
+              ''
+            )}
               </span>
             )
           })}
