@@ -1279,12 +1279,10 @@ summary:focus-visible {
 }
 .identity-meta-block > .identity-degrees span {
   color: var(--muted-foreground);
+  white-space: nowrap;
 }
 .identity-meta-block > .identity-email {
   margin-top: 8px;
-}
-.identity-degrees span {
-  color: var(--muted-foreground);
 }
 .identity-email {
   margin-top: 14px;
@@ -1598,13 +1596,13 @@ summary:focus-visible {
   .identity-panel { display: grid; grid-template-columns: minmax(0, 1fr) 110px; gap: 8px 16px; }
   .identity-heading { display: contents; }
   .identity-heading h1 { grid-column: 1 / -1; grid-row: 1; }
-  .identity-heading > p.identity-role { grid-column: 1; grid-row: 2; font-size: 14px; margin-top: 0; align-self: end; }
+  .identity-heading > p.identity-role { grid-column: 1; grid-row: 2; font-size: 14px; margin-top: 0; }
   .identity-heading > span.eyebrow { grid-column: 1; grid-row: 3; }
-  .identity-meta-block { grid-column: 1 / -1; grid-row: 4; }
+  .identity-meta-block { grid-column: 1; grid-row: 4; }
   .identity-side { display: contents; }
-  .identity-side .identity-photo { grid-column: 2; grid-row: 2 / span 2; width: 100%; }
-  .identity-panel .identity-description { grid-row: 5; margin-top: 16px; }
-  .identity-focus { grid-row: 6; }
+  .identity-side .identity-photo { grid-column: 2; grid-row: 2 / span 3; width: 100%; align-self: end; margin-bottom: 15px; }
+  .identity-panel .identity-description { grid-column: 1 / -1; grid-row: 5; margin-top: 16px; }
+  .identity-focus { grid-column: 1 / -1; grid-row: 6; }
   br.statement-br { display: none; }
   .research-card-context { margin-top: auto; }
 }
