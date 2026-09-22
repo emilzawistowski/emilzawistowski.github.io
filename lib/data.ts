@@ -9,7 +9,7 @@ export type Work = {
   findings: string
   category: string
   year: string
-  image: string
+  image?: string
   featured?: boolean
   selected?: boolean
   venue: string
@@ -50,7 +50,7 @@ export const works: Work[] = [
       'Auditory Distance Perception in Wave Field Synthesis: Pre-Attentive Neural Processing in a Cocktail-Party Environment',
     category: 'Thesis',
     year: '2026',
-    image: '/works/thesis-eeg.png',
+    image: '/works/thesis-eeg.jpg',
     featured: true,
     selected: true,
     venue: 'Aalborg University Copenhagen',
@@ -158,7 +158,6 @@ export const works: Work[] = [
       'Influence of Spatial Hearing on Auditory Parallel Subitizing Efficiency',
     category: 'Research Project',
     year: '2026',
-    image: '/works/subitizing.png',
     selected: true,
     venue: 'University of Warsaw',
     description:
@@ -186,7 +185,6 @@ export const works: Work[] = [
       'CamJam: A Modular Collaborative and Accessible Digital Musical Interface',
     category: 'Research Project',
     year: '2026',
-    image: '/works/camjam.png',
     selected: true,
     venue: 'New Interfaces for Musical Expression (NIME)',
     description:
@@ -212,7 +210,6 @@ export const works: Work[] = [
     title: 'Nordic AI Cup 2026: Solo Submission across RL, Vision and Speech/NLP',
     category: 'Competition',
     year: '2026',
-    image: '/works/matrix-grid.png',
     venue: 'Nordic AI Cup 2026 (Ambolt AI)',
     description:
       'Solo entry to the Nordic AI Cup 2026, a four-day online AI competition hosted by Ambolt AI. Developed FastAPI submission endpoints for three use cases — survival-simulator, drone-flyby and medical-appointment — spanning reinforcement learning, computer vision and speech/NLP, from the official competition templates.',
@@ -238,7 +235,6 @@ export const works: Work[] = [
       'Drumming Sonification: Real-Time Movement-to-Sound Mapping with MediaPipe, MIDI/OSC and Pure Data',
     category: 'Research Project',
     year: '2026',
-    image: '/works/timeseries.png',
     venue: 'Aalborg University Copenhagen',
     description:
       'Explorations in real-time sonification of drumming movement. A webcam and MediaPipe Pose provide movement descriptors mapped to musical control data across iterations: early wrist-motion sketch, MIDI Laban controller, and OSC pose tracker (127.0.0.1:7400) with Pure Data receiver and sound-mapping patch.',
@@ -263,7 +259,6 @@ export const works: Work[] = [
       'Thermobient: Temperature-Controlled Ambient Sound Interface with Teensy, C++ and Faust',
     category: 'Research Project',
     year: '2026',
-    image: '/works/spectral.png',
     venue: 'Aalborg University Copenhagen',
     description:
       'Experimental musical interface using temperature sensing to control an ambient sound generator, combining a Teensy microcontroller sketch with C++ audio code and Faust DSP code.',
@@ -289,7 +284,6 @@ export const works: Work[] = [
       'Encoding of Facial Features: Perceived Dominance from PCA and Linear Regression',
     category: 'Research Project',
     year: '2026',
-    image: '/works/data-topology.png',
     venue: 'Technical University of Denmark (DTU)',
     description:
       'Fits a linear encoding model relating facial image structure to perceived dominance, validates it by generating and rating synthetic faces, and tests it with an adaptation after-effect experiment. PCA on processed grayscale images with forward-selected components predicts mean dominance ratings.',
@@ -316,7 +310,6 @@ export const works: Work[] = [
       'Emotional Micro-Gestures Sonification: Real-Time Affective Soundscape Generation from Computer Interaction Patterns',
     category: 'Research Project',
     year: '2026',
-    image: '/works/timeseries.png',
     venue: 'Aalborg University Copenhagen',
     description:
       'Real-time affective sonification turning mouse movement, clicks and typing dynamics into a continuous soundscape. Features extracted at 20 Hz are projected onto arousal/valence dimensions and mapped to perceptually grounded synthesis parameters, rendered in SuperCollider and controlled from Python via Open Sound Control.',
@@ -341,7 +334,6 @@ export const works: Work[] = [
     title: 'YOLOv8 Recycling Object Detection: Real-Time Webcam Prototype',
     category: 'Research Project',
     year: '2026',
-    image: '/works/pointcloud.png',
     selected: true,
     venue: 'Aalborg University Copenhagen',
     description:
@@ -367,7 +359,6 @@ export const works: Work[] = [
     title: 'Neurojukebox: A Brain-Controlled Sound and Vision Interface',
     category: 'Competition',
     year: '2026',
-    image: '/works/waveform.png',
     selected: true,
     venue: 'BR41N.io BCI Hackathon (Aalborg University Copenhagen) / FENS Forum 2026',
     description:
@@ -404,7 +395,6 @@ export const works: Work[] = [
       'Computational Auditory Scene Analysis using Non-negative Matrix Factorization: Performance Evaluation on Extreme Audio Textures',
     category: 'Research Project',
     year: '2026',
-    image: '/works/nmf-casa.png',
     selected: true,
     venue: 'Aalborg University Copenhagen',
     description:
@@ -431,7 +421,6 @@ export const works: Work[] = [
       'DCASE 2025 – Task 2: First-Shot Unsupervised Anomalous Sound Detection for Machine Condition Monitoring',
     category: 'Research Project',
     year: '2026',
-    image: '/works/dcase-anomaly.png',
     selected: true,
     venue:
       'Aalborg University Copenhagen (coursework based on the DCASE 2025 Task 2 dataset)',

@@ -545,6 +545,20 @@ summary:focus-visible {
 .research-card-full .research-card-focus {
   margin-top: auto;
 }
+.research-card-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  margin-top: 14px;
+}
+.research-card-thumb img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  border: 1px solid var(--border);
+}
 .selected-project-list {
   margin-top: 16px;
 }
@@ -715,6 +729,12 @@ summary:focus-visible {
   .research-card-full h3 {
     font-size: 15px;
     margin-bottom: 12px;
+  }
+  .research-card-thumb {
+    grid-column: 2;
+  }
+  .research-card-focus {
+    grid-column: 2;
   }
   .archive-controls {
     grid-template-columns: repeat(2, minmax(0, 1fr));

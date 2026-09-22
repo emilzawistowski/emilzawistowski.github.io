@@ -97,15 +97,18 @@ export default async function WorkDetailPage({
               {work.findings}
             </p>
           </section>
-          <div className="relative mt-8 aspect-[3/2] w-full bg-muted">
-            <Image
-              src={work.image}
-              alt={`Project illustration: ${work.shortTitle}`}
-              fill
-              sizes="(max-width: 767px) 100vw, 700px"
-              className="object-contain"
-            />
-          </div>
+          {work.image && (
+            <div className="mt-8 w-full overflow-hidden border border-border">
+              <Image
+                src={work.image}
+                alt={`Project illustration: ${work.shortTitle}`}
+                width={1600}
+                height={1000}
+                sizes="(max-width: 767px) 100vw, 700px"
+                className="h-auto w-full"
+              />
+            </div>
+          )}
         </div>
         <aside className="font-mono text-xs leading-relaxed">
           <h2 className="mb-4 text-[11px] uppercase tracking-wider">
