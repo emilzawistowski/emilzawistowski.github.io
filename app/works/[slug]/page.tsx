@@ -38,7 +38,7 @@ export default async function WorkDetailPage({
   }
   const relatedPublicationId = relatedPublicationIds[work.slug]
   return (
-    <article className="mx-auto max-w-[1100px] px-4 md:px-6">
+    <article className="work-detail mx-auto max-w-[1100px] px-4 md:px-6">
       <div className="border-b border-foreground">
         <Link
           href="/works"
@@ -47,13 +47,16 @@ export default async function WorkDetailPage({
           ← Research & Projects
         </Link>
       </div>
-      <header className="max-w-3xl py-8 md:py-10">
-        <p className="mb-4 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
-          {work.year} / {work.category}
-        </p>
+      <header className="work-detail-header">
         <h1 className="text-pretty text-2xl font-medium leading-tight md:text-4xl">
           {work.title}
         </h1>
+        <div className="work-detail-meta">
+          <span>
+            {work.year} · {work.category}
+          </span>
+          <span>{work.venue}</span>
+        </div>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed">
           {work.question}
         </p>
@@ -79,8 +82,8 @@ export default async function WorkDetailPage({
           </div>
         ) : null}
       </header>
-      <div className="grid items-start gap-8 border-t border-border py-6 md:grid-cols-[minmax(0,1fr)_16rem] md:gap-12">
-        <div>
+      <div className="work-detail-body">
+        <div className="work-detail-content">
           <section aria-labelledby="methods">
             <h2 id="methods" className="section-heading">
               Approach & Methods
@@ -97,38 +100,25 @@ export default async function WorkDetailPage({
               {work.findings}
             </p>
           </section>
+          {work.collaborators && (
+            <p className="work-collaborators">
+              <span>Collaborators</span>
+              {work.collaborators.join(', ')}
+            </p>
+          )}
           {work.image && (
-            <div className="mt-8 w-full overflow-hidden border border-border">
+            <div className="work-detail-image">
               <Image
                 src={work.image}
                 alt={`Project illustration: ${work.shortTitle}`}
                 width={1600}
                 height={1000}
                 sizes="(max-width: 767px) 100vw, 700px"
-                className="h-auto w-full"
+                className="h-auto w-full grayscale"
               />
             </div>
           )}
         </div>
-        <aside className="font-mono text-xs leading-relaxed">
-          <h2 className="mb-4 text-[11px] uppercase tracking-wider">
-            Project context
-          </h2>
-          <dl className="divide-y divide-border border-y border-border">
-            <div className="py-3">
-              <dt className="mb-1 text-muted-foreground">
-                Institution / Venue
-              </dt>
-              <dd>{work.venue}</dd>
-            </div>
-            {work.collaborators && (
-              <div className="py-3">
-                <dt className="mb-1 text-muted-foreground">Collaborators</dt>
-                <dd>{work.collaborators.join(', ')}</dd>
-              </div>
-            )}
-          </dl>
-        </aside>
       </div>
       <Link
         href="/works"

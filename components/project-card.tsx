@@ -9,6 +9,19 @@ export function ProjectCard({
   work: Work
   fullTitle?: boolean
 }) {
+  const illustrations: Record<string, string> = {
+    'msc-thesis-auditory-distance': 'distance',
+    'auditory-object-enumeration': 'enumeration',
+    'demant-audio-explorers': 'extraction',
+    'harman-spatial-audio': 'spatial',
+  }
+  const contexts: Record<string, string> = {
+    'msc-thesis-auditory-distance': "Master’s Thesis | Aalborg University",
+    'auditory-object-enumeration': 'Preprint | University of Warsaw — Research Circle of Cognitive Psychology of Music',
+    'demant-audio-explorers': 'Competition | Audio Explorers (Demant)',
+    'harman-spatial-audio': 'Industry Collaboration | HARMAN International',
+  }
+  const illustration = illustrations[work.slug]
   return (
     <Link
       href={`/works/${work.slug}`}
@@ -21,7 +34,7 @@ export function ProjectCard({
       {work.image && (
         <div className="research-card-thumb">
           <Image
-            src={work.image}
+            src={illustration ? `/illustrations/${illustration}.svg` : work.image}
             alt={`Project thumbnail: ${work.shortTitle}`}
             width={800}
             height={450}
@@ -32,16 +45,18 @@ export function ProjectCard({
       )}
       <h3>{fullTitle ? work.title : work.shortTitle}</h3>
       {!fullTitle && <p className="research-card-question">{work.question}</p>}
-      <dl className="research-card-focus card-metadata">
-        <div>
-          <dt>Keywords</dt>
-          <dd>{work.keywords.join(' · ')}</dd>
-        </div>
+      {fullTitle ? <dl className="research-card-focus card-metadata">
+        {fullTitle && (
+          <div>
+            <dt>Keywords</dt>
+            <dd>{work.keywords.join(' · ')}</dd>
+          </div>
+        )}
         <div>
           <dt>Type</dt>
           <dd>{work.category}</dd>
         </div>
-      </dl>
+      </dl> : <p className="research-card-context">{contexts[work.slug] ?? `${work.category} | ${work.venue}`}</p>}
     </Link>
   )
 }

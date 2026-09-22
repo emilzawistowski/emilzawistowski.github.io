@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {
   biography,
-  contact,
   homeSelection,
   news,
   publications,
@@ -23,28 +22,25 @@ export default function HomePage() {
       <section className="identity-panel" aria-labelledby="intro-title">
         <div className="identity-photo">
           <Image
-            src="/portrait.jpg"
+            src="/portrait_emil.jpg"
             alt={`Portrait of ${scholar.name}`}
             fill
-            sizes="(max-width: 767px) 72px, 144px"
+            sizes="(max-width: 767px) 96px, 240px"
             className="object-cover grayscale"
             priority
           />
         </div>
         <div className="identity-heading">
+          <div className="identity-nameplate">
           <h1 id="intro-title">{scholar.name}</h1>
           <p>{scholar.role}</p>
           <span className="eyebrow">Copenhagen, DK</span>
+          </div>
+          <p className="identity-description">{biography.short}</p>
         </div>
-        <p className="identity-description">{biography.short}</p>
       </section>
-      <div className="contact-strip">
-        <Link href={`mailto:${contact.email}`}>{contact.email} ↗</Link>
-        {contact.links.map((link) => (
-          <Link key={link.label} href={link.href}>
-            {link.label} ↗
-          </Link>
-        ))}
+      <div className="identity-focus">
+        <p>{biography.focus}</p>
       </div>
       <section className="home-section" aria-labelledby="home-projects">
         <div className="editorial-heading">

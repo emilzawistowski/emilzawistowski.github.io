@@ -9,6 +9,12 @@ export function SiteFooter() {
         <div className="font-mono text-[10px] uppercase leading-relaxed tracking-[0.15em] text-muted-foreground">
           <p className="text-foreground">{scholar.title}</p>
           <p>{scholar.location}</p>
+          <Link
+            href={`mailto:${contact.email}`}
+            className="mt-2 inline-block whitespace-nowrap normal-case tracking-normal text-foreground hover:underline underline-offset-4"
+          >
+            {contact.email}
+          </Link>
         </div>
         <div className="flex flex-wrap gap-x-6 gap-y-2 font-mono text-[10px] uppercase tracking-[0.15em]">
           {contact.links.map((l) => (

@@ -65,7 +65,7 @@ export function PublicationArchive({
     setPage(1)
   }
   return (
-    <div className="project-archive">
+    <div className="project-archive publication-archive">
       <div className="archive-controls">
         <label className="archive-search">
           Search
@@ -79,72 +79,75 @@ export function PublicationArchive({
             placeholder="Title, authors, venue…"
           />
         </label>
-        <label>
-          Year
-          <select
-            value={year}
-            onChange={(e) => {
-              setYear(e.target.value)
-              setPage(1)
-            }}
-          >
-            <option value="">All years</option>
-            {options('year')
-              .reverse()
-              .map((value) => (
-                <option key={value}>{value}</option>
-              ))}
-          </select>
-        </label>
-        <label>
-          Type
-          <select
-            value={pubType}
-            onChange={(e) => {
-              setPubType(e.target.value)
-              setPage(1)
-            }}
-          >
-            <option value="">All types</option>
-            {options('type').map((value) => (
-              <option key={value}>{value}</option>
-            ))}
-          </select>
-        </label>
-        <label>
-          Sort by
-          <select
-            value={sort}
-            onChange={(e) => {
-              setSort(e.target.value)
-              setPage(1)
-            }}
-          >
-            <option value="year">Year</option>
-            <option value="title">Title</option>
-            <option value="type">Type</option>
-            <option value="venue">Venue</option>
-          </select>
-        </label>
-        <label>
-          Order
-          <select
-            value={direction}
-            onChange={(e) => {
-              setDirection(e.target.value)
-              setPage(1)
-            }}
-          >
-            <option value="desc">Descending</option>
-            <option value="asc">Ascending</option>
-          </select>
-        </label>
       </div>
-      <details className="archive-more">
+      <details className="archive-more publication-filters">
         <summary className="disclosure-label">
-          More filters{venue ? ' · active' : ''}
+          Filters / Sort
+          {year || pubType || venue || sort !== 'year' || direction !== 'desc'
+            ? ' · active'
+            : ''}
         </summary>
         <div className="archive-extra-controls">
+          <label>
+            Year
+            <select
+              value={year}
+              onChange={(e) => {
+                setYear(e.target.value)
+                setPage(1)
+              }}
+            >
+              <option value="">All years</option>
+              {options('year')
+                .reverse()
+                .map((value) => (
+                  <option key={value}>{value}</option>
+                ))}
+            </select>
+          </label>
+          <label>
+            Type
+            <select
+              value={pubType}
+              onChange={(e) => {
+                setPubType(e.target.value)
+                setPage(1)
+              }}
+            >
+              <option value="">All types</option>
+              {options('type').map((value) => (
+                <option key={value}>{value}</option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Sort by
+            <select
+              value={sort}
+              onChange={(e) => {
+                setSort(e.target.value)
+                setPage(1)
+              }}
+            >
+              <option value="year">Year</option>
+              <option value="title">Title</option>
+              <option value="type">Type</option>
+              <option value="venue">Venue</option>
+            </select>
+          </label>
+          <label>
+            Order
+            <select
+              value={direction}
+              onChange={(e) => {
+                setDirection(e.target.value)
+                setPage(1)
+              }}
+            >
+              <option value="desc">Descending</option>
+              <option value="asc">Ascending</option>
+            </select>
+          </label>
           <label>
             Venue
             <select
@@ -179,8 +182,8 @@ export function PublicationArchive({
       </ul>
       {!filtered.length && (
         <p className="py-6 text-sm text-muted-foreground">
-          No publications match these filters. Try a broader search or reset
-          the filters.
+          No publications match these filters. Try a broader search or reset the
+          filters.
         </p>
       )}
       {pages > 1 && (

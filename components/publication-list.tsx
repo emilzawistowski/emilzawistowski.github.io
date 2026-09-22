@@ -20,10 +20,7 @@ export function usePublicationHashFlash() {
       el.classList.remove('bibliography-flash')
       void el.offsetWidth
       el.classList.add('bibliography-flash')
-      window.setTimeout(
-        () => el.classList.remove('bibliography-flash'),
-        1300,
-      )
+      window.setTimeout(() => el.classList.remove('bibliography-flash'), 1300)
     }
     flashFromHash()
     window.addEventListener('hashchange', flashFromHash)
@@ -56,26 +53,23 @@ export function PublicationRow({ pub }: { pub: Publication }) {
             ),
           )}
         </p>
-        <p className="mt-0.5 text-xs italic leading-relaxed text-muted-foreground">
-          {pub.venue}
-        </p>
-        <div className="mt-1 flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-[10px] uppercase tracking-wider">
+        <div className="publication-source">
+          <span>{pub.venue}</span>
           {pub.doi && (
             <Link
               href={`https://doi.org/${pub.doi}`}
-              className="inline-flex min-h-11 items-center break-all hover:text-accent"
+              aria-label={`DOI for ${pub.title}`}
             >
-              DOI: {pub.doi} ↗
+              DOI ↗
             </Link>
           )}
           {pub.abstract && (
             <button
               type="button"
               onClick={() => setShowAbstract(!showAbstract)}
-              className="min-h-11 hover:text-accent"
               aria-expanded={showAbstract}
             >
-              {showAbstract ? '[ − hide abstract ]' : '[ + abstract ]'}
+              {showAbstract ? '− Abstract' : '+ Abstract'}
             </button>
           )}
         </div>
