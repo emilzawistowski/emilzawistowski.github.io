@@ -1595,11 +1595,15 @@ summary:focus-visible {
 
 .research-card-context { border-top: 1px solid var(--border); padding-top: 10px; font-size: 11px; line-height: 1.5; color: var(--muted-foreground); }
 @media (max-width: 767px) {
-  .identity-panel { display: block; }
-  .identity-heading { display: block; }
-  .identity-side { display: block; margin-top: 20px; }
-  .identity-side .identity-photo { width: 120px; }
-  .identity-role { font-size: 14px; margin-top: 12px; }
+  .identity-panel { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .identity-heading { display: contents; }
+  .identity-heading h1 { grid-column: 1; }
+  .identity-heading > p.identity-role { grid-column: 1; font-size: 14px; margin-top: 12px; }
+  .identity-heading .eyebrow { grid-column: 1; }
+  .identity-side { display: contents; }
+  .identity-side .identity-photo { grid-row: 5; width: 160px; }
+  .identity-panel .identity-description { grid-row: 6; margin-top: 16px; }
+  .identity-focus { grid-row: 7; }
   .research-card-context { margin-top: auto; }
 }
 
