@@ -22,6 +22,15 @@ export function ProjectCard({
     'harman-spatial-audio': 'Industry Collaboration | HARMAN International',
   }
   const illustration = illustrations[work.slug]
+  const illustrationAlt: Record<string, string> = {
+    'msc-thesis-auditory-distance':
+      'Diagram of a 60-loudspeaker array surrounding an EEG participant',
+    'auditory-object-enumeration':
+      'Six loudspeakers arranged around a listener for an auditory subitizing experiment',
+    'demant-audio-explorers':
+      'Illustrative SRP-PHAT direction-of-arrival response plot',
+    'harman-spatial-audio': 'Illustrative music spectrogram',
+  }
   return (
     <Link
       href={`/works/${work.slug}`}
@@ -35,7 +44,10 @@ export function ProjectCard({
         <div className="research-card-thumb">
           <Image
             src={illustration ? `/illustrations/${illustration}.svg` : work.image}
-            alt={`Project thumbnail: ${work.shortTitle}`}
+            alt={
+              illustrationAlt[work.slug] ??
+              `Project thumbnail: ${work.shortTitle}`
+            }
             width={800}
             height={450}
             sizes="(max-width: 767px) 100vw, 300px"

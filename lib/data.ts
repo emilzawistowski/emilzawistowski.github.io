@@ -10,6 +10,7 @@ export type Work = {
   category: string
   year: string
   image?: string
+  imageAlt?: string
   featured?: boolean
   selected?: boolean
   venue: string
@@ -51,6 +52,8 @@ export const works: Work[] = [
     category: 'Thesis',
     year: '2026',
     image: '/works/thesis-eeg.jpg',
+    imageAlt:
+      'Participant wearing an EEG cap seated among wave field synthesis loudspeaker arrays',
     featured: true,
     selected: true,
     venue: 'Aalborg University',
@@ -78,6 +81,7 @@ export const works: Work[] = [
     category: 'Industry Collaboration',
     year: '2024',
     image: '/works/harman-spatial.jpg',
+    imageAlt: 'HARMAN and Aalborg University logos',
     featured: true,
     selected: true,
     venue: 'HARMAN International',
@@ -102,6 +106,7 @@ export const works: Work[] = [
     category: 'Competition',
     year: '2026',
     image: '/works/audio_explorers_2026.png',
+    imageAlt: 'Demant Audio Explorers logo',
     featured: true,
     selected: true,
     venue: 'Demant Audio Explorers (Team "EarCode Duo")',
@@ -126,6 +131,8 @@ export const works: Work[] = [
     category: 'Preprint',
     year: '2026',
     image: '/works/subitizing.png',
+    imageAlt:
+      'Line plot of enumeration accuracy versus number of simultaneous sounds',
     featured: true,
     selected: true,
     venue:

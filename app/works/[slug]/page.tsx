@@ -17,6 +17,7 @@ export async function generateMetadata({
   if (!work) return {}
   const url = `/works/${work.slug}/`
   const image = work.image ?? '/portrait_emil.jpg'
+  const imageAlt = work.imageAlt ?? 'Portrait of Emil Zawistowski'
   return {
     title: `${work.shortTitle} — Emil Zawistowski`,
     description: work.question,
@@ -29,7 +30,7 @@ export async function generateMetadata({
       url,
       siteName: 'Emil Zawistowski',
       type: 'article',
-      images: [{ url: image }],
+      images: [{ url: image, alt: imageAlt }],
     },
     twitter: {
       card: 'summary_large_image',
@@ -128,7 +129,7 @@ export default async function WorkDetailPage({
             <div className="work-detail-image">
               <Image
                 src={work.image}
-                alt={`Project illustration: ${work.shortTitle}`}
+                alt={work.imageAlt ?? `Project illustration: ${work.shortTitle}`}
                 width={1600}
                 height={1000}
                 sizes="(max-width: 767px) 100vw, 700px"

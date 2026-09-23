@@ -17,14 +17,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://emilzawistowski.github.io'),
-  title: 'Emil Zawistowski',
+  title: 'Emil Zawistowski — Hearing Science, Auditory Perception & Cognition',
   description:
     'Emil Zawistowski — hearing science, auditory cognition and spatial hearing research using psychoacoustics, EEG and computational methods.',
+  authors: [{ name: 'Emil Zawistowski' }],
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Emil Zawistowski',
+    title: 'Emil Zawistowski — Hearing Science, Auditory Perception & Cognition',
     description:
       'Emil Zawistowski — hearing science, auditory cognition and spatial hearing research using psychoacoustics, EEG and computational methods.',
     url: '/',
@@ -39,13 +40,6 @@ export const metadata: Metadata = {
     ],
     locale: 'en_US',
     type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Emil Zawistowski',
-    description:
-      'Emil Zawistowski — hearing science, auditory cognition and spatial hearing research using psychoacoustics, EEG and computational methods.',
-    images: ['/portrait_emil.jpg'],
   },
   icons: {
     icon: [
