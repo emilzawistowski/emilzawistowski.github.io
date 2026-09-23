@@ -321,6 +321,30 @@ export const works: Work[] = [
     ],
   },
   {
+    slug: 'rhythm-reproduction-envelope-study',
+    keywords: ['Music cognition', 'Rhythm', 'Sound envelope'],
+    shortTitle: 'Rhythm & Envelope Study',
+    focus: 'Music cognition · Coursework',
+    question:
+      'How does the temporal envelope of a sound affect the perception and reproduction of a repeating rhythm?',
+    methods:
+      'MATLAB-generated square-wave rhythm stimuli with varying attack and decay characteristics; stimulus preparation and analysis with the REPP toolkit and its beat-detection extension.',
+    findings:
+      'Exploratory coursework analysis documenting the computational method. A method sketch rather than a complete or validated behavioural study.',
+    title: 'Rhythm Reproduction and Sound Envelope Study',
+    category: 'Research Project',
+    year: '2025',
+    venue: 'Aalborg University Copenhagen (coursework, Music Perception and Cognition)',
+    description:
+      'Small computational music cognition project exploring how the temporal envelope of a sound may affect the perception and reproduction of a repeating rhythm, comparing stimuli with different attack and decay characteristics using the REPP toolkit.',
+    links: [
+      {
+        label: 'Code',
+        href: 'https://github.com/emilzawistowski/rhythm-reproduction-envelope-study',
+      },
+    ],
+  },
+  {
     slug: 'yolov8-recycling-detection',
     keywords: ['Object detection', 'YOLOv8', 'Sustainability'],
     shortTitle: 'Recycling Detection',

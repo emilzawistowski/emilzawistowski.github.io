@@ -6,6 +6,31 @@ export const metadata = {
   title: 'Research & Projects — Emil Zawistowski',
   description:
     'Research projects by Emil Zawistowski: auditory distance perception with EEG and Wave Field Synthesis, spatial audio, auditory subitizing, sound-source separation and brain-computer music interfaces.',
+  alternates: {
+    canonical: '/works/',
+  },
+  openGraph: {
+    title: 'Research & Projects — Emil Zawistowski',
+    description:
+      'Research projects by Emil Zawistowski: auditory distance perception with EEG and Wave Field Synthesis, spatial audio, auditory subitizing, sound-source separation and brain-computer music interfaces.',
+    url: '/works/',
+    siteName: 'Emil Zawistowski',
+    images: [
+      {
+        url: '/portrait_emil.jpg',
+        width: 725,
+        height: 905,
+        alt: 'Portrait of Emil Zawistowski',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Research & Projects — Emil Zawistowski',
+    description:
+      'Research projects by Emil Zawistowski: auditory distance perception with EEG and Wave Field Synthesis, spatial audio, auditory subitizing, sound-source separation and brain-computer music interfaces.',
+    images: ['/portrait_emil.jpg'],
+  },
 }
 export default function WorksPage() {
   // Featured order follows homeSelection so / and /works stay consistent;

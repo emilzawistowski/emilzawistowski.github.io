@@ -14,12 +14,30 @@ export async function generateMetadata({
 }) {
   const { slug } = await params
   const work = works.find((work) => work.slug === slug)
-  return work
-    ? {
-        title: `${work.shortTitle} — Emil Zawistowski`,
-        description: work.question,
-      }
-    : {}
+  if (!work) return {}
+  const url = `/works/${work.slug}/`
+  const image = work.image ?? '/portrait_emil.jpg'
+  return {
+    title: `${work.shortTitle} — Emil Zawistowski`,
+    description: work.question,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: work.title,
+      description: work.question,
+      url,
+      siteName: 'Emil Zawistowski',
+      type: 'article',
+      images: [{ url: image }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: work.title,
+      description: work.question,
+      images: [image],
+    },
+  }
 }
 export default async function WorkDetailPage({
   params,

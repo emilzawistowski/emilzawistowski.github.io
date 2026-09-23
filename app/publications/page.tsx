@@ -5,6 +5,31 @@ export const metadata = {
   title: 'Publications — Emil Zawistowski',
   description:
     'Publications by Emil Zawistowski: auditory display (ICAD), computational audiology (VCCA), musical interfaces (NIME) and auditory cognition preprints.',
+  alternates: {
+    canonical: '/publications/',
+  },
+  openGraph: {
+    title: 'Publications — Emil Zawistowski',
+    description:
+      'Publications by Emil Zawistowski: auditory display (ICAD), computational audiology (VCCA), musical interfaces (NIME) and auditory cognition preprints.',
+    url: '/publications/',
+    siteName: 'Emil Zawistowski',
+    images: [
+      {
+        url: '/portrait_emil.jpg',
+        width: 725,
+        height: 905,
+        alt: 'Portrait of Emil Zawistowski',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Publications — Emil Zawistowski',
+    description:
+      'Publications by Emil Zawistowski: auditory display (ICAD), computational audiology (VCCA), musical interfaces (NIME) and auditory cognition preprints.',
+    images: ['/portrait_emil.jpg'],
+  },
 }
 
 export default function PublicationsPage() {
