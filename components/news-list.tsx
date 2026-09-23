@@ -3,6 +3,16 @@
 import { useState } from 'react'
 import type { NewsItem } from '@/lib/data'
 
+function toISODate(date: string): string | undefined {
+  const day = '(\\d{2})\\.(\\d{2})\\.(\\d{4})'
+  const month = '(\\d{2})\\.(\\d{4})'
+  let match = date.match(new RegExp(`^${day}`))
+  if (match) return `${match[3]}-${match[2]}-${match[1]}`
+  match = date.match(new RegExp(`^${month}`))
+  if (match) return `${match[2]}-${match[1]}`
+  return undefined
+}
+
 export function NewsList({
   items,
   limit = 6,
@@ -22,7 +32,10 @@ export function NewsList({
             key={i}
             className="grid grid-cols-1 gap-1 border-b border-border py-2.5 md:grid-cols-[7rem_1fr] md:gap-6"
           >
-            <time className="font-mono text-[11px] tabular-nums tracking-[0.1em] text-foreground">
+            <time
+              dateTime={toISODate(item.date)}
+              className="font-mono text-[11px] tabular-nums tracking-[0.1em] text-foreground"
+            >
               {item.date}
             </time>
             <div>

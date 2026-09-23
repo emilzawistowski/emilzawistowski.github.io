@@ -1,8 +1,8 @@
 const KEYWORDS = new Set([
   'attention',
-  'organisation',
+  'organization',
   'segregation',
-  'behavioural',
+  'behavioral',
   'neurophysiological',
   'computational',
 ])

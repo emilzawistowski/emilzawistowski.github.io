@@ -45,7 +45,7 @@ export const works: Work[] = [
     methods:
       'A passive oddball experiment with 20 participants, a 60-loudspeaker Wave Field Synthesis array and 32-channel EEG. Analyses targeted MMN and P3a responses and single-trial CSP+LDA decoding.',
     findings:
-      'Neither component showed a reliable distance-deviant effect, and decoding did not exceed chance. Bayes factors favoured the null. The thesis discusses methodological limitations and provides a reusable WFS/EEG framework for further research.',
+      'Neither component showed a reliable distance-deviant effect, and decoding did not exceed chance. Bayes factors favored the null. The thesis discusses methodological limitations and provides a reusable WFS/EEG framework for further research.',
     title:
       'Auditory Distance Perception in Wave Field Synthesis: Pre-Attentive Neural Processing in a Cocktail-Party Environment',
     category: 'Thesis',
@@ -53,9 +53,9 @@ export const works: Work[] = [
     image: '/works/thesis-eeg.jpg',
     featured: true,
     selected: true,
-    venue: 'Aalborg University Copenhagen',
+    venue: 'Aalborg University',
     description:
-      'Investigated whether the brain automatically detects shifts in sound-source distance within a multi-talker "cocktail party" scene, using a 60-loudspeaker Wave Field Synthesis array to render physically accurate distance cues (wavefront curvature, direct-to-reverberant ratio, intensity gradients). A passive oddball paradigm with 32-channel EEG in 20 participants targeted the Mismatch Negativity (MMN) and P3a components, plus single-trial CSP+LDA decoding. Contrary to predictions, neither component showed a reliable distance-deviant effect (Bayes factors favouring the null) and decoding did not exceed chance — a null result discussed against methodological limitations, alongside a validated, reusable WFS/EEG methodological framework for future work.',
+      'Investigated whether the brain automatically detects shifts in sound-source distance within a multi-talker "cocktail party" scene, using a 60-loudspeaker Wave Field Synthesis array to render physically accurate distance cues (wavefront curvature, direct-to-reverberant ratio, intensity gradients). A passive oddball paradigm with 32-channel EEG in 20 participants targeted the Mismatch Negativity (MMN) and P3a components, plus single-trial CSP+LDA decoding. Contrary to predictions, neither component showed a reliable distance-deviant effect (Bayes factors favoring the null) and decoding did not exceed chance — a null result discussed against methodological limitations, alongside a validated, reusable WFS/EEG methodological framework for future work.',
     links: [
       {
         label: 'Code & analysis',
@@ -230,12 +230,12 @@ export const works: Work[] = [
     methods:
       'Webcam and MediaPipe Pose provide movement descriptors (position, velocity, acceleration) mapped to musical control across iterations: a wrist-velocity sketch, a Laban-inspired MIDI controller (Weight, Time, Space effort categories to MIDI CC), and an OSC pose tracker with a Pure Data receiver patch.',
     findings:
-      'Academic prototype demonstrating three mapping iterations. It does not recognise drum hits and has not been evaluated in a user study; the Pure Data patch maps a subset of the OSC streams.',
+      'Academic prototype demonstrating three mapping iterations. It does not recognize drum hits and has not been evaluated in a user study; the Pure Data patch maps a subset of the OSC streams.',
     title:
       'Drumming Sonification: Real-Time Movement-to-Sound Mapping with MediaPipe, MIDI/OSC and Pure Data',
     category: 'Research Project',
     year: '2026',
-    venue: 'Aalborg University Copenhagen',
+    venue: 'Aalborg University',
     description:
       'Explorations in real-time sonification of drumming movement. A webcam and MediaPipe Pose provide movement descriptors mapped to musical control data across iterations: early wrist-motion sketch, MIDI Laban controller, and OSC pose tracker (127.0.0.1:7400) with Pure Data receiver and sound-mapping patch.',
     links: [
@@ -259,7 +259,7 @@ export const works: Work[] = [
       'Thermobient: Temperature-Controlled Ambient Sound Interface with Teensy, C++ and Faust',
     category: 'Research Project',
     year: '2026',
-    venue: 'Aalborg University Copenhagen',
+    venue: 'Aalborg University',
     description:
       'Experimental musical interface using temperature sensing to control an ambient sound generator, combining a Teensy microcontroller sketch with C++ audio code and Faust DSP code.',
     links: [
@@ -310,7 +310,7 @@ export const works: Work[] = [
       'Emotional Micro-Gestures Sonification: Real-Time Affective Soundscape Generation from Computer Interaction Patterns',
     category: 'Research Project',
     year: '2026',
-    venue: 'Aalborg University Copenhagen',
+    venue: 'Aalborg University',
     description:
       'Real-time affective sonification turning mouse movement, clicks and typing dynamics into a continuous soundscape. Features extracted at 20 Hz are projected onto arousal/valence dimensions and mapped to perceptually grounded synthesis parameters, rendered in SuperCollider and controlled from Python via Open Sound Control.',
     links: [
@@ -330,11 +330,11 @@ export const works: Work[] = [
     methods:
       'MATLAB-generated square-wave rhythm stimuli with varying attack and decay characteristics; stimulus preparation and analysis with the REPP toolkit and its beat-detection extension.',
     findings:
-      'Exploratory coursework analysis documenting the computational method. A method sketch rather than a complete or validated behavioural study.',
+      'Exploratory coursework analysis documenting the computational method. A method sketch rather than a complete or validated behavioral study.',
     title: 'Rhythm Reproduction and Sound Envelope Study',
     category: 'Research Project',
     year: '2025',
-    venue: 'Aalborg University Copenhagen (coursework, Music Perception and Cognition)',
+    venue: 'Aalborg University (coursework, Music Perception and Cognition)',
     description:
       'Small computational music cognition project exploring how the temporal envelope of a sound may affect the perception and reproduction of a repeating rhythm, comparing stimuli with different attack and decay characteristics using the REPP toolkit.',
     links: [
@@ -359,7 +359,7 @@ export const works: Work[] = [
     category: 'Research Project',
     year: '2026',
     selected: true,
-    venue: 'Aalborg University Copenhagen',
+    venue: 'Aalborg University',
     description:
       'Computer-vision coursework project fine-tuning YOLOv8 for real-time detection of recyclable object categories from a webcam, with helpers for image acquisition, category mapping and dataset preparation.',
     links: [
@@ -384,7 +384,7 @@ export const works: Work[] = [
     category: 'Competition',
     year: '2026',
     selected: true,
-    venue: 'BR41N.io BCI Hackathon (Aalborg University Copenhagen) / FENS Forum 2026',
+    venue: 'BR41N.io BCI Hackathon (Aalborg University) / FENS Forum 2026',
     description:
       'Brain-controlled jukebox — an interactive project using BCI technology to link neural activity with musical selection, developed during the BR41N.io Hackathon 2026. Users navigate a sound library using EEG signals: a Unicorn headset captures motor imagery, CSP filtering and LDA classification identify intent, jaw-clench artifacts select and loop tracks, and TouchDesigner visuals respond to the audio.',
     collaborators: [
@@ -420,7 +420,7 @@ export const works: Work[] = [
     category: 'Research Project',
     year: '2026',
     selected: true,
-    venue: 'Aalborg University Copenhagen',
+    venue: 'Aalborg University',
     description:
       'A systematic evaluation of classical NMF for source separation on extreme audio textures (dense choral polyphony, tropical soundscapes, reverberant speech), sweeping rank, beta-divergence, sparsity regularization, iteration count, and phase-recovery method across 288 configurations. High rank, Euclidean divergence, and zero regularization gave the best reconstruction quality (~5–10 dB SDR for choir/speech, ~20–29 dB for environmental textures), while exposing limitations in reconstruction-based metrics and motivating a reformulation of the proposed Mix Clarity Index and psychoacoustic overlap measures.',
     links: [
@@ -447,7 +447,7 @@ export const works: Work[] = [
     year: '2026',
     selected: true,
     venue:
-      'Aalborg University Copenhagen (coursework based on the DCASE 2025 Task 2 dataset)',
+      'Aalborg University (coursework based on the DCASE 2025 Task 2 dataset)',
     description:
       'A student mini-project exploring first-shot unsupervised anomalous sound detection for industrial machine condition monitoring, using the DCASE 2025 Task 2 dataset. Compared MFCC- and log-mel-based Gaussian Mixture Models against a Mahalanobis-distance approach on mean-pooled log-mel features across seven machine types; the Mahalanobis approach generalized best under domain shift, reaching AUC scores of 0.6394 (valves) and 0.6234 (sliders).',
     links: [
@@ -532,7 +532,7 @@ export const news: NewsItem[] = [
   {
     date: '11.11.2026',
     title: 'Volunteering at Danish Sound Day',
-    body: 'Volunteering at Danish Sound Day, organised by the Danish Sound Cluster.',
+    body: 'Volunteering at Danish Sound Day, organized by the Danish Sound Cluster.',
   },
   {
     date: '17.09.2026 - 20.09.2026',
@@ -542,7 +542,7 @@ export const news: NewsItem[] = [
   {
     date: '15.09.2026 - 18.09.2026',
     title: 'Volunteering at ICDVRAT 2026',
-    body: 'Volunteering at the 16th International Conference on Disability, Virtual Reality & Associated Technologies, hosted at Aalborg University Copenhagen.',
+    body: 'Volunteering at the 16th International Conference on Disability, Virtual Reality & Associated Technologies, hosted at Aalborg University.',
   },
   {
     date: '07.09.2026',
@@ -556,8 +556,8 @@ export const news: NewsItem[] = [
   },
   {
     date: '28.08.2026',
-    title: 'Defended MSc Thesis at Aalborg University Copenhagen',
-    body: 'Defended the Master’s thesis in Sound and Music Computing at Aalborg University Copenhagen; the final grade was 12/12, the highest possible grade in the Danish system.',
+    title: 'Defended MSc Thesis at Aalborg University',
+    body: 'Defended the Master’s thesis in Sound and Music Computing at Aalborg University; the final grade was 12/12, the highest possible grade in the Danish system.',
   },
   {
     date: '13.08.2026 - 18.08.2026',
@@ -656,15 +656,15 @@ export const news: NewsItem[] = [
   {
     date: '03.2023',
     title: 'Co-Founded Research Circle of Cognitive Psychology of Music',
-    body: 'Co-founded and led a student research organisation at the Faculty of Psychology, University of Warsaw, focused on auditory perception.',
+    body: 'Co-founded and led a student research organization at the Faculty of Psychology, University of Warsaw, focused on auditory perception.',
   },
 ]
 
 export const biography = {
   short:
-    'My research investigates the cognitive mechanisms underlying auditory attention, organisation, and the segregation of sound in complex acoustic environments. I approach these questions through behavioural, neurophysiological, and computational methods.',
+    'My research investigates the cognitive mechanisms underlying auditory attention, organization, and the segregation of sound in complex acoustic environments. I approach these questions through behavioral, neurophysiological, and computational methods.',
   focus:
-    'Within this broad frame, I am particularly interested in **auditory object individuation** and the closely related **binding problem**: how features such as pitch, timbre, and location, processed along largely distinct pathways in auditory processing, come to be represented as belonging to the same object, and how such objects are subsequently maintained as bound units in **working memory**. One concrete example is **auditory subitizing**, the rapid individuation of a small number of sound objects, which I have studied in relation to numerosity estimation more broadly. Beyond this stimulus-driven, feature-level side of the process, I am equally interested in the role of selection: how **attention**, guided by both goals and bottom-up **auditory salience**, determines which objects and streams are tracked, and how schema-based knowledge drawn from **long-term memory** biases scene organisation toward familiar sources and patterns. I am also drawn to **predictive-processing** accounts of hearing, including the ongoing debate over whether neural markers such as the **mismatch negativity** reflect genuine prediction-error signalling or can be explained by simpler mechanisms of stimulus-specific adaptation.',
+    'Within this broad frame, I am particularly interested in **auditory object individuation** and the closely related **binding problem**: how features such as pitch, timbre, and location, processed along largely distinct pathways in auditory processing, come to be represented as belonging to the same object, and how such objects are subsequently maintained as bound units in **working memory**. One concrete example is **auditory subitizing**, the rapid individuation of a small number of sound objects, which I have studied in relation to numerosity estimation more broadly. Beyond this stimulus-driven, feature-level side of the process, I am equally interested in the role of selection: how **attention**, guided by both goals and bottom-up **auditory salience**, determines which objects and streams are tracked, and how schema-based knowledge drawn from **long-term memory** biases scene organization toward familiar sources and patterns. I am also drawn to **predictive-processing** accounts of hearing, including the ongoing debate over whether neural markers such as the **mismatch negativity** reflect genuine prediction-error signaling or can be explained by simpler mechanisms of stimulus-specific adaptation.',
   education: [
     {
       year: '2026–',
@@ -672,7 +672,7 @@ export const biography = {
     },
     {
       year: '2024–2026',
-      text: 'MSc, Sound and Music Computing — Aalborg University Copenhagen',
+      text: 'MSc, Sound and Music Computing — Aalborg University',
     },
     {
       year: '2021–2024',

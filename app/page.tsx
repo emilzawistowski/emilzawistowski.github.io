@@ -72,7 +72,7 @@ export default function HomePage() {
           <span className="eyebrow">Copenhagen, DK</span>
           <div className="identity-meta-block">
             <p className="identity-degrees">MSc Sound and Music Computing, <span>Aalborg University</span><br />BSc Cognitive Science, <span>University of Warsaw</span></p>
-            <a className="identity-email" href={`mailto:${contact.email}`}>Get in touch ↗</a>
+            <a className="identity-email" href={`mailto:${contact.email}`}>{contact.email} ↗</a>
           </div>
           <StatementText text={biography.short} />
         </div>
