@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
 import type { Work } from '@/lib/data'
+import { fold } from '@/lib/search'
 
 const pageSize = 10
 const collator = new Intl.Collator('en', { numeric: true, sensitivity: 'base' })
@@ -19,24 +20,24 @@ export function ProjectArchive({ works }: { works: Work[] }) {
   const options = (key: 'year' | 'category' | 'venue') =>
     [...new Set(works.map((work) => work[key]))].sort(collator.compare)
   const filtered = useMemo(() => {
-    const terms = query.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean)
+    const terms = fold(query).trim().split(/\s+/).filter(Boolean)
     return works
       .filter((work) => {
-        const text = [
-          work.title,
-          work.shortTitle,
-          ...work.keywords,
-          work.year,
-          work.category,
-          work.venue,
-          work.focus,
-          work.description,
-          work.methods,
-          work.findings,
-          ...(work.collaborators ?? []),
-        ]
-          .join(' ')
-          .toLocaleLowerCase()
+        const text = fold(
+          [
+            work.title,
+            work.shortTitle,
+            ...work.keywords,
+            work.year,
+            work.category,
+            work.venue,
+            work.focus,
+            work.description,
+            work.methods,
+            work.findings,
+            ...(work.collaborators ?? []),
+          ].join(' '),
+        )
         return (
           terms.every((term) => text.includes(term)) &&
           (!year || work.year === year) &&

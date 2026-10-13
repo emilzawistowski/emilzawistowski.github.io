@@ -10,7 +10,8 @@ export function usePublicationHashFlash() {
       const hash = window.location.hash.slice(1)
       if (!hash) return
       const el = document.getElementById(hash)
-      if (!el) return
+      // Other anchors, such as the skip link's #main-content, are left to the browser.
+      if (!el?.classList.contains('bibliography-row')) return
       const reduced = window.matchMedia(
         '(prefers-reduced-motion: reduce)',
       ).matches

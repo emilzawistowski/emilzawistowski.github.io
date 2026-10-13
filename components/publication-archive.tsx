@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react'
 import type { Publication } from '@/lib/data'
+import { fold } from '@/lib/search'
 import { PublicationRow, usePublicationHashFlash } from './publication-list'
 
 const pageSize = 10
@@ -23,19 +24,19 @@ export function PublicationArchive({
   const options = (key: 'year' | 'type' | 'venue') =>
     [...new Set(publications.map((pub) => pub[key]))].sort(collator.compare)
   const filtered = useMemo(() => {
-    const terms = query.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean)
+    const terms = fold(query).trim().split(/\s+/).filter(Boolean)
     return publications
       .filter((pub) => {
-        const text = [
-          pub.title,
-          pub.authors,
-          pub.venue,
-          pub.type,
-          pub.year,
-          pub.doi ?? '',
-        ]
-          .join(' ')
-          .toLocaleLowerCase()
+        const text = fold(
+          [
+            pub.title,
+            pub.authors,
+            pub.venue,
+            pub.type,
+            pub.year,
+            pub.doi ?? '',
+          ].join(' '),
+        )
         return (
           terms.every((term) => text.includes(term)) &&
           (!year || pub.year === year) &&

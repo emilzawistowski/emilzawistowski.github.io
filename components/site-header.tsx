@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { scholar } from '@/lib/data'
 import { applyTheme, storedTheme } from '@/lib/theme'
 
@@ -48,6 +48,7 @@ function ThemeToggle({ className }: { className: string }) {
 export function SiteHeader() {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
+  const menuButton = useRef<HTMLButtonElement>(null)
   // Until the visitor picks a theme, keep following the system setting.
   useEffect(() => {
     const media = window.matchMedia('(prefers-color-scheme: dark)')
@@ -67,7 +68,11 @@ export function SiteHeader() {
     <header
       className="sticky top-0 z-50 border-b border-border bg-background"
       onKeyDown={(event) => {
-        if (event.key === 'Escape') setOpen(false)
+        if (event.key === 'Escape' && open) {
+          setOpen(false)
+          // The focused menu link is about to disappear; hand focus back to the button.
+          menuButton.current?.focus()
+        }
       }}
     >
       <div className="site-masthead mx-auto max-w-[1100px] px-4 md:px-6">
@@ -105,11 +110,12 @@ export function SiteHeader() {
         <div className="masthead-actions flex items-center md:hidden">
           <ThemeToggle className="flex min-h-11 min-w-11 items-center justify-center" />
           <button
+            ref={menuButton}
             type="button"
             onClick={() => setOpen(!open)}
             className="min-h-11 min-w-16 font-mono text-xs uppercase tracking-[0.15em]"
             aria-expanded={open}
-            aria-controls="mobile-navigation"
+            aria-controls={open ? 'mobile-navigation' : undefined}
             aria-label="Toggle navigation menu"
           >
             {open ? '[ close ]' : '[ menu ]'}

@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://emilzawistowski.github.io'),
-  title: 'Emil Zawistowski — Hearing Science, Auditory Perception & Cognition',
+  title: 'Emil Zawistowski',
   description:
     'Emil Zawistowski — hearing science, auditory cognition and spatial hearing research using psychoacoustics, EEG and computational methods.',
   authors: [{ name: 'Emil Zawistowski' }],
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Emil Zawistowski — Hearing Science, Auditory Perception & Cognition',
+    title: 'Emil Zawistowski',
     description:
       'Emil Zawistowski — hearing science, auditory cognition and spatial hearing research using psychoacoustics, EEG and computational methods.',
     url: '/',
@@ -52,9 +52,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon/favicon.ico' },
-      { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      // Fallback for browsers without SVG icons; the size keeps Chrome from preferring it.
+      { url: '/favicon/favicon.ico', sizes: '32x32' },
+      // Turns light when the browser itself is in dark mode.
+      { url: '/favicon/icon.svg', type: 'image/svg+xml' },
     ],
     apple: '/favicon/apple-touch-icon.png',
   },

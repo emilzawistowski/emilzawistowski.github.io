@@ -15,6 +15,8 @@ export const metadata = {
       'Research projects by Emil Zawistowski: auditory distance perception with EEG and Wave Field Synthesis, spatial audio, auditory subitizing, sound-source separation and brain-computer music interfaces.',
     url: '/works/',
     siteName: 'Emil Zawistowski',
+    locale: 'en_GB',
+    type: 'website',
     images: [
       {
         url: '/og.jpg',

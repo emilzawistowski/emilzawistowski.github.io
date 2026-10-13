@@ -13,7 +13,7 @@ export function SiteFooter() {
           <p>{scholar.location}</p>
           <Link
             href={`mailto:${contact.email}`}
-            className="mt-2 inline-block whitespace-nowrap normal-case tracking-normal text-foreground hover:underline underline-offset-4"
+            className="footer-email inline-block whitespace-nowrap normal-case tracking-normal text-foreground hover:underline underline-offset-4"
           >
             {contact.email}
           </Link>

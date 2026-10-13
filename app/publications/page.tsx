@@ -14,6 +14,8 @@ export const metadata = {
       'Publications by Emil Zawistowski: auditory display (ICAD), computational audiology (VCCA), musical interfaces (NIME) and auditory cognition preprints.',
     url: '/publications/',
     siteName: 'Emil Zawistowski',
+    locale: 'en_GB',
+    type: 'website',
     images: [
       {
         url: '/og.jpg',

@@ -109,6 +109,30 @@ summary:focus-visible {
 .skip-link:focus {
   transform: translateY(0);
 }
+/* Small text links get a larger clickable area. The padding is cancelled by the margin, */
+/* so nothing moves, and the focus ring is pulled back to where it was. */
+:is(
+    .masthead-name,
+    .identity-email,
+    .footer-email,
+    .publication-source a,
+    .publication-source button
+  ) {
+  padding: 6px;
+  margin: -6px;
+}
+:is(
+    .masthead-name,
+    .identity-email,
+    .footer-email,
+    .publication-source a,
+    .publication-source button
+  ):focus-visible {
+  outline-offset: -2px;
+}
+a.footer-email {
+  margin-top: 2px;
+}
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

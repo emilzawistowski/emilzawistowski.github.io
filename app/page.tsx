@@ -49,7 +49,6 @@ export default function HomePage() {
       addressCountry: 'DK',
     },
     url: 'https://emilzawistowski.github.io/',
-    image: 'https://emilzawistowski.github.io/portrait_emil.jpg',
     sameAs: contact.links.map((link) => link.href),
     knowsAbout: [
       'Hearing science',
