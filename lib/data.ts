@@ -597,6 +597,11 @@ export const news: NewsItem[] = [
     body: 'Volunteering at Danish Sound Day, organised by the Danish Sound Cluster.',
   },
   {
+    date: '03.11.2026',
+    title: 'Presented MSc Thesis Poster at NAD 2026 Annual Meeting',
+    body: 'Presented a poster on the MSc thesis research on auditory distance perception at the Neuroscience Academy Denmark (NAD) 2026 Annual Meeting.',
+  },
+  {
     date: '17.09.2026 – 20.09.2026',
     title: 'Participated in Nordic AI Cup 2026',
     body: 'Took part solo in the Nordic AI Cup 2026 national challenge, a four-day online AI competition hosted by Ambolt AI.',
@@ -729,8 +734,8 @@ export const biography = {
     'Within this broad frame, I am particularly interested in **auditory object individuation** and the closely related **binding problem**: how features such as pitch, timbre, and location, processed along largely distinct pathways in auditory processing, come to be represented as belonging to the same object, and how such objects are subsequently maintained as bound units in **working memory**. One concrete example is **auditory subitizing**, the rapid individuation of a small number of sound objects, which I have studied in relation to numerosity estimation more broadly. Beyond this stimulus-driven, feature-level side of the process, I am equally interested in the role of selection: how **attention**, guided by both goals and bottom-up **auditory salience**, determines which objects and streams are tracked, and how schema-based knowledge drawn from **long-term memory** biases scene organisation towards familiar sources and patterns. I am also drawn to **predictive-processing** accounts of hearing, including the ongoing debate over whether neural markers such as the **mismatch negativity** reflect genuine prediction-error signalling or can be explained by simpler mechanisms of stimulus-specific adaptation.',
   education: [
     {
-      year: '2026–',
-      text: 'MSc, Engineering Acoustics — Technical University of Denmark (DTU)',
+      year: '2026–Present',
+      text: 'MSc, Engineering Acoustics — Technical University of Denmark',
     },
     {
       year: '2024–2026',
@@ -746,6 +751,14 @@ export const biography = {
     },
   ],
   appointments: [
+    {
+      year: '2026–Present',
+      text: 'Student Research Assistant — DTU Health Tech',
+    },
+    {
+      year: '2026–Present',
+      text: 'Student Assistant — Demant',
+    },
     {
       year: '2024–2025',
       text: 'Student Research Project Partner — HARMAN International',

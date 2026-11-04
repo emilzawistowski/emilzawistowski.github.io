@@ -230,9 +230,10 @@ a.footer-email {
   line-height: 1.7;
   letter-spacing: -0.01em;
 }
+/* The institution moves to its own line as a whole and only wraps inside when even that is too narrow. */
 .identity-meta-block > .identity-degrees span {
+  display: inline-block;
   color: var(--muted-foreground);
-  white-space: nowrap;
 }
 .identity-email {
   font-family: var(--font-mono);
