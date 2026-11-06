@@ -70,7 +70,7 @@ export default function HomePage() {
           <p className="identity-role">{scholar.role}</p>
           <span className="eyebrow">Copenhagen, DK</span>
           <div className="identity-meta-block">
-            <p className="identity-degrees">MSc student in Engineering&nbsp;Acoustics, <span>Technical University of Denmark</span></p>
+            <p className="identity-degrees">MSc Student in Engineering&nbsp;Acoustics, <span>Technical University of Denmark</span></p>
             <a className="identity-email" href={`mailto:${contact.email}`}>{contact.email} ↗</a>
           </div>
           <StatementText text={biography.short} />
